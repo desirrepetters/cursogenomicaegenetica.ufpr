@@ -40,7 +40,7 @@ As aulas ocorrerão entre os dias 19 de Abril de 2021 e 31 de Maio de 2021, nas 
 <table>
   <tr>
    <td><strong>Módulo I - Genômica no Estudo de Microrganismos (30 horas, de 19 a 30 de Abril)
-   <p>Professoras: Chirlei Glienke e Desirrê Petters-Vandresen
+   <p><p>Professoras: Chirlei Glienke e Desirrê Petters-Vandresen
    <p>Tópicos Teóricos</strong>
    </td>
    <td>
@@ -56,7 +56,7 @@ As aulas ocorrerão entre os dias 19 de Abril de 2021 e 31 de Maio de 2021, nas 
   </tr>
   <tr>
    <td><strong>Módulo I - Genômica no Estudo de Microrganismos (30 horas, de 19 a 30 de Abril)
-   <p>Professoras: Chirlei Glienke e Desirrê Petters-Vandresen
+   <p><p>Professoras: Chirlei Glienke e Desirrê Petters-Vandresen
    <p>Tópicos Práticos</strong>
    </td>
    <td>
@@ -76,7 +76,7 @@ As aulas ocorrerão entre os dias 19 de Abril de 2021 e 31 de Maio de 2021, nas 
   <tr>
    <td><strong>Módulo 2: Genética Funcional de Microrganismos e suas interações
 com as plantas (60h - 03 a 31 de Maio)
-<p>Professores: Chirlei Glienke e Alan de Oliveira Silva
+<p><p>Professores: Chirlei Glienke e Alan de Oliveira Silva
 <p>Tópicos Teóricos</strong>
    </td>
    <td>
@@ -94,7 +94,7 @@ com as plantas (60h - 03 a 31 de Maio)
     <tr>
    <td><strong>Módulo 2: Genética Funcional de Microrganismos e suas interações
 com as plantas (60h - 03 a 31 de Maio)
-<p>Professores: Chirlei Glienke e Alan de Oliveira Silva
+<p><p>Professores: Chirlei Glienke e Alan de Oliveira Silva
 <p>Tópicos Práticos</strong>
    </td>
    <td>
@@ -178,8 +178,8 @@ espécies de <i>Colletotrichum</i></li>
 <strong>Formação</strong>
 <p>
 <ul>
-<li>Graduação em Ciências Biológicas (Licenciatura) - Universidade Federal de Sergipe (UFS) (2005);</li>
-<li>Mestrado em Genética - Universidade Federal do Paraná (UFPR) (2014);</li>
+<li>Graduação em Ciências Biológicas (Licenciatura) - Universidade Federal de Sergipe (UFS) (2005)</li>
+<li>Mestrado em Genética - Universidade Federal do Paraná (UFPR) (2014)</li>
 <li>Doutorado em Genética - Universidade Federal do Paraná (UFPR) (2017)</li>
 </ul>
 
@@ -191,7 +191,7 @@ espécies de <i>Colletotrichum</i></li>
 </ul>
 
 </td>
-<td rowspan="3"> <img class="alignnone size-full wp-image-604" src="/sobre/alan_silva.jpg" alt="Foto de Perfil de Alan de Oliveira Silva" width="310"/></td>
+<td rowspan="3"> <img class="alignnone size-full wp-image-604" src="/sobre/alan_silva.jpeg" alt="Foto de Perfil de Alan de Oliveira Silva" width="310"/></td>
 </tr>
 </tbody>
 </table>
@@ -202,6 +202,7 @@ espécies de <i>Colletotrichum</i></li>
 <table>
 <tbody>
 <tr>
+<td rowspan="3"> <img class="alignnone size-full wp-image-604" src="/sobre/desirre.jpg" alt="Foto de Perfil de Desirrê Petters-Vandresen" width="310"/></td>
 <td>
 
 <p><p>
@@ -223,7 +224,6 @@ espécies de <i>Colletotrichum</i></li>
 <li>Doutorado em Genética em andamento na Universidade Federal do Paraná (UFPR), com período sanduíche no Max Planck Institute for Evolutionary Biology em Plön, na Alemanha (previsão de titulação: 2022)</li>
 </ul>
 </td>
-<td rowspan="3"> <img class="alignnone size-full wp-image-604" src="/sobre/desirre.jpg" alt="Foto de Perfil de Desirrê Petters-Vandresen" width="310"/></td>
 </tr>
 </tbody>
 </table>
