@@ -39,7 +39,7 @@ As aulas ocorrerão entre os dias 19 de Abril de 2021 e 31 de Maio de 2021, nas 
 
 <table>
   <tr>
-   <td><strong>Módulo I - Genômica no Estudo de Microrganismos (30 horas, de 19 a 30 de Abril)
+   <td><strong>Módulo I - Genômica no Estudo de Microrganismos (30 horas - 19 a 30 de Abril)
    <p><p>Professoras: Chirlei Glienke e Desirrê Petters-Vandresen
    <p>Tópicos Teóricos</strong>
    </td>
@@ -55,7 +55,7 @@ As aulas ocorrerão entre os dias 19 de Abril de 2021 e 31 de Maio de 2021, nas 
    </td>
   </tr>
   <tr>
-   <td><strong>Módulo I - Genômica no Estudo de Microrganismos (30 horas, de 19 a 30 de Abril)
+   <td><strong>Módulo I - Genômica no Estudo de Microrganismos (30 horas - 19 a 30 de Abril)
    <p><p>Professoras: Chirlei Glienke e Desirrê Petters-Vandresen
    <p>Tópicos Práticos</strong>
    </td>
@@ -75,7 +75,7 @@ As aulas ocorrerão entre os dias 19 de Abril de 2021 e 31 de Maio de 2021, nas 
   </tr>
   <tr>
    <td><strong>Módulo 2: Genética Funcional de Microrganismos e suas interações
-com as plantas (60h - 03 a 31 de Maio)
+com as plantas (60 horas - 03 a 31 de Maio)
 <p><p>Professores: Chirlei Glienke e Alan de Oliveira Silva
 <p>Tópicos Teóricos</strong>
    </td>
@@ -93,7 +93,7 @@ com as plantas (60h - 03 a 31 de Maio)
   </tr>
     <tr>
    <td><strong>Módulo 2: Genética Funcional de Microrganismos e suas interações
-com as plantas (60h - 03 a 31 de Maio)
+com as plantas (60 horas - 03 a 31 de Maio)
 <p><p>Professores: Chirlei Glienke e Alan de Oliveira Silva
 <p>Tópicos Práticos</strong>
    </td>
