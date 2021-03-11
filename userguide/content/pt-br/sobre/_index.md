@@ -7,7 +7,7 @@ menu:
 layout: docs
 ---
 
-{{% blocks/cover title="Como o curso de Sequências de DNA na Identificação de Espécies e Análise Filogenética pode te ajudar?" height="auto" color="black" %}}
+{{% blocks/cover title="Como o curso de Genômica e Genética Funcional de Microrganismos pode te ajudar?" height="auto" color="black" %}}
 
 {{% /blocks/cover %}}
 
@@ -17,7 +17,7 @@ Independentemente do contexto, a qualidade da comunicação científica e de tro
 
 Nesse sentido, o uso de sequências de DNA e análises filogenéticas permite que nossa compreensão da biodiversidade e a capacidade de descobrir novas espécies cresçam continuamente e exponencialmente, gerando ganhos em diversas áreas. Entretanto, estas ferramentas também trazem diversos desafios: sem o preparo e conhecimento adequado, possíveis erros de identificação podem acontecer e gerar sérios problemas e prejuízos. 
 
-Nossa proposta com o curso "Sequências de DNA na Identificação de Espécies e Análise Filogenética" é proporcionar o treinamento adequado com as melhores práticas em todas as etapas do processo, desde a obtenção das sequências até à precisa identificação da espécie. Com um conteúdo detalhado e tutoriais para todas as etapas, nosso objetivo é explorar estes temas de forma descomplicada e fornecer à você autonomia para empregar sequências de DNA e análises filogenéticas em seus projetos!
+Nossa proposta com o curso " Genômica e Genética Funcional de Microrganismos" é proporcionar o treinamento adequado com as melhores práticas em todas as etapas do processo, desde a obtenção das sequências até à precisa identificação da espécie. Com um conteúdo detalhado e tutoriais para todas as etapas, nosso objetivo é explorar estes temas de forma descomplicada e fornecer à você autonomia para empregar sequências de DNA e análises filogenéticas em seus projetos!
 
 {{% /blocks/section %}}
 
@@ -25,16 +25,12 @@ Nossa proposta com o curso "Sequências de DNA na Identificação de Espécies e
 
 <h2>Como o curso está estruturado?</h2> 
 <p><p>
-O curso conta com aulas teóricas e práticas, as quais serão realizadas por vídeoconferência na plataforma online Microsoft Teams, e posteriormente poderão ser reassistidas por meio de gravação. Os resumos do conteúdo teórico e tutoriais das atividades práticas serão disponibilizados em um site exclusivo para o participantes, e também por meio de uma apostila.
+O curso conta com aulas teóricas e práticas, as quais serão realizadas por vídeoconferência na plataforma online Microsoft Teams, e posteriormente poderão ser reassistidas por meio de gravação. Além disso, algumas das aulas práticas que envolvem experimentos laboratorais serão previamente gravadas a partir de experimentos reais realizados pelos professores.  Os resumos do conteúdo teórico, tutoriais e protocolos das atividades práticas serão disponibilizados em um site exclusivo para o participantes, e também por meio de uma apostila.
 <p><p>
 
 <h2>Quais são as datas?</h2>
 <p><p>
-Para a turma 01, as aulas ocorreram entre os dias 19 de Outubro de 2020 e 18 de Novembro de 2020, nas segundas pela manhã (09:00 até 13:00) e quintas à tarde (13:30 até 17:30). Além dos horários de aula, eventuais dúvidas sobre os conteúdos também foram resolvidas via e-mail.
-<p>
-Para a turma 02,as aulas ocorreram entre os dias 30 de Novembro de 2020 e 18 de Dezembro de 2020. nas segundas e quartas à tarde (13:30 até 17:30) e sextas pela manhã (08:30-12:30). Além dos horários de aula, eventuais dúvidas sobre os conteúdos também foram resolvidas via e-mail.
-<p>
-A previsão de abertura da turma 03 é no segundo semestre de 2021. Para ser informado sobre as datas e mais detalhes futuramente, clique <a href="https://forms.gle/ddmNQn6eBntGuUYg9">aqui</a> para se cadastrar na nossa lista de espera.
+As aulas ocorrerão entre os dias 19 de Abril de 2021 e 31 de Maio de 2021, nas segundas, quintas e sextas à tarde (13:30 até 17:30). Além dos horários de aula, eventuais dúvidas sobre os conteúdos também serão resolvidas via e-mail.
 <p><p>
 
 <h2>Quais conteúdos serão abordados?</h2>
@@ -43,43 +39,74 @@ A previsão de abertura da turma 03 é no segundo semestre de 2021. Para ser inf
 
 <table>
   <tr>
-   <td><strong>Tópicos Teóricos</strong>
+   <td><strong>Módulo I - Genômica no Estudo de Microrganismos (30 horas, de 19 a 30 de Abril)
+   <p>Professoras: Chirlei Glienke e Desirrê Petters-Vandresen
+   <p>Tópicos Teóricos</strong>
    </td>
    <td>
    <ul>
 <li style="text-align: left">Introdução ao curso</li>
-<li style="text-align: left">Conteúdos básicos em taxonomia, sistemática e filogenia molecular</li>
-<li style="text-align: left">Critérios para identificação de espécies em diferentes organismos – seleção de genes apropriados e problemas frequentemente encontrados</li>
-<li style="text-align: left">Identificação de espécies em microrganismos – problemas e soluções.</li>
-<li style="text-align: left">Obtenção, alinhamento e análise de seqüências; Bancos de dados.</li>
-<li style="text-align: left">Métodos de reconstrução filogenética e modelos evolutivos.</li>
-<li style="text-align: left">Princípios para escolha de sequências para compor a árvore filogenética. Como usar os Bancos de dados. </li>
-<li style="text-align: left">Construção e interpretação de árvores filogenéticas. </li>
+<li style="text-align: left">Organização de genomas eucariotos</li>
+<li style="text-align: left">Genomas de fungos e suas especificidades</li>
+<li style="text-align: left">Metodologias de sequenciamento de genomas</li>
+<li style="text-align: left">Metodologias de montagem e anotação de genomas</li>
+<li style="text-align: left">Metodologias de genômica comparativa e estrutural</li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><strong>Tópicos Práticos</strong>
+   <td><strong>Módulo I - Genômica no Estudo de Microrganismos (30 horas, de 19 a 30 de Abril)
+   <p>Professoras: Chirlei Glienke e Desirrê Petters-Vandresen
+   <p>Tópicos Práticos</strong>
    </td>
    <td>
    <ul>
-<li style="text-align: left">Obtenção de sequências consenso, análise de cromatogramas</li>
-<li style="text-align: left">Busca de sequências em bancos de dados, alinhamento e edição de alinhamentos</li>
-<li style="text-align: left">Testes de modelo evolutivo</li>
-<li style="text-align: left">Construção de árvores filogenéticas em diferentes softwares</li>
-<li style="text-align: left">Alinhamento multigênico</li>
-<li style="text-align: left">Construção e interpretação de árvores filogenéticas</li>
-<li style="text-align: left">Edição e preparação das árvores filogenéticas para publicações científicas</li>
+<li style="text-align: left">Estudo de caso: Genômica aplicada no estudo evolutivo de interações de fungos do gênero <i>Phyllosticta</i> com seus hospedeiros vegetais</li>
+<li style="text-align: left">Noções gerais de trabalho em ambiente Linux: organização do sistema e diretórios, uso de comandos e diferentes linguagens de programação (ex: Python, Perl), criação de scripts, instalação de softwares a serem utilizados nas etapas subsequentes, e servidores on-line como alternativa à instalação</li>
+<li style="text-align: left">Discussão sobre critérios de escolha de linhagens sequenciadas e metodologias utilizadas (Illumina e PacBio)</li>
+<li style="text-align: left">Análise de dados brutos de sequenciamento de genomas e transcriptomas (Illumina e PacBio): controle de qualidade, detecção de adaptadores e contaminantes, limpeza e filtragem</li>
+<li style="text-align: left">Montagem de genomas (Illumina e PacBio) e estatísticas básicas de qualidade: L50, N50, tamanho, quantidade de contigs/scaffolds, cobertura, completude, contaminação</li>
+<li style="text-align: left">Anotação gênica com comparação entre metodologias ab initio, baseadas em RNA-seq, baseadas em transcriptoma, baseadas em proteínas e consenso entre todos os métodos, e detecção de genes ortólogos</li>
+<li style="text-align: left">Anotação de elementos transponíveis e sua classificação</li>
+<li style="text-align: left">Anotação funcional: efetores, CAZymes, clusters de genes de metabólitos secundários, localização celular</li>
+<li style="text-align: left">Análise dos resultados: gráficos de sintenia e organização genômica</li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><strong>CONTEÚDO EXTRA!</strong>
+   <td><strong>Módulo 2: Genética Funcional de Microrganismos e suas interações
+com as plantas (60h - 03 a 31 de Maio)
+<p>Professores: Chirlei Glienke e Alan de Oliveira Silva
+<p>Tópicos Teóricos</strong>
    </td>
    <td>
    <ul>
-<li style="text-align: left">Depósito de sequências no GenBank</li>
-<li style="text-align: left">Depósito de alinhamentos no TreeBase</li>
+<li style="text-align: left">Genética de interações patógeno-planta</li>
+<li style="text-align: left">Bases moleculares do reconhecimento de patógenos por plantas</li>
+<li style="text-align: left">Aspectos moleculares de diferentes interações Microrganismo-planta</li>
+<li style="text-align: left">Metodologias para o estudo funcional de genes</li>
+<li style="text-align: left">Metodologias para knockout (deleção), knockdown (RNAi) e superexpressão de genes</li>
+<li style="text-align: left">Metodologias para o estudo de expressão de genes</li>
+<li style="text-align: left">Metodologias para edição de genomas (CRISPR-Cas)</li>
+</ul>
+   </td>
+  </tr>
+    <tr>
+   <td><strong>Módulo 2: Genética Funcional de Microrganismos e suas interações
+com as plantas (60h - 03 a 31 de Maio)
+<p>Professores: Chirlei Glienke e Alan de Oliveira Silva
+<p>Tópicos Práticos</strong>
+   </td>
+   <td>
+   <ul>
+<li style="text-align: left">Estudo de caso: Estudo de genes de patogenicidade e virulência em
+espécies de <i>Colletotrichum</i></li>
+<li style="text-align: left">Seleção de genes candidatos e métodos de transformação genética.</li>
+<li style="text-align: left">PCR: do desenho de primers eficientes à confirmação da amplificação por eletroforese.</li>
+<li style="text-align: left">Clonagem gênica: escolha e manipulação de vetores, desenho de primers, digestão, ligação e clonagem em <i>E. coli.</i></li>
+<li style="text-align: left">Transformação genética em fungos: montagem de cassetes para deleção (<i>knock-out</i>), aumento (<i>overexpression</i>) ou redução de expressão de genes (knock-down por RNA de interferência).</li>
+<li style="text-align: left">PCR quantitativo (qPCR) para avaliar a biomassa de fungos em tecidos vegetais infectados: do desenho e validação de primers, curva de calibração, desenho experimental, seleção de controles à análise dos resultados.</li>
+<li style="text-align: left">RT-qPCR para avaliar a expressão de genes de interesse: da extração de RNA, desenho e validação de primers, seleção de genes para normalização ao procedimento experimental e análise dos resultados.</li>
 </ul>
    </td>
   </tr>
@@ -139,6 +166,46 @@ A previsão de abertura da turma 03 é no segundo semestre de 2021. Para ser inf
 
 <p><p>
 
+<b>Alan de Oliveira Silva</b> é XXXX.
+<p><p>
+<p style="text-align: left">Atua principalmente nos seguintes tópicos:</p>
+
+<ul>
+<li style="text-align: left">xxxx</li>
+<li style="text-align: left">xxxx</li>
+</ul>
+
+<strong>Formação</strong>
+<p>
+<ul>
+<li>Graduação em Ciências Biológicas (Licenciatura) - Universidade Federal de Sergipe (UFS) (2005);</li>
+<li>Mestrado em Genética - Universidade Federal do Paraná (UFPR) (2014);</li>
+<li>Doutorado em Genética - Universidade Federal do Paraná (UFPR) (2017)</li>
+</ul>
+
+<p>
+
+<strong>Pós-doutorado</strong>
+<ul>
+<li>Pós-Doutorado na Martin-Luther-Universität Halle-Wittenberg em Halle, Alemanha (2017 - em andamento)</li>
+</ul>
+
+</td>
+<td rowspan="3"> <img class="alignnone size-full wp-image-604" src="/sobre/alan_silva.jpg" alt="Foto de Perfil de Alan de Oliveira Silva" width="310"/></td>
+</tr>
+</tbody>
+</table>
+<p>
+<p>
+<p>
+
+<table>
+<tbody>
+<tr>
+<td>
+
+<p><p>
+
 <b>Desirrê Petters-Vandresen</b> é aluna de doutorado do Programa de Pós-Graduação em <a href="https://www.bio.ufpr.br/portal/ppggenetica/">Genética</a>.
 <p><p>
 <p style="text-align: left">Atua principalmente nos seguintes tópicos:</p>
@@ -166,7 +233,7 @@ A previsão de abertura da turma 03 é no segundo semestre de 2021. Para ser inf
 
 ## Acompanhe nosso trabalho junto ao Laboratório BioGeMM!
 <p><p>
-O curso de Sequências de DNA na Identificação de Espécies e Análise Filogenética é promovido e ofertado pelo Programa de Pós-Graduação em Genética e pelo Laboratório de Bioprospecção e Genética Molecular de Microrganismos, localizado no Departamento de Genética da Universidade Federal do Paraná (UFPR, Curitiba, Brasil).
+O curso de Genômica e Genética Funcional de Microrganismos é promovido e ofertado pelo Programa de Pós-Graduação em Genética e pelo Laboratório de Bioprospecção e Genética Molecular de Microrganismos, localizado no Departamento de Genética da Universidade Federal do Paraná (UFPR, Curitiba, Brasil).
 
 Você pode visitar o site do [Laboratório BioGeMM](https://www.bio.ufpr.br/portal/biogemm/) para conhecer melhor a nossa [equipe](https://www.bio.ufpr.br/portal/biogemm/o-laboratorio/equipe/), [linhas de pesquisa](https://www.bio.ufpr.br/portal/biogemm/o-laboratorio/linhas-de-pesquisa/), [produção acadêmica](https://www.bio.ufpr.br/portal/biogemm/o-laboratorio/publicacoes/), e também saber das últimas novidades e publicações mais recentes!
 
