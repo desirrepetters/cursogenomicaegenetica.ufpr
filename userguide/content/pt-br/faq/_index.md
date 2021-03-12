@@ -9,7 +9,7 @@ layout: docs
 
 {{% blocks/cover title="Dúvidas Frequentes" height="auto" color="black" %}}
 
-Nessa seção buscamos responder às dúvidas mais frequentes em relação à vários aspectos do curso. Essa página será constantemente atualizada sempre que surgirem novas dúvidas, mas caso não encontre a resposta para sua pergunta, sinta-se à vontade para entrar em contato conosco pelo e-mail <b>cursogenomicaegenetica.ufpr@gmail.com</b>! Estaremos sempre à disposição para esclarecer qualquer dúvida ou fornecer mais informações!
+Nessa seção buscamos responder às dúvidas mais frequentes em relação aos vários aspectos do curso. Essa página será constantemente atualizada sempre que surgirem novas dúvidas, mas caso não encontre a resposta para sua pergunta, sinta-se à vontade para entrar em contato conosco pelo e-mail <b>cursogenomicaegenetica.ufpr@gmail.com</b>! Estaremos sempre à disposição para esclarecer qualquer dúvida ou fornecer mais informações!
 
 {{% /blocks/cover %}}
 
@@ -21,7 +21,7 @@ O curso é estruturado de forma a abordar desde aspectos básicos sobre cada uma
 <p><p>
 
 <b>Quais os requisitos em termos de computador e Internet?</b><p>
-Recomendamos que a conexão à Internet que permita a realização de vídeoconferência com áudio e vídeo. Em termos de computador, um desktop ou notebook de desempenho mediano permitem acompanhar as atividades, visto que os softwares a serem instalados não são computacionalmente exigentes, e algumas das etapas podem ser realizadas em servidores gratuitos online, os quais serão apresentados no decorrer do curso. 
+Recomendamos que a conexão à Internet que permita a realização de videoconferência com áudio e vídeo. Em termos de computador, um desktop ou notebook de desempenho mediano permitem acompanhar as atividades, visto que os softwares a serem instalados não são computacionalmente exigentes, e algumas das etapas podem ser realizadas em servidores gratuitos online, os quais serão apresentados no decorrer do curso. 
 <p><p>
 
 <b>Quando terei acesso à apostila/site com os conteúdos teóricos e práticos?</b><p>
