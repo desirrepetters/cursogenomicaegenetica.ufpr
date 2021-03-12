@@ -45,7 +45,7 @@ Se você participar de 75% ou mais das atividades síncronas, receberá um certi
 Clique <a href="https://cursogenomicaegeneticaufpr.netlify.app/inscricoes/">aqui</a>.
 <p><p>
 
-<b>Todas as vagas foram preenchidas. Há novas turmas previstas?</b><p>
+<b>Se todas as vagas forem preenchidas há novas turmas previstas?</b><p>
 A oferta de novas turmas leva em consideração diversos fatores, e um deles é a existência de alunos interessados. Sendo assim, caso as vagas tenham se esgotado e você tenha interesse em saber quando novas turmas serão abertas e queira receber nosso material de divulgação com mais detalhes, basta sinalizar seu interesse em nossa <a href="https://forms.gle/KmJ2QTgUUYFke9As8">lista de espera</a>.
 <p><p>
 
