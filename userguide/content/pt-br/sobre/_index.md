@@ -166,13 +166,14 @@ espécies de <i>Colletotrichum</i></li>
 
 <p><p>
 
-<b>Alan de Oliveira Silva</b> é XXXX.
+<b>Alan de Oliveira Silva</b> é pós-doutorando na Martin-Luther-Universität Halle-Wittenberg, em Halle, na Alemanha.
 <p><p>
 <p style="text-align: left">Atua principalmente nos seguintes tópicos:</p>
 
 <ul>
-<li style="text-align: left">xxxx</li>
-<li style="text-align: left">xxxx</li>
+<li style="text-align: left">Genética de Microorganismos Fitopatogênicos</li>
+<li style="text-align: left">Genética da Interação Fungo-Planta</li>
+<li style="text-align: left">Genética Funcional em <i>Colletotrichum</i></li>
 </ul>
 
 <strong>Formação</strong>
