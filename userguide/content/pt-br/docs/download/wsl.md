@@ -23,6 +23,7 @@ Para instalar qualquer distribuição do Linux (Ubuntu, Debian, entre outras), p
 </center>
 <br><br>
 Após abrir o Windows Power Shell, digite o seguinte comando e aperte “<i>Enter</i>”:
+<br><br>
 </div>
 
 ```
@@ -31,6 +32,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 <div align="justify">
 Em seguida, precisaremos habilitar o recurso opcional “<i>Plataforma de Máquina Virtual</i>”. Abra o Windows PowerShell novamente como administrador e execute o seguinte comando:
+<br><br>
 </div>
 
 ```
@@ -39,6 +41,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 <div align="justify">
 Após habilitar a “<i>Plataforma de Máquina Virtual</i>”, baixe o pacote de atualização do kernel do Linux do WSL2 clicando <a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">aqui</a>. Após baixar o arquivo, execute-o e selecione “<i>sim</i>” para aprovar a instalação da atualização. Ao terminar a instalação, abra novamente o Windows PowerShell e configure a versão 2 do WSL como a versão padrão ao instalar uma distribuição Linux utilizando o seguinte comando:
+<br><br>
 </div>
 
 ```
