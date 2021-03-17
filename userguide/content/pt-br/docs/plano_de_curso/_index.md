@@ -15,7 +15,7 @@ description: >
 <table class="center" style="text-align:center; vertical-align:middle;">
   <tr>
     <th style="vertical-align:middle;"><strong>Aula</strong></th>
-    <th style="vertical-align:middle;" width="310"><strong>Data e horário</strong></th>
+    <th style="vertical-align:middle;" width="210"><strong>Data e horário</strong></th>
 	<th style="vertical-align:middle;"><strong>Conteúdo</strong></th>
 	<th style="vertical-align:middle;"><strong>Professora(s)</strong></th>
   <tr>
