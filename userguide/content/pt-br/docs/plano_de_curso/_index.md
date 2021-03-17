@@ -17,7 +17,7 @@ description: >
     <th style="vertical-align:middle;"><strong>Aula</strong></th>
     <th style="vertical-align:middle;" width="210"><strong>Data e horário</strong></th>
 	<th style="vertical-align:middle;"><strong>Conteúdo</strong></th>
-	<th style="vertical-align:middle;"><strong>Professora(s)</strong></th>
+	<th style="vertical-align:middle;" width="210"><strong>Professora(s)</strong></th>
   <tr>
   <td style="vertical-align:middle;">Aula 01 (Síncrona)</td>
   <td style="vertical-align:middle;">19/04/2021 <br>(13:30 - 17:30)</td>
@@ -58,9 +58,9 @@ description: >
 <table class="center" style="text-align:center; vertical-align:middle;">
   <tr>
     <th style="vertical-align:middle;"><strong>Aula</strong></th>
-    <th style="vertical-align:middle;" width="310"><strong>Data e horário</strong></th>
+    <th style="vertical-align:middle;" width="210"><strong>Data e horário</strong></th>
 	<th style="vertical-align:middle;"><strong>Conteúdo</strong></th>
-	<th style="vertical-align:middle;"><strong>Professor(es)</strong></th>
+	<th style="vertical-align:middle;" width="210"><strong>Professor(es)</strong></th>
   <tr>
   <td style="vertical-align:middle;">Aula 07 (Síncrona)</td>
   <td style="vertical-align:middle;">03/05/2021 <br>(13:30 - 17:30)</td>
