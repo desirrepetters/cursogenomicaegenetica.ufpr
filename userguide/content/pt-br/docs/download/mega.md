@@ -15,8 +15,10 @@ Ao utilizar a versão MEGA 7 em suas publicações, inclua a seguinte citação:
 ```
 Kumar S, Stecher G, Tamura K, 2016. 
 MEGA7: Molecular Evolutionary Genetics Analysis version 7.0 for bigger datasets. 
-Molecular Biology and Evolution 33,1870-1874.
+Molecular Biology and Evolution 33, 1870-1874.
+DOI: 10.1093/molbev/msw054
 ```
+
 <div align="justify">
 <br><br>
 Ao utilizar a versão MEGA X em suas publicações, inclua a seguinte citação:
@@ -26,7 +28,8 @@ Ao utilizar a versão MEGA X em suas publicações, inclua a seguinte citação:
 ```
 Kumar S, Stecher G, Li M, Knyaz C, Tamura K, 2018. 
 MEGA X: Molecular Evolutionary Genetics Analysis across computing platforms. 
-Molecular Biology and Evolution 35,1547-1549.
+Molecular Biology and Evolution 35, 1547-1549.
+DOI: 10.1093/molbev/msy096
 ```
 
 ## Download
