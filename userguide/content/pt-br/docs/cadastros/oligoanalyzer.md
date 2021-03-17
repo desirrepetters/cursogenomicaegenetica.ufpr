@@ -7,7 +7,7 @@ description: >
 ---
 <div align="justify">
 O <a href="https://www.idtdna.com/pages/tools/oligoanalyzer">OligoAnalyzer</a> é um website que permite a avaliação de primers e suas características, tais como conteúdo GC, temperatura de melting, formação de estruturas secundárias e comparação com o banco de dados do NCBI utilizando BLAST. Trata-se de uma ferramenta muito útil, visto que é capaz de prever o comportamento dos primers in silico antes que sejam comprados e testados experimentalmente, e permitindo com que primers com características indesejáveis sejam eliminados e desconsiderados.
-<br><br>
+<br>
 </div>
 
 ## Criando um cadastro de usuário no OligoAnalyzer
