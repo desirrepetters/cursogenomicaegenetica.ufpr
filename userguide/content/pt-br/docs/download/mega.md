@@ -6,7 +6,18 @@ description: >
   Como instalar o software para edição de sequências de DNA e alinhamentos
 ---
 <div align="justify">
-MEGA (<i>Molecular Evolutionary Genetics Analysis</i>) é um software gratuito para uso em ensino e pesquisa, que tem como objetivo fornecer ferramentas para explorar, visualizar a analisar sequências de DNA e proteínas sob uma perspectiva evolutiva, com uma interface gráfica intuitiva. O MEGA apresenta diversas funcionalidades, desde edição de sequências, visualização e produção de alinhamentos, até testes de modelos evolutivos e produção de árvores filogenéticas. No contexto do nosso curso, utilizaremos o MEGA apenas para análise de sequências de DNA, visualização e edição de alinhamentos, pela existência de softwares melhores para as etapas de análise filogenética. 
+MEGA (<i>Molecular Evolutionary Genetics Analysis</i>) é um software gratuito para uso em ensino e pesquisa, que tem como objetivo fornecer ferramentas para explorar, visualizar a analisar sequências de DNA e proteínas sob uma perspectiva evolutiva, com uma interface gráfica intuitiva. O MEGA apresenta diversas funcionalidades, desde edição de sequências, visualização e produção de alinhamentos, até testes de modelos evolutivos e produção de árvores filogenéticas. No contexto do nosso curso, utilizaremos o MEGA para análise de sequências de DNA, visualização e edição de alinhamentos quando necessário. Para as etapas de análise filogenética utilizaremos outros softwares que apresentam um desempenho melhor e são capazes de lidar com conjuntos maiores de dados. 
+<br><br>
+Ao utilizar a versão MEGA 7 em suas publicações, inclua a seguinte citação:
+<br><br>
+</div>
+
+```
+Kumar S, Stecher G, Tamura K, 2016. 
+MEGA7: Molecular Evolutionary Genetics Analysis version 7.0 for bigger datasets. 
+Molecular Biology and Evolution 33,1870-1874.
+```
+<div align="justify">
 <br><br>
 Ao utilizar a versão MEGA X em suas publicações, inclua a seguinte citação:
 <br><br>
