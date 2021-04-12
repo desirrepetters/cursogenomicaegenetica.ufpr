@@ -1,28 +1,33 @@
 ---
-title: "Aula 08 - Concatenação de alinhamentos, teste de modelo evolutivo e análises filogenéticas de máxima verossimilhança e inferência bayesiana de alinhamentos concatenados e visualização e pré-edição de árvores filogenéticas"
-linkTitle: "Aula 08 - Concatenação de alinhamentos, teste de modelo evolutivo e análises filogenéticas de máxima verossimilhança e inferência bayesiana de alinhamentos concatenados e visualização e pré-edição de árvores filogenéticas"
+title: "Aula 08 - em breve"
+linkTitle: "Aula 08 - em breve"
 weight: 4
 description: >
-  Encontro do dia 16 de Novembro com prática em concatenação de alinhamentos, teste de modelo evolutivo e análises filogenéticas de máxima verossimilhança e inferência bayesiana de alinhamentos concatenados e visualização e pré-edição de árvores filogenéticas, e discussão de dados dos alunos e solução de problemas
+  Encontro do dia 06 de Maio
 ---
 
 <br>
 <div align="center">
 <h2>Parte 01</h2>
 <br>
-<i>Concatenação de alinhamentos, teste de modelo evolutivo e análises filogenéticas de máxima verossimilhança e inferência bayesiana de alinhamentos concatenados e visualização e pré-edição de árvores filogenéticas</i>
+<i>Em breve!</i>
 <br><br><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XA3ILyQPF5g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
-Clique <a href="https://photos.app.goo.gl/KwakXbv5QSso4ZoD7">aqui</a> para fazer o download do vídeo.
+Clique <a href="https://photos.app.goo.gl/">aqui</a> para fazer o download do vídeo (EM BREVE!).
 <br><br>
 
 <h2>Parte 02</h2>
 <br>
-<i>Discussão de dados dos alunos e solução de problemas</i>
+<i>Em breve!</i>
 <br><br><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sRGofmKjrRY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
 <br><br>
-Clique <a href="https://photos.app.goo.gl/hEvPweMgWtVE1j5M9">aqui</a> para fazer o download do vídeo.
+Clique <a href="https://photos.app.goo.gl/">aqui</a> para fazer o download do vídeo (EM BREVE!).
+
+<h2>Slides</h2>
+<br>
+Clique <a href="https://github.com/desirrepetters/cursogenomicaegenetica.ufpr/raw/master/userguide/content/pt-br/docs/teoricas/slides/aula_08.pdf">aqui</a> (EM BREVE!)!
+<br><br>
 </div>
