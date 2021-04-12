@@ -1,28 +1,33 @@
 ---
-title: "Aula 07 - Obtenção de Sequências no GenBank e Alinhamento Múltiplo"
-linkTitle: "Aula 07 - Obtenção de Sequências no GenBank e Alinhamento Múltiplo"
+title: "Aula 07 - em breve"
+linkTitle: "Aula 07 - em breve"
 weight: 4
 description: >
-  Encontro do dia 12 de Novembro com discussão de dados dos alunos e solução de problemas, e prática em análise filogenética de Máxima Verossimilhança no IQ-TREE (PhyloSuite e online) e de Inferência Bayesiana no MrBayes (PhyloSuite e online)
+  Encontro do dia 03 de Maio
 ---
 
 <br>
 <div align="center">
 <h2>Parte 01</h2>
 <br>
-<i>Discussão de exemplos e materiais dos alunos</i>
+<i>Em breve!</i>
 <br><br><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Pgg0sy629Mo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 <br><br>
-Clique <a href="https://photos.app.goo.gl/HzDXaKFx6mrpYdHK9">aqui</a> para fazer o download do vídeo.
+Clique <a href="https://photos.app.goo.gl/">aqui</a> para fazer o download do vídeo (EM BREVE!).
 <br><br>
 
 <h2>Parte 02</h2>
 <br>
-<i>Análise Filogenética de Máxima Verossimilhança no IQ-TREE (PhyloSuite e online) e de Inferência Bayesiana no MrBayes (PhyloSuite e online)</i>
+<i>Em breve!</i>
 <br><br><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_J7iF0ftJ-Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
-Clique <a href="https://photos.app.goo.gl/dTcSY9dFBqeWh2hf6">aqui</a> para fazer o download do vídeo.
+Clique <a href="https://photos.app.goo.gl/">aqui</a> para fazer o download do vídeo (EM BREVE!).
+<br><br>
+
+<h2>Slides</h2>
+<br>
+Clique <a href="https://github.com/desirrepetters/cursogenomicaegenetica.ufpr/raw/master/userguide/content/pt-br/docs/teoricas/slides/aula_07.pdf">aqui</a> (EM BREVE!)!
 <br><br>
 </div>
