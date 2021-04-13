@@ -3,7 +3,7 @@ title: "Aula 11 - em breve"
 linkTitle: "Aula 11 - em breve"
 weight: 4
 description: >
-  Encontro do dia 13 de Abril
+  Encontro do dia 13 de Maio
 ---
 
 <br>
