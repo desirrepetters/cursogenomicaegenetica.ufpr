@@ -3,7 +3,7 @@ title: "Aula 10 - em breve"
 linkTitle: "Aula 10 - em breve"
 weight: 4
 description: >
-  Encontro do dia 10 de Abril
+  Encontro do dia 10 de Maio
 ---
 
 <br>
