@@ -228,6 +228,7 @@ espécies de <i>Colletotrichum</i></li>
 </tr>
 </tbody>
 </table>
+
 <br>
 <table width="100%">
   <tr width="100%">
@@ -239,13 +240,7 @@ espécies de <i>Colletotrichum</i></li>
 <li style="text-align: left">Histórico e conceitos</li>
 </ul>
    </td>
-   <tr>
-   <td width="50%">
-   </td>
-   <td width="50%">
-   </td>
    </tr>
-  </tr>
  </table>
  <br>
 <table width="100%">
