@@ -230,7 +230,7 @@ espécies de <i>Colletotrichum</i></li>
 </table>
 <br>
 <table width="100%">
-  <tr>
+  <tr width="100%">
    <td width="50%"><strong>Introdução a epigenética</strong>
    </td>
    <td width="50%">
@@ -240,9 +240,9 @@ espécies de <i>Colletotrichum</i></li>
 </ul>
    </td>
    <tr>
-   <td>
+   <td width="50%">
    </td>
-   <td>
+   <td width="50%">
    </td>
    </tr>
   </tr>
