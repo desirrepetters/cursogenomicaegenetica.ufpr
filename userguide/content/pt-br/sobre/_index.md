@@ -285,6 +285,18 @@ espécies de <i>Colletotrichum</i></li>
    </td>
     </tr>
  </table>
+ <table width="100%">
+  <tr width="100%">
+   <td width="50%"><strong>Introdução a epigenética</strong>
+   </td>
+   <td width="50%">
+   <ul>
+<li style="text-align: left">Introdução ao curso</li>
+<li style="text-align: left">Histórico e conceitos</li>
+</ul>
+   </td>
+   </tr>
+ </table>
 
 {{% /blocks/section %}}
 {{% blocks/section type="section" color="primary" %}}
