@@ -316,6 +316,7 @@ espécies de <i>Colletotrichum</i></li>
 </ul>
    </td>
   </tr>
+   </table>
 
 {{% /blocks/section %}}
 {{% blocks/section type="section" color="primary" %}}
