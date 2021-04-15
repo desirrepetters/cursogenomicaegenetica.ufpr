@@ -294,6 +294,98 @@ espécies de <i>Colletotrichum</i></li>
    </td>
    </tr>
    </table>
+   
+    <table>
+ <tr>
+ <td width="30%" bgcolor="#ffffff"><strong>Bloco 1: Mecanismos Epigenéticos</strong>
+   </td>
+ </table>
+   <table width="100%">
+  <tr>
+   <td width="50%"><strong>Nucleossomo e modificações nas histonas</strong>
+   </td>
+   <td width="50%">
+   <ul>
+<li style="text-align: left">Estrutura do nucleossomo</li>
+<li style="text-align: left">Etapas da condensação do DNA</li>
+<li style="text-align: left">Código das histonas</li>
+<li style="text-align: left">Imunoprecipitação de cromatina</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td width="50%"><strong>Escritores, apagadores e leitores do código das histonas. Variantes histônicas</strong>
+   </td>
+   <td width="50%">
+   <ul>
+<li style="text-align: left">Mecanismos e proteínas envolvidas nas modificações das caudas histônicas</li>
+<li style="text-align: left">Variantes e suas funções</li>
+<li style="text-align: left">Papel na herança epigenética</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td width="50%"><strong>Metilação do DNA</strong>
+   </td>
+   <td width="50%">
+   <ul>
+<li style="text-align: left">Mecanismos de metilação e demetilação do DNA</li>
+<li style="text-align: left">Ilhas CpG</li>
+<li style="text-align: left">Papel na herança epigenética</li>
+<li style="text-align: left">Técnicas para investigação do metiloma</li>
+</ul>
+   </td>
+  </tr>
+   <tr>
+   <td width="50%"><strong>Coordenação da metilação das histonas e do DNA</strong>
+   </td>
+   <td width="50%">
+   <ul>
+<li style="text-align: left">Metilação <i>de novo</i> do DNA</li>
+<li style="text-align: left">CpGs não metiladas e H3K4</li>
+<li style="text-align: left">Demetilação de H3K36</li>
+<li style="text-align: left">Metilação de H3K9 e do DNA</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td width="50%"><strong>RNAi</strong>
+   </td>
+   <td width="50%">
+   <ul>
+<li style="text-align: left">Vias de RNAi</li>
+<li style="text-align: left">RNAi como intermediário no silenciamento transcricional</li>
+<li style="text-align: left">Modificações induzidas por RNAi na cromatina</li>
+<li style="text-align: left">RNASeq</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td width="50%"><strong>Interações cromatínicas de longa distância</strong>
+   </td>
+   <td width="50%">
+   <ul>
+<li style="text-align: left">Estocagem de DNA</li>
+<li style="text-align: left">Arquitetura nuclear</li>
+<li style="text-align: left">Interações de alça e regulação gênica</li>
+<li style="text-align: left">Hi-Seq</li>
+<li style="text-align: left">UCSC Genome browser</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td width="50%"><strong>Sinalização metabólica a cromatina</strong>
+   </td>
+   <td width="50%">
+   <ul>
+<li style="text-align: left">Enzimas e metabólitos</li>
+<li style="text-align: left">Metabolismo alterado e modificações epigenéticas</li>
+<li style="text-align: left">Nutrigenômica</li>
+<li style="text-align: left">Síndrome metabólica</li>
+</ul>
+   </td>
+  </tr>
+  </table>
 
 {{% /blocks/section %}}
 {{% blocks/section type="section" color="primary" %}}
