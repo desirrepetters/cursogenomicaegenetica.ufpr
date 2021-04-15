@@ -278,6 +278,11 @@ espécies de <i>Colletotrichum</i></li>
    </td>
    </table>
     <br>
+	<table>
+ <tr>
+ <td width="30%" bgcolor="#ffffff"><strong>Bloco 1: Mecanismos Epigenéticos</strong>
+   </td>
+ </table>
  <table width="100%">
   <tr>
    <td width="50%"><strong>Introdução a epigenética</strong>
@@ -295,7 +300,7 @@ espécies de <i>Colletotrichum</i></li>
    </tr>
    </table>
    
-    <table>
+ <table>
  <tr>
  <td width="30%" bgcolor="#ffffff"><strong>Bloco 1: Mecanismos Epigenéticos</strong>
    </td>
