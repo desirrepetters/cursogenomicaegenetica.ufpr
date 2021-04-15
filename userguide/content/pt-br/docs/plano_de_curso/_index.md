@@ -127,20 +127,7 @@ description: >
   <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_19"><br>Discussão geral e encerramento do curso<br><br></td>
   <td style="vertical-align:middle;">Chirlei e Alan</td>
   </table>
-  
-  <br>
-  <table width="100%">
-  <tr>
-   <td width="50%"><strong>Introdução a epigenética</strong>
-   </td>
-   <td width="50%">
-   <ul>
-<li style="text-align: left">Introdução ao curso</li>
-<li style="text-align: left">Histórico e conceitos</li>
-</ul>
-   </td>
-  </tr>
- </table>
+
   </div>
 
 	
