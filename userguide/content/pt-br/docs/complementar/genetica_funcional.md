@@ -15,7 +15,7 @@ Figueiredo et al. 2009. <i>Agrobacterium tumefaciens</i>-mediated transformation
 <br><br>
 Goulin et al. 2016.  Identification of genes associated with asexual reproduction in <i>Phyllosticta citricarpa</i> mutants obtained through <i>Agrobacterium tumefaciens</i> transformation. <b>Microbiological Research</b> 192, 142-147. DOI: <a href"https://doi.org/10.1016/j.micres.2016.06.010">10.1016/j.micres.2016.06.010</a>. <b><a href="https://doi.org/10.1016/j.micres.2016.06.010">[PDF]</a></b>
 <br><br>
-Münch et al. 2011.  Identification of virulence genes in the corn pathogen <I>Colletotrichum graminicola</i> by <i>Agrobacterium tumefaciens</i>-mediated transformation. <b>Molecular Plant Pathology</b> 12, 43-55. DOI: <a href"https://doi.org/10.1111/J.1364-3703.2010.00651.X">10.1111/J.1364-3703.2010.00651.X</a>. <b><a href="https://bsppjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/j.1364-3703.2010.00651.x>[PDF]</a></b>
+Münch et al. 2011.  Identification of virulence genes in the corn pathogen <I>Colletotrichum graminicola</i> by <i>Agrobacterium tumefaciens</i>-mediated transformation. <b>Molecular Plant Pathology</b> 12, 43-55. DOI: <a href"https://doi.org/10.1111/J.1364-3703.2010.00651.X">10.1111/J.1364-3703.2010.00651.X</a>. <b><a href="https://bsppjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/j.1364-3703.2010.00651.x">[PDF]</a></b>
 </div> 
 
 ## Caracterização de genes específicos
