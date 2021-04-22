@@ -300,7 +300,7 @@ Como solução de problemas, é possível cortar e filtrar os reads em função 
 <br><br>
 No exemplo em questão (análise do arquivo SRR9672751_1), podemos perceber que para a maioria das posições ao longo dos reads os dados apresentam boa qualidade, com a mediana e toda a distribuição na faixa verde, e que de uma forma geral a qualidade dos reads é ótima. Entretanto, a qualidade vai diminuindo perto do final alguns dos reads (o que é comum que aconteça). 
 <br><br>
-Como a mediana e o quartil inferior para esses reads finais ainda estão acima de 25, percebemos que essa perda de qualidade não deve ter acontecido em muitos reads, e o FastQC não classificou esta observação como problemática. <a href="">Na atividade prática com o Trimmomatic iremos explicar em maiores detalhes como filtrar estas poucas posições de menor qualidade</a>.
+Como a mediana e o quartil inferior para esses reads finais ainda estão acima de 25, percebemos que essa perda de qualidade não deve ter acontecido em muitos reads, e o FastQC não classificou esta observação como problemática. <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#filtragem-e-limpeza-dos-reads-no-trimmomatic">Na atividade prática com o Trimmomatic iremos explicar em maiores detalhes como filtrar estas poucas posições de menor qualidade</a>.
 <br><br>
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_5.png" alt="Campo superior esquerdo dos resultados de blastn" align="center">
