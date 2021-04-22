@@ -237,7 +237,7 @@ Ao terminar a análise, podemos abrir o arquivo HTML que foi gerado em qualquer 
 <table style="vertical-align:middle;">
   <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
-  <td width="750"><b><i>Normal:</i></b> nenhuma alteração do que seria esperado em um contexto normal</td>
+  <td width="700"><b><i>Normal:</i></b> nenhuma alteração do que seria esperado em um contexto normal</td>
   </tr>
   <tr>
   <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
