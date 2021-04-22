@@ -237,7 +237,7 @@ Ao terminar a análise, podemos abrir o arquivo HTML que foi gerado em qualquer 
 <table style="text-align:center; vertical-align:middle;">
   <tr>
   <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
-  <td width="500"><b><i>Normal:</i></b> nenhuma alteração do que seria esperado em um contexto normal</td>
+  <td width="700"><b><i>Normal:</i></b> nenhuma alteração do que seria esperado em um contexto normal</td>
   </tr>
   <tr>
   <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
@@ -294,7 +294,13 @@ A classificação dos resultados desse módulo é a seguinte:
 <br><br>
 
 
-Na parte superior esquerda, são sumarizadas algumas informações sobre a busca, como o tipo de programa usado (BLASTN), qual banco de dados (nt), qual o tipo de molécula (dna) e o tamanho da sequência:
+Em geral, as classificações “<i>Slightly abnormal</i>” e “<i>Very unusual</i>” para este módulo ocorrem pela degradação de qualidade que normalmente é observada nas corridas devido à degradação dos reagentes, e será observada à medida que a quantidade de reads aumenta ou o comprimento é aumentado. 
+<br><br>
+Como solução de problemas, é possível cortar e filtrar os reads em função da qualidade (quando as bases de má qualidade estão restritas ao começo ou final da sequência, é possível remover regiões específicas e manter as regiões de boa qualidade). Entretanto, quando todas as bases apresentam qualidade ruim, possivelmente será necessário sequenciar a amostra novamente.
+<br><br>
+No exemplo em questão (análise do arquivo SRR9672751_1), podemos perceber que para a maioria das posições ao longo dos reads os dados apresentam boa qualidade, com a mediana e toda a distribuição na faixa verde, e que de uma forma geral a qualidade dos reads é ótima. Entretanto, a qualidade vai diminuindo perto do final alguns dos reads (o que é comum que aconteça). 
+<br><br>
+Como a mediana e o quartil inferior para esses reads finais ainda estão acima de 25, percebemos que essa perda de qualidade não deve ter acontecido em muitos reads, e o FastQC não classificou esta observação como problemática. <a href="">Na atividade prática com o Trimmomatic iremos explicar em maiores detalhes como filtrar estas poucas posições de menor qualidade</a>.
 <br><br>
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_5.png" alt="Campo superior esquerdo dos resultados de blastn" align="center">
@@ -485,6 +491,8 @@ No contexto deste tutorial não iremos discutir exaustivamente todos os pontos d
 Após inspecionar e estar satisfeito com sua edição, exporte o alinhamento no formato FASTA. Dentro do menu superior “<i>Data</i>”, selecione a opção “<i>FASTA format</i>” dentro de “<i>Export alignment</i>”. Escolha a pasta do computador e o nome de sua preferência para salvar o arquivo. Na próxima atividade, faremos o teste de modelo evolutivo e produziremos nossas primeiras árvores filogenéticas.
 <br><br>
 </div>
+
+## Filtragem e limpeza dos reads no Trimmomatic
 
 ## Aula em vídeo
 
