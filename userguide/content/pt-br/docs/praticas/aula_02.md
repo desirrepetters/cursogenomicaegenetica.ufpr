@@ -16,7 +16,7 @@ Para este tutorial, acessaremos o <a href="https://www.ncbi.nlm.nih.gov/sra">NCB
 <br><br>
 Ao utilizar estes softwares e servidores, cite as seguintes referências ou agradecimentos:
 <br><br>
-<table class="center" style="text-align:center; vertical-align:middle;">
+<table style="text-align:center; vertical-align:middle;">
   <tr>
     <th><strong>Software</strong></th>
 	<th width="300" ><strong>Referência / Agradecimento</strong></th>
