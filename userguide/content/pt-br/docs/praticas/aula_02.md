@@ -145,8 +145,28 @@ Usando o software “<i>curl</i>”:
 curl -O https://sra-download.ncbi.nlm.nih.gov/traces/sra50/SRR/012854/SRR13162647
 ```
 
-O BLAST (<i>Basic Local Alignment Search Tool</i>) encontra regiões de similaridade entre sequências biológicas (como sequências de nucleotídeos ou proteínas). Ele pode ser utilizado de forma local e até para realizar alinhamentos entre um par de sequências, mas no nosso caso utilizaremos para buscar sequências semelhantes à nossa sequência consenso no banco de dados do NCBI (falaremos mais sobre ele depois) e tentar descobrir à que gênero o indivíduo da sequência consenso pertence, e assim, definir quais sequências de referência precisamos buscar nos bancos de dados. 
+<div align="justify">
+Usando a ferramenta “<i>prefetch</i>” do SRA Toolkit:
 <br><br>
+</div>
+
+```
+prefetch SRR13162647
+```
+
+<div align="justify">
+Como o arquivo obtido está no formato SRA, ainda precisamos convertê-lo para o formato FASTQ antes de prosseguir com as avaliações e processamentos. Para isso, utilizaremos a ferramenta “<i>fastd-dump</i>” do SRA Toolkit:
+<br><br>
+Para corridas com layout “<i>SINGLE</i>”:
+<br><br>
+</div>
+
+```
+fastq-dump SRR13162647
+```
+
+
+<div align="justify">
 A primeira etapa é acessar diretamente a página do <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST</a> e escolher a opção “<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome"><i>Nucleotide BLAST</i></a>”, em que compararemos uma sequência de nucleotídeos contra um banco de dados de nucleotídeos:
 <br><br>
 <center>
