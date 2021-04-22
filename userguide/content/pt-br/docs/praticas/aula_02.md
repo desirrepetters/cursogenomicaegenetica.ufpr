@@ -19,7 +19,7 @@ Ao utilizar estes softwares e servidores, cite as seguintes referências ou agra
 <table>
   <tr>
     <th><strong>Software</strong></th>
-	<th><strong>Referência / Agradecimento</strong></th>
+	<th width="400"><strong>Referência / Agradecimento</strong></th>
   <tr>
     <td>FastQC</td>
     <td>Andrews S, 2019. FastQC: a quality control tool for high throughput sequence data. Disponível online em: <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</a></td>
@@ -41,7 +41,6 @@ Clique nos links abaixo para acessar as páginas do NCBI SRA que contém os arqu
 <li><a href="https://www.ncbi.nlm.nih.gov/sra/SRX6433203%5baccn%5d">Sequenciamento de genoma de <i>Phyllosticta citriasiana</i> (linhagem CBS 120486) em Illumina</a></li>
 <li><a href="https://www.ncbi.nlm.nih.gov/sra/SRX9601541%5baccn%5d">Sequenciamento de genoma de Phyllosticta citricarpa (linhagem CBS 111.20) em PacBio</a></li>
 </ul>
-<br><br>
 Clique nos links abaixo para baixar os arquivos que serão utilizados nesta prática:
 <br><br>
 <li><a href="https://github.com/desirrepetters/cursogenomicaegenetica.ufpr/raw/master/userguide/content/pt-br/docs/praticas/example_files/aula_02/aula_02.zip">Link para pasta com todos os arquivos (formato zip)</a></li>
@@ -58,7 +57,6 @@ Para baixar os arquivos individualmente:
 <li><a href="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/example_files/aula_02/SRR9672751_2_R2_paired_FastQC_2a_Avaliacao.html">Arquivo de saída da segunda avaliação do FastQC para os reads reverse pareados de <i>P. citriasiana</i> CBS 120486 (formato HTML)</a></li>
 <li><a href="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/example_files/aula_02/SRR9672751_2_R2_unpaired_FastQC_2a_Avaliacao.html">Arquivo de saída da segunda avaliação do FastQC para os reads reverse não pareados de <i>P. citriasiana</i> CBS 120486 (formato HTML)</a></li>
 </ul>
-<br><br>
 Nesta atividade prática iremos:
 <br><br>
 <ul>
@@ -68,9 +66,7 @@ Nesta atividade prática iremos:
 <li>Filtrar reads de baixa qualidade e remover adaptadores do arquivo Illumina</li>
 <li>Reavaliar o arquivo filtrado para confirmar a efetividade da filtragem do arquivo Illumina</li>
 </ul>
-<br><br>
 Após a realização destas etapas, utilizaremos os arquivos obtidos para as <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_03">atividades práticas de montagem de genomas.</a>
-<br><br>
 </div>
 
 ## Obtenção de sequências no NCBI SRA e conversão para o formato FASTQ no ambiente Linux
@@ -93,11 +89,13 @@ Na próxima página podemos ver o número de resultados da nossa busca (neste ca
 </center>
 <br><br>
 Ao abrir o primeiro resultado, é possível descobrir qual é o código de acesso com o qual o conjunto de dados foi registrado (neste caso, SRX9601541), e obter mais informações sobre o sequenciamento e o depositante, tais como:
+<br><br>
 <li><b>Submitted by: </b>responsável pela submissão dos dados, nesse caso “<i>DOE Joint Genome Institute (JGI)</i>”</li>
-<ul>
+<ol>
 <li><b>Study: </b>título breve do estudo, nesse caso “<i><u>Phyllosticta citricarpa</u> CBS 111.20 Standard Draft genome sequencing</i>”, referindo-se ao sequenciamento de genoma rascunho da linhagem CBS 111.20 da espécie <i>Phyllosticta citricarpa</i></li>
 <li><b>Sample: </b>amostra utilizada, nesse caso “<i><u>Phyllosticta citricarpa</u> CBS 111.20</i>”. Nesse caso a informação já estava presente no título, mas em muitos casos o título é mais abrangente e não informa qual linhagem foi sequenciada.</li>
 <li><b>Library: </b>aqui é possível encontrar informações sobre a estratégia de sequenciamento, como:<br>
+<ol style="list-style-type: lower-alpha; padding-bottom: 0;">
 <li><b>Name: </b>nome da biblioteca sequenciada</li>
 <li><b>Instrument: </b>tipo de equipamento utilizado, neste caso “<i>PacBio RS II</i>” da Pacific BioSciences</li>
 <li><b>Strategy: </b>estratégia ou objetivo do sequenciamento, neste caso “<i>WGS (Whole Genome Sequencing)</i>", ou seja, sequenciamento do genoma completo</li>
@@ -105,8 +103,9 @@ Ao abrir o primeiro resultado, é possível descobrir qual é o código de acess
 <li><b>Layout: </b>este campo indica se os reads gerados são simples ou pareados. Neste caso, “<i>Single</i>”, indicando que são reads simples, não pareados.</li>
 <li><b>Construction protocol: </b>o tipo de protocolo utilizado para a construção da biblioteca para sequenciamento, se houver. Nesse caso, “<i>Regular (DNA)</i>”, indicando o uso de um protocolo padrão a partir de DNA, sem etapas diferenciadas.</li>
 <li><b>Runs: </b>quantas corridas foram sequenciadas ("<i>1 run</i>"), com a quantidade de posições lidas pelo sequenciador ("<i>6.1M spots</i>"), total de bases em todos os reads ("<i>53.4G bases</i>) e tamanho do arquivo para download ("<i>12.6 Gb</i>").</li>
+</ol>
 </li>
-</ul>
+</ol>
 <br><br>
 Para seguir para o download da sequência via NCBI SRA, podemos clicar no código de acesso da corrida (nesse caso, “<i>SRR13162647</i>”). Na página da corrida, podemos ter acesso à diferentes abas. Na aba “<i>Metadata</i>” os dados com a quantidade de posições lidas pelo sequenciador, total de bases em todos os reads e tamanho do arquivo para download são novamente apresentados.
 <br><br>
@@ -124,10 +123,28 @@ Na aba “<i>Data access</i>” a primeira opção de download é no formato SRA
 <br><br>
 Para fazer o download diretamente para o computador, basta clicar no link do arquivo no NCBI ou AWS e escolher o local de preferência para salvar o arquivo. O NCBI também fornece acesso aos dados no formato SRA pela plataforma em nuvem GCP (para usuários que possuam uma conta), e no formato original FASTQ nos serviços AWS e GCP (também exigindo uma conta de usuário.
 <br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_5.png" alt="Aba Data access do registro SRR13162647 dos dados de sequenciamento de genoma da linhagem CBS 111.20 de Phyllosticta citricarpa, evidenciando o link para download dos dados" align="center">
+</center>
+<br><br>
+Embora exista a possibilidade realizar o download do arquivo SRA pelo navegador, na maior parte dos casos os arquivos possuem um tamanho grande e podem ocorrer erros no processo de download. Nesse sentido, uma recomendação para ambientes Linux é fazer o download diretamente por linha de comando. Há algumas possibilidades:
+<br><br>
+Usando o software “<i>wget</i>” e o link de download:
+<br><br>
+</div>
 
+```
+wget https://sra-download.ncbi.nlm.nih.gov/traces/sra50/SRR/012854/SRR13162647
+```
 
+<div align="justify">
+Usando o software “<i>curl</i>”:
+<br><br>
+</div>
 
-
+```
+curl -O https://sra-download.ncbi.nlm.nih.gov/traces/sra50/SRR/012854/SRR13162647
+```
 
 O BLAST (<i>Basic Local Alignment Search Tool</i>) encontra regiões de similaridade entre sequências biológicas (como sequências de nucleotídeos ou proteínas). Ele pode ser utilizado de forma local e até para realizar alinhamentos entre um par de sequências, mas no nosso caso utilizaremos para buscar sequências semelhantes à nossa sequência consenso no banco de dados do NCBI (falaremos mais sobre ele depois) e tentar descobrir à que gênero o indivíduo da sequência consenso pertence, e assim, definir quais sequências de referência precisamos buscar nos bancos de dados. 
 <br><br>
