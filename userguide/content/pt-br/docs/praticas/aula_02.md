@@ -303,30 +303,55 @@ No exemplo em questão (análise do arquivo SRR9672751_1), podemos perceber que 
 Como a mediana e o quartil inferior para esses reads finais ainda estão acima de 25, percebemos que essa perda de qualidade não deve ter acontecido em muitos reads, e o FastQC não classificou esta observação como problemática. <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#filtragem-e-limpeza-dos-reads-no-trimmomatic">Na atividade prática com o Trimmomatic iremos explicar em maiores detalhes como filtrar estas poucas posições de menor qualidade</a>.
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_5.png" alt="Campo superior esquerdo dos resultados de blastn" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_11.png" alt="Resultados do módulo Per base sequence quality do FastQC" align="center">
 </center>
 <br><br>
-Para nós, as informações mais relevantes estão presentes na seção seguinte: “<i>Sequences producing significant alignments</i>”, em que são listadas as sequências mais similares à sequência consenso que foram encontradas pelo BLASTn. Ao lado da lista de sequências, há algumas colunas com informações adicionais. Vamos discorrer brevemente sobre seu significado.
+De modo geral, as bases dos reads do sequenciamento da linhagem CBS 120486 de <i>Phyllosticta citriasiana</i> são de excelente qualidade e poderão ser bem aproveitadas em sua maioria para análises posteriores. Mas como ficaria o gráfico caso essa não fosse a situação? 
 <br><br>
+Apresentamos então um exemplo de dados em que a qualidade é muito ruim. Nesse outro exemplo, várias posições apresentam os quartis inferiores das distribuições dos valores de qualidades na faixa laranja (razoável) e vermelha (ruim), inclusive com valores abaixo de 5, sugerindo que a qualidade dos reads é bastante questionável.
+<br><br>
+Nesse tipo de cenário, diferente do exemplo em <i>P. citriasiana</i>, dificilmente será possível aproveitar esses reads após filtragem e processamento, pois muitos dos reads serão completamente removidos, e os que permanecerem provavelmente serão cortados em quase toda a sua extensão, restando pouca informação biológica. Nesse caso, a melhor solução será sequenciar o material novamente, com mais cuidado nos procedimentos de extração, purificação e sequenciamento, evitando erros que possam causar o mesmo tipo de problema.
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_6.png" alt="Campo ~Sequences producing significant alignments~ na página de resultados de blastn, com diversas sequências de Fusarium" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_12.png" alt="Exemplo de resultados ruins no módulo Per base sequence quality do FastQC" align="center">
 </center>
 <br><br>
-Dentre as colunas descritivas, podemos ver duas colunas que se referem ao “<i>score</i>”. Este score depende do tamanho do alinhamento, do número de matches, mismatches, gaps e da matriz de comparação de sequências utilizada e é normalizado através de variáveis estatísticas. 
+</div>
+
+### Per Sequence Quality Scores (Qualidade por sequência / read) 
+
+<div align="justify">
+Este módulo permite avaliar a qualidade média dos reads, e detectar se existe ou não alguns reads que possuem qualidade inferior ao longo de todo o comprimento da sequência. Neste plot, o eixo x representa o valor médio de qualidade (quanto maior, melhor), e o eixo y representa o número de reads. A linha vermelha traça a distribuição dos valores de qualidade ao longo de todos os reads, e o formato da curva permite detectar se existem porções de reads que apresentam qualidade inferior. 
 <br><br>
-Como vimos na aula teórica, ao alinhar duas sequências há vários alinhamentos possíveis, dependendo da combinação de gaps, matches e mismatches existentes. Além disso, diferentes matrizes de substituição ou penalidades de gaps podem gerar diferentes scores. Resumidamente, o score se refere à qualidade geral daquele alinhamento entre as duas sequências, mas não deve ser interpretado no sentido de que a sequência analisada é mais similar às sequências de maior score.
+Em um cenário ideal, apenas um pico nos melhores valores de qualidade será observado. Entretanto, não é incomum observar que alguns reads tenham qualidade inferior (por limitações do próprio equipamento), desde que representam uma porção muito pequena do total de reads sequenciados.
 <br><br>
-“<i>Query coverage</i>” se refere à porcentagem da sequência que foi utilizada na busca está presente em cada um dos alinhamentos. Em muitos casos, a sequência que estamos analisando pode ser mais longa ou mais curta que as sequências dos bancos de dados, de modo que parte dela pode ficar de fora do alinhamento e reduzir a porcentagem de cobertura. 
+A classificação dos resultados desse módulo é a seguinte:
 <br><br>
-Já o E-value nos dá uma noção estatística sobre a qualidade do alinhamento entre as sequências: ele representa a quantidade de alinhamentos como scores iguais ou maiores ao score apresentado espera-se que ocorram ao acaso em uma base de dados de mesmo tamanho que a base de dados utilizada. Se o E-value é baixo, significa que é altamente improvável que um alinhamento de score igual aconteça ao acaso, sugerindo que de fato as sequências são similares. Já se o E-value é muito alto, significa que provavelmente as sequências não são similares, já que um alinhamento de mesmo score é altamente provável, e, portanto, pode ter acontecido por mera coincidência (e não tem real significado biológico). 
+Em geral, as classificações “<i>Slightly abnormal</i>” e “<i>Very unusual</i>” para este módulo ocorrem pela degradação de qualidade que normalmente é observada nas corridas, e por limitações do próprio equipamento. 
 <br><br>
-A coluna “<i>Percentage of identity (Per. Ident)</i>” se refere à porcentagem de similaridade entre as duas sequências alinhadas, exclusivamente para as regiões alinhadas (representadas na porcentagem de “<i>Query coverage</i>”. Isso significa que é possível que sequências diferentes apresentem a mesma porcentagem de cobertura, mas porcentagens de identidade diferente (uma é mais semelhante à sequência analisada do que a outra), ou uma sequência apresentam menor porcentagem de cobertura, mas porcentagem de identidade maior (provavelmente um pedaço da sequência ficou de fora do alinhamento pela diferença entre o comprimento da sequência analisada e a sequência no banco de dados, mas a porção que foi incluída no alinhamento tem maior similaridade do que a outra que apresenta maior porcentagem de cobertura).
+Como solução de problemas, é possível cortar e filtrar os reads em função da qualidade, removendo reads com qualidade baixa, quando a quantidade de reads de baixa qualidade não for muito elevada. Entretanto, quando muitos reads apresentarem qualidade ruim, a solução está relacionada ao equipamento e não ao processamento de dados.
 <br><br>
-E, por fim, a coluna Accession se refere ao código de acesso com que cada uma das sequências foi registrada ao ser depositada na base de dados, e que pode ser utilizado para buscar diretamente cada uma das sequências, bem como obter informações mais detalhadas sobre elas (tais como dados do indivíduo sequenciado, autores que realizaram o depósito da sequência, entre outras).
+No exemplo em questão (análise do arquivo SRR9672751_1), podemos perceber que a maior parte dos reads apresentam excelente qualidade, com o pico da distribuição com qualidade entre 35 e 36, e pouquíssimos reads de qualidade inferior a 25. Se os reads forem filtrados em função de sua qualidade média, a maior parte dos reads não será removida.
 <br><br>
-De forma geral, os valores das colunas descritivas não devem ser interpretados como valores que dão suporte ou não à identificação de um indivíduo num nível taxonômico tão preciso como espécie. O mais adequado é utilizá-los para avaliar a qualidade daqueles alinhamentos e avaliar se sequenciamos de fato o gene correto, e qual a identificação taxonômica de uma forma mais abrangente (por exemplo, em termos de família ou gênero).
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_13.png" alt="Resultados do módulo Per sequence quality scores do FastQC" align="center">
+</center>
 <br><br>
+De modo geral, assim como discutimos no módulo anterior, as bases dos reads do sequenciamento da linhagem CBS 120486 de <i>Phyllosticta citriasiana</i> são de excelente qualidade e poderão ser bem aproveitadas em sua maioria para análises posteriores.  
+<br><br>
+Mas como ficaria o gráfico caso essa não fosse a situação? Apresentamos então um exemplo de dados em que a qualidade é muito ruim. Nesse outro exemplo, podemos perceber que há vários reads de qualidade baixa, começando numa qualidade média de 9, com muitos reads de valor de qualidade inferior a 25, e o valor máximo de 33, inferior ao exemplo de <i>P. citriasiana</i> (valor máximo de 37). 
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_14.png" alt="Exemplo de resultados ruins do módulo Per sequence quality scores do FastQC" align="center">
+</center>
+<br><br>
+Nesse tipo de situação, diferente do exemplo em <i>P. citriasiana</i>, dificilmente será possível aproveitar esses reads após filtragem e processamento, pois se filtramos os reads em função de sua qualidade média, muitos dos reads serão completamente removidos, restando poucos reads para análise. Nesse caso, a melhor solução será sequenciar o material novamente, com mais cuidado nos procedimentos de extração, purificação e sequenciamento, evitando erros que possam causar o mesmo tipo de problema.
+<br><br>
+</div>
+
+### Per base sequence content (Conteúdo de sequência em cada uma das bases)
+
+<div align="justify">
 No nosso exemplo, é possível ver que em todas as sequências aparece “<i>translation elongation fator 1-alpha (tef1) gene</i>” ao lado da espécie e do isolado, indicando que a região sequenciada na sequência consenso corresponde a um fragmento do fator de elongamento da tradução 1-alpha, bastante utilizado em alguns grupos taxonômicos. Como a intenção ao sequenciar este indivíduo era de fato sequenciar este fragmento, sabemos então que fomos bem sucedidos em termos de sequenciar a região correta.
 <br><br>
 Por outro lado, vemos diversas espécies listadas: “<i>Fusarium awaxy</i>”, “<i>Fusarium cf. fujikuroi</i>”, “<i>Fusarium</i> sp.”, “<i>Fusarium culmorum</i>”, “<i>Fusarium subglutinans</i>”, “<i>Fusarium guttiforme</i>”, “<i>Fusarium antophilum</i>”. Este tipo de ocorrência é bastante comum e não é um exemplo isolado: aqui demonstramos o quão problemático é realizar a identificação de espécies apenas via BLASTn, sem análises mais refinadas. Neste caso, a única informação relevante para nossa atividade é de que provavelmente o indivíduo da sequência consenso pertence ao gênero “<i>Fusarium</i>”, mas uma identificação definitiva só poderá ser realizada por meio de análise filogenética utilizando sequências de referência do gênero Fusarium. Não há informações que nos permitam escolher uma das espécies da lista e definir a identificação do indivíduo da sequência consenso. 
