@@ -642,7 +642,6 @@ Um outro tipo de situação problemática ocorre quando todas as sequências sup
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_27.png" alt="Contaminação de dímeros de adaptadores detectada no módulo Overrepresented sequences do FastQC" align="center">
 </center>
-<br><br>
 </div>
 
 ### Adapter content (Presença de adaptadores)
@@ -698,70 +697,57 @@ Agora, ao finalizar a avaliação de todos os módulos de resultados, podemos pe
 ## Primeira avaliação de qualidade no FastQC no Galaxy
 
 <div align="justify">
-Também é possível produzir o alinhamento pelo plugin do MAFFT no PhyloSuite. Caso ainda não tenha o PhyloSuite instalado e o plugin do MAFFT configurado, siga estas instruções <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/phylosuite">aqui</a>. Após a instalação e configuração, para fazer os alinhamentos primeiramente iremos definir uma pasta de trabalho ao abrir o programa. Clicando no ícone amarelo, escolha a pasta que contiver o arquivo com as sequências. Lembre-se de <b>NÃO</b> selecionar a opção “<i>Use this as the default and do not ask again</i>” para que você sempre seja capaz de escolher qualquer pasta de seu interesse e não ficar restrito à uma única pasta:
+Após realizar o download os dados em formato FASTQ no Galaxy, também é possível realizar a avaliação de qualidade com o FastQC. 
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_15.png" alt="Janela de seleção do workplace no PhyloSuite" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_30.png" alt="Ferramenta FastQC na aba Tools do Galaxy" align="center">
 </center>
 <br><br>
-Em seguida, clique na opção “<i>MAFFT</i>” dentro do menu “<i>Alignment</i>":
+Para isso, na aba “<i>Tools</i>”, na região esquerda da página, digite “<i>fastqc</i>” e selecione a opção “<i>FastQC Read Quality Reports</i>”: 
+<br><br>
+Ao abrir a aba para seleção de arquivos e opções, clique no ícone da opção “<i>Browse Datasets</i>” para escolher os arquivos a serem analisados:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_16.png" alt="Opção MAFFT dentro do menu Alignment do PhyloSuite" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_31.png" alt="Opção Browse Datasets na ferramenta FastQC no Galaxy" align="center">
 </center>
 <br><br>
-Na janela de opções, escolha o arquivo com todas as sequências, modo de alinhamento “<i>Normal</i>”, estratégia “<i>1. –auto</i>” e Export Format “<i>3. FASTA Format / Sorted</i>” para exportar o arquivo final para o formato FASTA com as sequências ordenadas por similaridade. Em “<i>Additional parameters</i>” geralmente a opção “--adjustdirection” para ajustar a orientação das sequências para a mesma da primeira sequência já está selecionada, mas se não estiver, deve ser selecionada. As outras opções não precisam ser selecionadas. Em seguida, aperte em “<i>Start</i>” e acompanhe o processo por meio da barra de progresso:
+Primeiro, iremos analisar os reads forward, então clique no arquivo correspondente, chamado “<br>SRR9672751_1</b>”:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_17.png" alt="Janela de configurações do MAFFT dentro do PhyloSuite" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_31.png" alt="Janela Browse Datasets, com destaque para o arquivo SRR9672751_1" align="center">
 </center>
 <br><br>
-Em alguns casos o programa pode retornar uma janela de erro, mas apesar disso, o alinhamento foi concluído. Para encontrar o arquivo de saída, basta acessar a pasta “<i>GenBank file</i>”, em seguida “<i>files</i>”, “<i>mafft_results</i>” e a pasta com a data e horário em você utilizou o software. Dentro desta pasta estará o arquivo FASTA alinhado pelo MAFFT e um arquivo log da tarefa.
+É possível fornecer uma lista personalizada de contaminantes (“<i>Contaminant list</i>”) ou de adaptadores (“<i>Adapter list</i>”) para o FastQC usar durante a análise, mas nesse momento utilizaremos a lista padrão. Sendo assim, basta clicar em “<i>Execute</i>” para iniciar a tarefa:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_18.png" alt="Possível bug inofensivo ao utilizar o MAFFT no PhyloSuite" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_32.png" alt="Opções para configuração do FastQC no Galaxy" align="center">
 </center>
 <br><br>
+Para analisar o arquivo com reads reverse, clique novamente na opção “<i>Browse Datasets</i>” e clique agora no arquivo “<b>SRR9672751_2</b>”:
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_33.png" alt="Janela Browse Datasets, com destaque para o arquivo SRR9672751_2" align="center">
+</center>
+<br><br>
+Quando ambas as análises estiverem concluídas, os quatro arquivos estarão listados em verde. Para realizar o download, basta clicar sobre o nome do arquivo, e no ícone de disquete, referente à opção “Download”. Os arquivos HTML com os resultados estão listados sob os nomes “FastQC on data: Webpage”.
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_34.png" alt="Análise do FastQC concluída no Galaxy, indicada pela cor verde na lista de arquivos" align="center">
+</center>
+<br><br>
+A <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#primeira-avalia%C3%A7%C3%A3o-de-qualidade-no-fastqc">interpretação dos módulos de resultados do arquivo HTML é a mesma descrita anteriormente</a>, na seção em que o uso do FastQC via linha de comando foi descrita.
 </div>
 
-## Inspeção visual e edição do alinhamento no MEGA
-
-<div align="justify">
-Para inspeção visual e edição, abriremos o alinhamento no software MEGA 7 ou MEGA X. Para abrir o alinhamento seleciona a opção “<i>Edit/Build Aligment</i>” dentro do menu “<i>Align</i>”. Escolha a opção “<i>Retrieve sequences from a file</i>", clique em OK e escolha o arquivo do alinhamento no seu computador (seja o produzido pelo MAFFT online ou pelo plugin do MAFFT no PhyloSuite) para abrir:
-<br><br>
-<center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_19.png" alt="Instruções para abrir um arquivo de alinhamento no MEGA" align="center">
-</center>
-<br><br>
-Ao abrir o alinhamento na aba do Explorador de Alinhamentos, vemos que nem todas as sequências tem o mesmo comprimento: algumas são mais longas que outras, de modo que as mais curtas acabam possuindo vários “gaps” no começo e no final. Nesse sentido, é importante cortar um pouco do início e do final do alinhamento para que o alinhamento consista de regiões representadas pela maioria das sequências. Podemos selecionar e deletar estas bases do começo e do final da mesma forma que fizemos ao produzir a sequência consenso na <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#o-que-%C3%A9-e-como-analisar-um-eletroferograma">Aula 01</a>.
-<br><br>
-<center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_20.png" alt="Corte nas porções inicial e final do alinhamento" align="center">
-</center>
-<br><br>
-Para a inspeção visual e edição ao longo de um alinhamento, observe principalmente se:
-<br><br>
-<b>Há um excesso de transversões?</b> Em geral, transições são mais prováveis e frequentes, de modo que isso deve se refletir no alinhamento. Se ao longo de um alinhamento você encontrar um excesso de transversões, avalie estas regiões com mais cuidado para ver se não seria possível incluir alguns gaps ou deslocar algumas bases para que se alinhem à outras.
-<br><br>
-<b>Há bases que estão deslocadas, e uma região próxima à qual claramente elas deveriam estar alinhadas?</b> Nesse caso, desloque as bases e corrija o alinhamento. No exemplo a seguir, o gap existente nas sequências 15 a 20 provavelmente não existe, visto que nas sequências logo abaixo ou logo acima a região deslocada existe. Nesse caso, selecione as bases deslocadas e mova para a posição correta com a opção “<i>Move selected block left</i>” do menu superior:
-<br><br>
-<center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_21.png" alt="Opção ~Move selected block left~ no MEGA 7" align="center">
-</center>
-<br><br>
-<center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_22.png" alt="Exemplo de bases deslocadas em um alinhamento" align="center">
-</center>
-<br><br>
-No contexto deste tutorial não iremos discutir exaustivamente todos os pontos do alinhamento que poderiam ou não ser editados. A edição dos alinhamentos exigirá um pouco de prática e tempo, e à medida que você trabalhar com frequência com as mesmas sequências, e olhar com atenção o alinhamento, este processo se tornará cada vez mais fácil e você terá mais confiança nas edições. Lembre-se: sempre é possível desfazer as mudanças (Ctrl + Z), ou exportar várias opções de edição, testá-las em sua análise filogenética e perceber as mudanças, ou mesmo não fazer nenhuma edição enquanto não sentir confiança o suficiente para isso.
-<br><br>
-Após inspecionar e estar satisfeito com sua edição, exporte o alinhamento no formato FASTA. Dentro do menu superior “<i>Data</i>”, selecione a opção “<i>FASTA format</i>” dentro de “<i>Export alignment</i>”. Escolha a pasta do computador e o nome de sua preferência para salvar o arquivo. Na próxima atividade, faremos o teste de modelo evolutivo e produziremos nossas primeiras árvores filogenéticas.
-<br><br>
-</div>
 
 ## Filtragem e limpeza dos reads no Trimmomatic
 
+<div align="justify">
+</div>
+
 ## Segunda avaliação de qualidade no FastQC
+
+<div align="justify">
+</div>
 
 ## Aula em vídeo
 
