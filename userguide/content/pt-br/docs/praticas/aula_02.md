@@ -184,7 +184,7 @@ fastq-dump --split-files /home/RNAseq/SRR9672751
 ```
 
 <div align="justify">
-Em todos os modos de uso do fastq-dump para corridas com layout PAIRED serão gerados arquivos de saída: nesse exemplo, SRR9672751_1 para os reads forward e SRR9672751_2 para os reads reverse.
+Em todos os modos de uso do fastq-dump para corridas com layout PAIRED serão gerados arquivos de saída: nesse exemplo, <b>SRR9672751_1</b> para os reads forward e <b>SRR9672751_2</b> para os reads reverse.
 <br><br>
 </div>
 
@@ -214,7 +214,6 @@ Quando o download estiver finalizado, os arquivos estarão listados na aba Histo
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_9.png" alt="Download de arquivos finalizado no Galaxy, indicado pela coloração verde nos itens da lista" align="center">
 </center>
-<br><br>
 </div>
 
 ## Primeira avaliação de qualidade no FastQC
@@ -251,8 +250,7 @@ Ao terminar a análise, podemos abrir o arquivo HTML que foi gerado em qualquer 
   <br><br>
 É importante frisar que tais avaliações do FastQC devem ser sempre contextualizadas em relação à amostra que está sendo trabalhada, pois a comparação é feita em relação a um contexto normal e aleatório. Por exemplo, o FastQC espera que parâmetros como quantidade e tamanho de reads sigam uma distribuição normal, por exemplo. Entretanto, se você está trabalhando com um conjunto de dados que sofreu seleção em função do tamanho dos reads, provavelmente este parâmetro não apresentará uma distribuição normal e será classificado como “slightly abnormal” ou “very unusual”, mas isso não significará que existam grandes problemas. De forma geral, é importante sempre encarar as avaliações como uma visão geral dos dados e levar o contexto sempre em consideração antes de realizar a interpretação.
 <br><br>
-Prosseguiremos para a avaliação do arquivo HTML e cada um dos módulos analisados pelo FastQC, usando o arquivo HTML de saída para os reads forward (<b>SRR9672751_1</b>) como exemplo:
-<br><br>
+Prosseguiremos para a avaliação do arquivo HTML e cada um dos módulos analisados pelo FastQC, usando o arquivo HTML de saída para os reads forward (<b>SRR9672751_1</b>) como exemplo.
 </div>
 
 ### Basic Statistics (Estatísticas básicas)
@@ -269,7 +267,7 @@ Este primeiro módulo sempre é classificado como “Normal” (ícone verde) e 
 <li><b><i>Sequence Length:</i></b> informa o tamanho da menor e da maior sequência (read) presentes no arquivo, e se todos os reads forem do mesmo tamanho, apenas um valor será mostrado (nesse caso, todos os reads possuem tamanho de “<b>150</b>” bases)</li>
 <li><b><i>%GC:</i></b> porcentagem de GC considerando todas as bases e todos os reads (nesse caso, o conteúdo GC médio é de “<b>52%</b>”)</li>
 </ul>
-<br><br>
+<br>
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_10.png" alt="Resultados do módulo Basic Statistics do FastQC" align="center">
 </center>
@@ -328,7 +326,7 @@ Nesse tipo de cenário, diferente do exemplo em <i>P. citriasiana</i>, dificilme
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_12.png" alt="Exemplo de resultados ruins no módulo Per base sequence quality do FastQC" align="center">
 </center>
-<br><br>
+<br>
 </div>
 
 ### Per Sequence Quality Scores (Qualidade por sequência / read) 
@@ -374,7 +372,7 @@ Mas como ficaria o gráfico caso essa não fosse a situação? Apresentamos ent�
 </center>
 <br><br>
 Nesse tipo de situação, diferente do exemplo em <i>P. citriasiana</i>, dificilmente será possível aproveitar esses reads após filtragem e processamento, pois se filtramos os reads em função de sua qualidade média, muitos dos reads serão completamente removidos, restando poucos reads para análise. Nesse caso, a melhor solução será sequenciar o material novamente, com mais cuidado nos procedimentos de extração, purificação e sequenciamento, evitando erros que possam causar o mesmo tipo de problema.
-<br><br>
+<br>
 </div>
 
 ### Per base sequence content (Conteúdo de sequência em cada uma das bases)
@@ -467,7 +465,6 @@ Mas como ficaria o gráfico caso essa não fosse a situação? Apresentamos ent�
 Nesse outro caso também é importante ter em mente o tipo de contexto e situação para definir uma solução. Se os dados forem provenientes de um experimento ou condição em que se esperam vieses no tipo de sequências e sequências com diferentes tipos de conteúdo GC são mais frequentes que outras (por exemplo, um experimento de super expressão de algum gene em relação a outros), esse tipo de observação pode ser normal e é possível prosseguir com a análise sem problemas. 
 <br><br>
 Por outro lado, se não for esse o caso, pode indicar problemas no sequenciamento e inclusive a presença de contaminantes. Nesse caso, a melhor solução será sequenciar o material novamente, com mais cuidado nos procedimentos de extração, purificação e sequenciamento, evitando erros que possam causar o mesmo tipo de problema, com especial atenção à possíveis fontes de contaminação (como amostras ou reagentes contaminados).
-<br><br>
 </div>
 
 ### Per base N content (Quantidade de N em cada uma das bases)
@@ -509,7 +506,6 @@ Mas como ficaria o gráfico caso essa não fosse a situação? Apresentamos ent�
 </center>
 <br><br>
 Neste exemplo ainda é possível cortar e filtrar os reads em função da qualidade, pois somente uma quantidade pequena de reads apresentam bases indeterminadas, e estão restritas a uma porção da sequência total. Entretanto, quando todas as bases apresentam N, ou quando uma grande quantidade de reads apresenta esse tipo de problema, será necessário sequenciar a amostra novamente.
-<br><br>
 </div>
 
 ### Sequence length distribution (Distribuição de tamanho das sequências)
@@ -547,7 +543,6 @@ Em um arquivo com reads de tamanhos variáveis, poderíamos observar resultados 
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_22.png" alt="Exemplo de resultados ruins do módulo Sequence Length Distribution do FastQC" align="center">
 </center>
-<br><br>
 </div>
 
 ### Sequence duplication levels (Nível de duplicação das sequências)
@@ -596,7 +591,6 @@ Mas como ficaria o gráfico caso essa não fosse a situação? Apresentamos ent�
 Nesse outro caso também é importante ter em mente o tipo de contexto e situação para definir uma solução. Se os dados forem provenientes de um experimento ou condição em que se esperam vieses e que algumas sequências sejam mais frequentes que outras (por exemplo, um experimento de super expressão de algum gene em relação a outros), esse tipo de observação pode ser normal e é possível prosseguir com a análise sem problemas. 
 <br><br>
 Por outro lado, se não for esse o caso, pode indicar problemas no sequenciamento ou com a amostra. Nesse caso, a melhor solução será sequenciar o material novamente, com mais cuidado nos procedimentos de extração, purificação e sequenciamento, evitando erros que possam causar o mesmo tipo de problema.
-<br><br>
 </div>
 
 ### Overrepresented sequences (Sequências super representadas)
@@ -714,25 +708,25 @@ Ao abrir a aba para seleção de arquivos e opções, clique no ícone da opçã
 Primeiro, iremos analisar os reads forward, então clique no arquivo correspondente, chamado “<b>SRR9672751_1</b>”:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_31.png" alt="Janela Browse Datasets, com destaque para o arquivo SRR9672751_1" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_32.png" alt="Janela Browse Datasets, com destaque para o arquivo SRR9672751_1" align="center">
 </center>
 <br><br>
 É possível fornecer uma lista personalizada de contaminantes (“<i>Contaminant list</i>”) ou de adaptadores (“<i>Adapter list</i>”) para o FastQC usar durante a análise, mas nesse momento utilizaremos a lista padrão. Sendo assim, basta clicar em “<i>Execute</i>” para iniciar a tarefa:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_32.png" alt="Opções para configuração do FastQC no Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_33.png" alt="Opções para configuração do FastQC no Galaxy" align="center">
 </center>
 <br><br>
 Para analisar o arquivo com reads reverse, clique novamente na opção “<i>Browse Datasets</i>” e clique agora no arquivo “<b>SRR9672751_2</b>”:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_33.png" alt="Janela Browse Datasets, com destaque para o arquivo SRR9672751_2" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_34.png" alt="Janela Browse Datasets, com destaque para o arquivo SRR9672751_2" align="center">
 </center>
 <br><br>
 Quando ambas as análises estiverem concluídas, os quatro arquivos estarão listados em verde. Para realizar o download, basta clicar sobre o nome do arquivo, e no ícone de disquete, referente à opção “<i>Download</i>”. Os arquivos HTML com os resultados estão listados sob os nomes “<b>FastQC on data: Webpage</b>”.
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_34.png" alt="Análise do FastQC concluída no Galaxy, indicada pela cor verde na lista de arquivos" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_35.png" alt="Análise do FastQC concluída no Galaxy, indicada pela cor verde na lista de arquivos" align="center">
 </center>
 <br><br>
 A <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#primeira-avalia%C3%A7%C3%A3o-de-qualidade-no-fastqc">interpretação dos módulos de resultados do arquivo HTML é a mesma descrita anteriormente</a>, na seção em que o uso do FastQC via linha de comando foi descrita.
@@ -779,18 +773,16 @@ Nesse tipo de bibliotecas, se o sequenciamento de porções dos adaptadores (“
 A abordagem palindrômica pode identificar tanto cenários em que praticamente não há informação válida nos reads (e uma boa porção dos adaptadores foi sequenciada, demonstrada no exemplo A da imagem abaixo), quanto situações em que apenas uma base do adaptador foi sequenciada, demonstrada no exemplo B. 
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_35.png" alt="Exemplos de adapter read-through detectados pelo Trimmomatic" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_36.png" alt="Exemplos de adapter read-through detectados pelo Trimmomatic" align="center">
 </center>
 <br><br>
 Como nesta abordagem os alinhamentos podem ser bem maiores dos alinhamentos produzidos no alinhamento da abordagem simples, o valor mínimo de score precisa ser maior para manter a especificidade do processo, próximo de 30. Mesmo que esse valor mínimo seja bem alto e exija pelo menos 50 matches ao longo da sequência, ele ainda permite que o Trimmomatic identifique fragmentos curtos de adaptadores. Esse valor mínimo é informado no segundo argumento do comando <i>ILLUMINACLIP</i>, e nesse exemplo usamos “<b>30</b>”, indicando que são necessários pelo menos 50 matches na região complementar do alinhamento para identificar um adaptador na região não-complementar.
-<br><br>
 </div>
 
 ### LEADING/TRAILING
 
 <div align="justify">
 Esses commandos removem bases de baixa qualidade do começo (<i>LEADING</i>) ou final (<i>TRAILING</i>) do read, de acordo com um valor mínimo especificado. Caso a primeira base apresente um valor abaixo do valor exigido ela será removida, e as próximas bases serão avaliadas sucessivamente, até que uma base com valor igual ou superior ao exigido seja encontrada. Nesse exemplo utilizamos o valor "<b>25</b>" no comando <i>LEADING</i>, informando ao Trimmomatic que bases no início dos reads que possuam qualidade inferior à 25 devem ser removidas.
-<br><br>
 </div>
 
 ### SLIDINGWINDOW
@@ -799,14 +791,12 @@ Esses commandos removem bases de baixa qualidade do começo (<i>LEADING</i>) ou 
 O comando <i>SLIDINGWINDOW</i> informa ao Trimmomatic para realizar a análise de qualidade dos reads ao longo de janelas, e cortar as bases somente quando a qualidade média dentro da janela analisada estiver abaixo de um valor mínimo determinado. Ao considerar várias bases ao mesmo tempo, o Trimmomatic garante que bases de qualidade não sejam removidas do conjunto por conta de apenas uma única base de qualidade inferior.  	
 <br><br>
 O primeiro argumento informa o tamanho da janela em número de bases (nesse exemplo, “<b>4</b>”) e o segundo argumento informa a qualidade média que é exigida para manter os dados (nesse exemplo, uma qualidade média de “<b>25</b>”).
-<br><br>
 </div>
 
 ### AVGQUAL
 
 <div align="justify">
 O comando <i>AVGQUAL</i> informa ao Trimommatic para remover reads que apresentem uma qualidade média (levando em consideração todas as bases) inferior a um valor especificado. Nesse exemplo utilizamos o valor “<b>25</b>”, informando ao Trimmomatic que reads de qualidade média inferior à 25 devem ser removidos.
-<br><br>
 </div>
 
 ### MINLEN
@@ -833,43 +823,43 @@ A filtragem e limpeza dos reads também pode ser realizada no Galaxy, <a href="h
 Para isso, na aba “<i>Tools</i>”, na região esquerda da página, digite “<i>Trimmomatic</i>” e selecione a segunda opção “<i>Trimmomatic: flexible read trimming tool for Illumina NGS data</i>”, para utilizar a versão mais recente do software.
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_36.png" alt="Ferramenta Trimmomatic na aba Tools do Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_37.png" alt="Ferramenta Trimmomatic na aba Tools do Galaxy" align="center">
 </center>
 <br><br>
 Ao abrir a aba para seleção de arquivos e opções, selecione a opção “<i>Paired-end (two separate input files)</i>” no campo “<i>Single-end or paired-end reads?</i>”, informando que analisaremos reads pareados:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_37.png" alt="Opções no campo Single-end or paired-end reads? da ferramenta Trimmomatic no Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_38.png" alt="Opções no campo Single-end or paired-end reads? da ferramenta Trimmomatic no Galaxy" align="center">
 </center>
 <br><br>
 Em seguida, clique no ícone da opção “<i>Browse Datasets</i>” no campo “<i>Input FASTQ file (R1/first of pair)</i>” para selecionar o arquivo com reads forward para análise:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_38.png" alt="Opção Browse Datasets para escolha de arquivos da ferramenta Trimmomatic no Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_39.png" alt="Opção Browse Datasets para escolha de arquivos da ferramenta Trimmomatic no Galaxy" align="center">
 </center>
 <br><br>
 Na janela seguinte, selecione o arquivo correspondente os reads forward (<b>SRR9672751_1</b>):
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_39.png" alt="Lista de arquivos dentro da aba Browse Datasets, com destaque para o arquivo SRR9672751_1" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_40.png" alt="Lista de arquivos dentro da aba Browse Datasets, com destaque para o arquivo SRR9672751_1" align="center">
 </center>
 <br><br>
 Para incluir o arquivo com reads reverse na análise, clique novamente na opção “<i>Browse Datasets</i>” no campo “<i>Input FASTQ file (R2/second of pair)</i>”:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_40.png" alt="Opção Browse Datasets para escolha de arquivos da ferramenta Trimmomatic no Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_41.png" alt="Opção Browse Datasets para escolha de arquivos da ferramenta Trimmomatic no Galaxy" align="center">
 </center>
 <br><br>
 Na janela seguinte, selecione o arquivo correspondente os reads reverse (<b>SRR9672751_2</b>):
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_41.png" alt="Lista de arquivos dentro da aba Browse Datasets, com destaque para o arquivo SRR9672751_2" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_42.png" alt="Lista de arquivos dentro da aba Browse Datasets, com destaque para o arquivo SRR9672751_2" align="center">
 </center>
 <br><br>
 Agora iremos configurar o comando <i>ILLUMINACLIP</i>. Selecione a opção “<i>Yes</i>” no campo “<i>Perform initial ILLUMINACLIP step?</i>”. Em seguida, informe que deseja usar as sequências padrão do Trimmomatic, escolhendo a opção “<i>Standard</i>” no campo “<i>Select adapter sequences or provide custom?</i>”
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_42.png" alt="Configuração inicial da opção ILLUMINACLIP do Trimmomatic no Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_43.png" alt="Configuração inicial da opção ILLUMINACLIP do Trimmomatic no Galaxy" align="center">
 </center>
 <br><br>
 No campo “<i>Adapter sequences to use</i>” precisamos escolher o conjunto de sequências referente à estratégia de sequenciamento utilizada. Nesse caso, ao consultar a <a href="https://www.ncbi.nlm.nih.gov/sra/SRX6433203%5baccn%5d">página do depósito destes dados no SRA</a>, podemos determinar que a plataforma utilizada foi “<i>Illumina HiSeq</i>” e os dados são pareados. Sendo assim, a opção a ser escolhida é “<i>TruSeq3 (paired-ended, for MiSeq and HiSeq)</i>”:
@@ -885,43 +875,43 @@ Em seguida, iremos configurar os argumentos para o comando <i>ILLUMINACLIP</i> <
 As outras opções podem ser mantidas com a configuração padrão do Galaxy:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_43.png" alt="Configuração de opções do ILLUMINACLIP do Trimmomatic no Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_44.png" alt="Configuração de opções do ILLUMINACLIP do Trimmomatic no Galaxy" align="center">
 </center>
 <br><br>
 Na seção “<i>Trimmomatic Operation</i>” iremos adicionar as etapas de filtragem e limpeza a serem realizadas na mesma ordem que realizamos para a linha de comando. A primeira etapa após o comando <i>ILLUMINACLIP</i> era do comando “<i>LEADING</i>”, para remover bases de baixa qualidade no início dos reads. Selecione a opção “<i>Cut bases off the start of a read, if below a threshold quality (LEADING)</i>” no campo “<i>Select Trimmomatic operation to perform</i>” e informe o valor de qualidade “<i>25</i>” no campo “<i>Minimum quality required to keep a base</i>” para remover bases de qualidade inferior à 25, e clique em “<i>Insert Trimmomatic Operation</i>” para adicionar mais uma etapa:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_44.png" alt="Configuração da opção LEADING do Trimmomatic no Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_45.png" alt="Configuração da opção LEADING do Trimmomatic no Galaxy" align="center">
 </center>
 <br><br>
 Agora iremos adicionar a etapa do comando “<i>SLIDINGWINDOW</i>”, para avaliar a qualidade dos reads ao longo de janelas. Selecione a opção “<i>Sliding window trimming (SLIDINGWINDOW)</i>” no campo “<i>Select Trimmomatic operation to perform</i>”, informe o tamanho da janela como "<b>4</b>" no campo “<i>Number of bases to average across</i>”, e o valor de qualidade como “<b>25</b>” no campo “<i>Average quality required</i>”. Em seguida, clique novamente em “<i>Insert Trimmomatic Operation</i>” para adicionar uma terceira etapa:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_45.png" alt="Configuração da opção SLIDINGWINDOW do Trimmomatic no Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_46.png" alt="Configuração da opção SLIDINGWINDOW do Trimmomatic no Galaxy" align="center">
 </center>
 <br><br>
 A terceira etapa será a do comando “<i>AVGQUAL</i>”, para manter reads com uma qualidade média de acordo com um valor mínimo especificado. Selecione a opção “<i>Drop reads with average quality lower than a specified level (AVGQUAL)</i>” no campo “<i>Select Trimmomatic operation to perform</i>” e informe o valor de qualidade de “<b>25</b>” no campo “<i>Mininum average quality required to keep a read</i>”. Clique novamente em “<i>Insert Trimmomatic Operation</i>” para adicionar a última etapa:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_46.png" alt="Configuração da opção AVGQUAL do Trimmomatic no Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_47.png" alt="Configuração da opção AVGQUAL do Trimmomatic no Galaxy" align="center">
 </center>
 <br><br>
 Agora seguiremos para a última etapa com o comando “<i>MINLEN</i>”, removendo reads de tamanho inferior à um valor especificado. Selecione a opção “<i>Drop reads below a specified length (MINLEN)</i>” no campo “<i>Select Trimmomatic operation to perform</i>” e informe o tamanho de “<b>50</b>” no campo “<i>Mininum length of reads to be kept</i>”:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_47.png" alt="Configuração da opção MINLEN do Trimmomatic no Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_48.png" alt="Configuração da opção MINLEN do Trimmomatic no Galaxy" align="center">
 </center>
 <br><br>
 Por fim, selecione a opção “<i>Yes</i>” nos campos “<i>Output trimmlog file?</i>” e “<i>Output trimmomatic log messages</i>” para criar os arquivos de log do processo, e clique em “<i>Execute</i>” para iniciar a filtragem e limpeza dos arquivos:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_48.png" alt="Configuração final do Trimmomatic no Galaxy" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_49.png" alt="Configuração final do Trimmomatic no Galaxy" align="center">
 </center>
 <br><br>
 Quando a filtragem e processamento de ambos os arquivos estiverem concluídas, os seis arquivos estarão listados em verde.  Podemos avaliar o arquivo log para verificar se o processamento ocorreu corretamente e quantos reads foram eliminados. Para isso, baixe o arquivo sob o nome “<b>Trimmomatic on data (log file)</b>” utilizando a opção “<i>Download</i>”: 
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_49.png" alt="Análise do Trimmomatic finalizada no Galaxy, indicada pelos arquivos listados em verde, e opção de download do arquivo LOG" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_50.png" alt="Análise do Trimmomatic finalizada no Galaxy, indicada pelos arquivos listados em verde, e opção de download do arquivo LOG" align="center">
 </center>
 <br><br>
 Abra o arquivo em algum editor de texto simples (como o Notepad ++). Nas linhas iniciais há algumas informações sobre o software, o comando utilizado e a sequência dos adaptadores utilizada na busca. Na linha 9 encontramos informações sobre os reads que foram mantidos e removidos:
@@ -934,7 +924,7 @@ Abra o arquivo em algum editor de texto simples (como o Notepad ++). Nas linhas 
 <li><b>Dropped: </b>reads que foram removidos por não atenderem aos critérios exigidos nas etapas de filtragem (645.166 reads, 3,11% dos reads de entrada, não são salvos em nenhum arquivo)</li>
 </ul>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_50.png" alt="Arquivo LOG do Trimmomatic" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_51.png" alt="Arquivo LOG do Trimmomatic" align="center">
 </center>
 <br><br>
 Podemos perceber que boa parte dos pares de reads sobreviveu ao processo de filtragem (88.46%), o que já era esperado considerando que a primeira avaliação dos arquivos no FastQC atestava a boa qualidade do conjunto de dados. Entretanto, apenas olhando o arquivo LOG do Trimmomatic não é possível perceber se os adaptadores foram totalmente removidos e se podemos prosseguir com a montagem do genoma. Sendo assim, avaliaremos os arquivos filtrados com o FastQC, seguindo a mesma lógica de avaliação dos arquivos originais.  
@@ -956,7 +946,7 @@ Com os reads processados pelo Trimmomatic em mãos, iremos avaliar se a limpeza 
 Para avaliar esse ponto, podemos comparar os resultados do módulo “<a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#per-base-sequence-quality-qualidade-da-sequ%C3%AAncia-em-cada-uma-das-bases"><i>Per base sequence quality</i></a>”. Podemos ver que para todos os arquivos (<b>R1 paired, R2 paired, R1 unpaired e R2 unpaired</b>) ocorreu a remoção de posições de qualidade reduzida ao longo dos reads, se comparados aos arquivos originais. Neste exemplo abaixo, é possível perceber que a distribuição de qualidade para cada posição é diferente após a filtragem:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_51.png" alt="Comparação de resultados do módulo Per base sequence quality antes e depois da filtragem" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_52.png" alt="Comparação de resultados do módulo Per base sequence quality antes e depois da filtragem" align="center">
 </center>
 <br><br>
 </div>
@@ -967,7 +957,7 @@ Para avaliar esse ponto, podemos comparar os resultados do módulo “<a href="h
 Para avaliar este ponto, podemos comparar os resultados do módulo “<a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#per-sequence-quality-scores-qualidade-por-sequ%C3%AAncia-read"><i>Per sequence quality score</i></a>”. Podemos ver que para todos os arquivos (<b>R1 paired, R2 paired, R1 unpaired e R2 unpaired</b>) ocorreu a remoção de reads com qualidade baixa, se comparados aos arquivos originais. Neste exemplo abaixo, é possível observar que a distribuição é diferente após a filtragem, iniciando em 28, pois reads de qualidade abaixo de 25 foram removidos:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_52.png" alt="Comparação de resultados do módulo Per sequence quality scores antes e depois da filtragem" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_53.png" alt="Comparação de resultados do módulo Per sequence quality scores antes e depois da filtragem" align="center">
 </center>
 <br><br>
 </div>
@@ -978,19 +968,25 @@ Para avaliar este ponto, podemos comparar os resultados do módulo “<a href="h
 Para avaliar este ponto, podemos comparar os resultados dos módulos “<a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#adapter-content-presen%C3%A7a-de-adaptadores"><i>Adapter Content</i></a>” e “<a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#overrepresented-sequences-sequ%C3%AAncias-super-representadas"><i>Overrepresented sequences</i></a>”. Podemos ver que para quase todos os arquivos (<b>R1 paired, R2 paired e R2 unpaired</b>) ocorreu a remoção das sequências de adaptadores, se comparados aos arquivos originais. Neste exemplo abaixo, no módulo “<i>Adapter Content</i>” é possível que a distribuição é diferente após a filtragem, e as sequências de adaptadores estão ausentes:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_53.png" alt="Comparação de resultados do módulo Adapter content antes e depois da filtragem" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_54.png" alt="Comparação de resultados do módulo Adapter content antes e depois da filtragem" align="center">
 </center>
 <br><br>
 Além disso, sequências de adaptadores que eram listadas no módulo “<i>Overrepresented sequences</i>” estão ausentes:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_54.png" alt="Comparação de resultados do módulo Overrepresented sequences antes e depois da filtragem" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_55.png" alt="Comparação de resultados do módulo Overrepresented sequences antes e depois da filtragem" align="center">
 </center>
 <br><br>
 Para o arquivo “<b>R1 unpaired</b>”, entretanto, as sequências de adaptadores não foram totalmente removidas pelo Trimmomatic, sendo identificadas pelo módulo “<i>Overrepresented sequences</i>”:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_54.png" alt="Comparação de resultados do módulo Overrepresented sequences antes e depois da filtragem" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_56.png" alt="Comparação de resultados do módulo Overrepresented sequences antes e depois da filtragem" align="center">
+</center>
+<br><br>
+Para o arquivo “<b>R1 unpaired</b>”, entretanto, as sequências de adaptadores não foram totalmente removidas pelo Trimmomatic, sendo identificadas pelo módulo “<i>Overrepresented sequences</i>”:
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_57.png" alt="Erros no módulo Overrepresented sequences, com várias sequências de adaptadores detectadas" align="center">
 </center>
 <br><br>
 No contexto das atividades práticas do curso isso não será um problema, pois utilizaremos apenas os dados pareados para realizar a montagem do genoma e desconsideraremos os arquivos “<b>R1 unpaired</b>” e “<b>R2 unpaired</b>”. Caso fosse necessário utilizar os arquivos não pareados por alguma razão, as possibilidades de solução deste problema seriam:
