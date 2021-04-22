@@ -19,7 +19,7 @@ Ao utilizar estes softwares e servidores, cite as seguintes referências ou agra
 <table style="text-align:center; vertical-align:middle;">
   <tr>
     <th><strong>Software</strong></th>
-	<th width="600" ><strong>Referência / Agradecimento</strong></th>
+	<th width="700" ><strong>Referência / Agradecimento</strong></th>
   <tr>
     <td>FastQC</td>
     <td>Andrews S, 2019. FastQC: a quality control tool for high throughput sequence data. Disponível online em: <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</a></td>
