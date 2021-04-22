@@ -234,17 +234,17 @@ fastqc SRR9672751_1 SRR9672751_2
 Ao terminar a análise, podemos abrir o arquivo HTML que foi gerado em qualquer navegador e avaliar os resultados. Para cada um dos módulos, o FastQC classifica os resultados em:
 <br><br>
 
-<table class="center" style="text-align:center; vertical-align:middle;">
+<table style="text-align:center; vertical-align:middle;">
   <tr>
-  <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center"></td>
+  <td width="300"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="100"></td>
   <td><b><i>Normal:</i></b> nenhuma alteração do que seria esperado em um contexto normal</td>
   </tr>
   <tr>
-  <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center"></td>
+  <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="100"></td>
   <td><b><i>Slightly abnormal:</i></b> levemente anormal, com algumas leves alterações em relação ao que seria esperado em um contexto normal, mas que provavelmente são alterações simples e fáceis de se resolver, ou que não devem ser motivo de maiores cuidados</td>
   </tr>
   <tr>
-  <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center"></td>
+  <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center" width="100"></td>
   <td><b><i>Very unusual:</i></b> muito anormal, com muita diferença em relação ao que seria esperado em um contexto normal, e que pode caracterizar problemas mais sérios, e demandar mais atenção</td>
   </tr>
   </table>
