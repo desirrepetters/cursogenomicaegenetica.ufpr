@@ -647,16 +647,17 @@ Um outro tipo de situação problemática ocorre quando todas as sequências sup
 
 ### Adapter content (Presença de adaptadores)
 
+<div align="justify">
 Muitas das estratégias de sequenciamento de nova geração exigem o uso de adaptadores durante o processo, e parte dos adaptadores acaba sendo sequenciada junto com a amostra. Como estas são sequências técnicas, e não fazem parte da amostra, é necessário detectar se existem, para que sejam removidas. 
 <br><br>
 Esse módulo avalia a presença de adaptadores para os principais tipos de plataformas de sequenciamento de reads curtos, como Illumina e SOLID. No eixo x, apresenta a posição da base ao longo do read, e no eixo y apresenta a porcentagem de sequências de adaptadores que foi encontrada para cada posição. As linhas coloridas de distribuição representam diferentes plataformas:
 <br><br>
 <ul>
-<li><b><p style="color:#eb3434";>Linha vermelha:</p></b> Illumina Universal Adapter</li>
-<li><b><p style="color:#3437eb";>Linha azul:</p></b> Illumina Small RNA 3’ Adapter</li>
-<li><b><p style="color:#34eb40";>Linha verde:</p></b> Illumina Small RNA 5’ Adapter</li>
-<li><b><p style="color:#000000";>Linha preta:</p></b> Nextera Transposase Sequence</li>
-<li><b><p style="color:#eb34df";>Linha rosa:</p></b> SOLID Small RNA Adapter</li>
+<li><b><style="color:#eb3434";>Linha vermelha:</b> Illumina Universal Adapter</li>
+<li><b><style="color:#3437eb";>Linha azul:</b> Illumina Small RNA 3’ Adapter</li>
+<li><b><style="color:#34eb40";>Linha verde:</b> Illumina Small RNA 5’ Adapter</li>
+<li><b><style="color:#000000";>Linha preta:</b> Nextera Transposase Sequence</li>
+<li><b><style="color:#eb34df";>Linha rosa:</b> SOLID Small RNA Adapter</li>
 </ul>
 <br><br>
 A classificação dos resultados desse módulo é a seguinte:
