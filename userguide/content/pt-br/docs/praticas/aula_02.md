@@ -362,7 +362,7 @@ Em geral, as classificações “<i>Slightly abnormal</i>” e “<i>Very unusua
 <li><b>Sequências super representadas:</b> seja por razões biológicas ou por procedimentos de sequenciamento ou amostragem, se algumas sequências específicas forem mais frequentes que as outras podem causar desvios nas distribuições. </li>
 <li><b>Viés na fragmentação ou na preparação da biblioteca para sequenciamento:</b> algumas estratégias ou kits de sequenciamento possuem procedimentos de preparação que podem gerar vieses na composição das bases no começo ou final das sequências, mas que não atrapalham as análises e processamento posterior dos dados</li>
 <li><b>Remoção de adaptadores:</b> o corte e filtragem das sequências para remoção de adaptadores também pode inserir um viés na composição das bases no começo ou final da sequência, mas também não atrapalha as análises e processamento posterior dos dados. </li>
-<ul>
+</ul>
 
 Todas estas questões dificilmente serão resolvidas com processamento e filtragem de reads (principalmente porque o viés no conteúdo de bases pode ser originado no próprio sequenciamento), mas em geral não atrapalham análises posteriores, e podem ser deixadas de lado dependendo do contexto.
 <br><br>
