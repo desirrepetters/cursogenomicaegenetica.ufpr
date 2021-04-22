@@ -497,6 +497,7 @@ A classificação dos resultados desse módulo é a seguinte:
   Como solução de problemas, é possível cortar e filtrar os reads em função da qualidade, pois os N serão classificados como bases de qualidade ruim (quando as bases de má qualidade estão restritas ao começo ou final da sequência, é possível remover regiões específicas e manter as regiões de boa qualidade). Entretanto, quando todas as bases apresentam N, possivelmente será necessário sequenciar a amostra novamente.
   <br><br>
   No exemplo em questão (análise do arquivo SRR9672751_1), podemos perceber que nenhuma base indeterminada ocorreu em nenhuma das posições ao longo de todos os reads, reforçando <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#per-base-sequence-quality-qualidade-da-sequência-em-cada-uma-das-bases">a observação anterior de que a qualidade das bases é excelente e não há bases duvidosas</a>.
+  <br><br>
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_19.png" alt="Resultados do módulo Per base N content do FastQC" align="center">
 </center>
@@ -549,7 +550,7 @@ Em um arquivo com reads de tamanhos variáveis, poderíamos observar resultados 
 <br><br>
 </div>
 
-## Sequence duplication levels (Nível de duplicação das sequências)
+### Sequence duplication levels (Nível de duplicação das sequências)
 
 <div align="justify">
 Num conjunto de dados diverso e aleatório, espera-se que a maior parte das sequências ocorra na mesma proporção que as outras, sem que estejam duplicadas. Sendo assim, esse módulo avalia o nível de duplicação de cada um dos reads no conjunto de dados e cria um plot para mostrar a distribuição de possíveis sequências duplicadas. No eixo x o gráfico apresenta os níveis de duplicação, e no eixo y a porcentagem de sequências de cada categoria. A linha azul representa a distribuição observada para a amostra original, e a linha vermelha representa a distribuição que seria observada se as sequências observadas fossem removidas. Em seu título, o gráfico apresenta a porcentagem de sequências que seriam mantidas caso as sequências duplicadas fossem removidas, para fornecer uma ideia do nível de perda no caso de remoção de sequências.
@@ -572,11 +573,12 @@ A classificação dos resultados desse módulo é a seguinte:
   </table>
   <br><br>
 Em diversos cenários é perfeitamente normal que algumas sequências estejam duplicadas. Por exemplo:
+<br><br>
 <ul>
 <li>Em bibliotecas de RNA-Seq, diferentes transcritos apresentam diferentes níveis de expressão, e possivelmente os transcritos mais frequentes serão sequenciados muito mais vezes que transcritos não tão frequentes</li>
 <li>Se o sequenciamento está sendo realizado com uma cobertura bastante alta, à medida que todas as regiões do genoma forem sequenciadas, é provável que algumas regiões sejam sequenciadas vária vezes. Nesse tipo de cenário, encontrar muitas sequências duplicadas pode sugerir que a cobertura do sequenciamento não precisava ser tão alta</li>
 </ul>
-<br><br>
+
 Novamente, aqui se reforça a importância de ter sempre o contexto dos dados e das análises em mente para detectar se a classificação deste módulo realmente representa um problema a ser resolvido, ou se é um comportamento já esperado no tipo de amostra que está sendo analisada.
 <br><br>
 No exemplo do arquivo SRR9672751_1, a quantidade de sequências duplicadas é muito pequena, e, se forem removidas, 82.6% dos reads ainda serão mantidos na amostra, sugerindo que não há problemas com o arquivo nesse sentido. 
@@ -597,7 +599,7 @@ Por outro lado, se não for esse o caso, pode indicar problemas no sequenciament
 <br><br>
 </div>
 
-## Overrepresented sequences (Sequências super representadas)
+### Overrepresented sequences (Sequências super representadas)
 
 <div align="justify">
 Num conjunto de dados diverso e aleatório, espera-se que nenhuma sequência única ocorra em uma proporção maior que as outras. Este módulo lista sequências que representem mais de 0.1% do total de sequências, e realiza comparações contra uma lista de contaminantes comuns (e. g.: sequências bacterianas, sequências de adaptadores de sequenciamento) para tentar identificar a identidade das sequências super representadas.
@@ -633,7 +635,7 @@ Em alguns casos, o FastQC pode encontrar algumas sequências super representadas
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_26.png" alt="Exemplo de resultados ruins do módulo Overrepresented sequences do FastQC" align="center">
 </center>
 <br><br>
-Nesse tipo de situação, é importante <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#filtragem-e-limpeza-dos-reads-no-trimmomatic">realizar o processamento e filtragem do arquivo e a remoção de adaptadores</a>, e <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/segunda-avaliacao-de-qualidade-no-fastqc">avaliar se as sequências listadas deixaram de existir</a>. Se ainda persistirem, é interessante investigar a possível identidade das sequências por meio do BLAST, ou seguir para análises posteriores e investigar a contaminação em outros momentos (como na avaliação de montagem de genomas). Por outro lado, dependendo do contexto e do tipo de experimento, estas sequências podem representar sequências reais que realmente estavam mais presentes na amostra que outras. Aqui também reforçamos a importância de lembrar do contexto do experimento ao avaliar os resultados deste módulo.
+Nesse tipo de situação, é importante <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#filtragem-e-limpeza-dos-reads-no-trimmomatic">realizar o processamento e filtragem do arquivo e a remoção de adaptadores</a>, e <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#segunda-avalia%C3%A7%C3%A3o-de-qualidade-no-fastqc">avaliar se as sequências listadas deixaram de existir</a>. Se ainda persistirem, é interessante investigar a possível identidade das sequências por meio do BLAST, ou seguir para análises posteriores e investigar a contaminação em outros momentos (como na avaliação de montagem de genomas). Por outro lado, dependendo do contexto e do tipo de experimento, estas sequências podem representar sequências reais que realmente estavam mais presentes na amostra que outras. Aqui também reforçamos a importância de lembrar do contexto do experimento ao avaliar os resultados deste módulo.
 <br><br>
 Um outro tipo de situação problemática ocorre quando todas as sequências super representadas representam sequências de adaptadores, e em alta quantidade, como neste último exemplo. Neste caso, o FastQC conseguiu atribuir a identidade da maior parte dessas sequências, caracterizando-as como adaptadores Illumina. Além disso, elas representam uma fração significativa dos dados, em frequências de 8,12%, 5,08%, 1,08%. Esse tipo de observação sugere que a há contaminação com dímeros de adaptadores, e pode ser necessário sequenciar o material novamente.
 <br><br>
@@ -641,17 +643,59 @@ Um outro tipo de situação problemática ocorre quando todas as sequências sup
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_27.png" alt="Contaminação de dímeros de adaptadores detectada no módulo Overrepresented sequences do FastQC" align="center">
 </center>
 <br><br>
-O MAFFT também fornece algumas opções avançadas para otimização dos alinhamentos em caso de muitas sequências ou regiões problemáticas, e também a possibilidade de utilizar diferentes matrizes de substituição e alterar a penalidade de gaps. Para este exemplo, utilizaremos as opções já definidas por padrão e clicaremos em “<i>Submit</i>”.
-<br><br>
-Ao finalizar o alinhamento, o MAFFT redireciona para uma página de resultados. É possível avaliar se havia sequências em orientação reversa no arquivo original na opção “<i>Open all plots</i>”. Se houverem somente linhas vermelhas nos gráficos, todas as sequências estavam em orientação direta (quando comparadas à primeira sequência do alinhamento). Se houver alguma linha azul, esta sequência estava em orientação reversa quando comparada à primeira sequência do alinhamento. Para baixar o alinhamento em formato FASTA, basta clicar em “<i>Fasta format</i>” no menu superior. Neste caso, salvaremos o alinhamento como “<b>Aula_02_Alinhamento_MAFFT.fasta</b>”.
-<br><br>
-<center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_14.png" alt="Instruções para download do alinhamento produzido pelo MAFFT online" align="center">
-</center>
-<br><br>
 </div>
 
-## Alinhamento múltiplo com o plugin do MAFFT no PhyloSuite
+### Adapter content (Presença de adaptadores)
+
+Muitas das estratégias de sequenciamento de nova geração exigem o uso de adaptadores durante o processo, e parte dos adaptadores acaba sendo sequenciada junto com a amostra. Como estas são sequências técnicas, e não fazem parte da amostra, é necessário detectar se existem, para que sejam removidas. 
+<br><br>
+Esse módulo avalia a presença de adaptadores para os principais tipos de plataformas de sequenciamento de reads curtos, como Illumina e SOLID. No eixo x, apresenta a posição da base ao longo do read, e no eixo y apresenta a porcentagem de sequências de adaptadores que foi encontrada para cada posição. As linhas coloridas de distribuição representam diferentes plataformas:
+<br><br>
+<ul>
+<li><b><p style="color:#eb3434";>Linha vermelha:</p></b> Illumina Universal Adapter</li>
+<li><b><p style="color:#3437eb";>Linha azul:</p></b> Illumina Small RNA 3’ Adapter</li>
+<li><b><p style="color:#34eb40";>Linha verde:</p></b> Illumina Small RNA 5’ Adapter</li>
+<li><b><p style="color:#000000";>Linha preta:</p></b> Nextera Transposase Sequence</li>
+<li><b><p style="color:#eb34df";>Linha rosa:</p></b> SOLID Small RNA Adapter</li>
+</ul>
+<br><br>
+A classificação dos resultados desse módulo é a seguinte:
+<br><br>
+<table style="vertical-align:middle;">
+  <tr>
+  <td style="text-align:center" width="100"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
+  <td width="650"><b><i>Normal:</i></b> nenhum adaptador foi encontrado</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
+  <td><b><i>Slightly abnormal:</i></b> em pelo menos uma das posições, adaptadores foram encontrados numa frequência maior que 5%</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center" width="50"></td>
+  <td><b><i>Very unusual:</i></b> em pelo menos uma das posições, adaptadores foram encontrados numa frequência maior que 10%</td>
+  </tr>
+  </table>
+  <br><br>
+Como solução de problemas, é possível remover as bases correspondentes aos adaptadores que estão presentes nos reads, visto que vários softwares de processamento de dados de sequenciamento são capazes de buscar e filtrar os adaptadores. Entretanto, se boa parte das sequências for representada por adaptadores, ou os reads ao longo de todo o seu comprimento forem apenas adaptadores, possivelmente será necessário repetir o sequenciamento do material.
+<br><br>
+No exemplo do arquivo <b>SRR9672751_1</b>, o FastQC detectou que há sequências de adaptadores nas posições finais de cerca de 10% dos reads, <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#overrepresented-sequences-sequ%C3%AAncias-super-representadas">corroborando os resultados do módulo anterior</a>, que listavam alguns adaptadores na lista de sequências super representadas. 
+<br><br>
+Nesse caso, também será algo simples de resolver através da <a href ="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#filtragem-e-limpeza-dos-reads-no-trimmomatic">limpeza e filtragem dos dados</a>, e será possível remover fragmentos que correspondam à adaptadores. Além disso, como poucos reads (10%) apresentam adaptadores, e o adaptadores estão restritos a posições finais dos reads, ainda restarão muitos reads com a informação biológica que nos interessa.
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_28.png" alt="Presença de adaptadores detectada pelo módulo Adapter Content do FastQC" align="center">
+</center>
+<br><br>
+O cenário perfeito neste módulo será não detectar nenhum tipo de adaptador nessa etapa. Ao trabalhar com reads brutos, isso raramente acontece, pois sequenciar parte dos adaptadores é uma característica do processo de sequenciamento. Quando não detectamos adaptadores nesta etapa, isso sugere que os dados já passaram por pelo menos um pré-processamento básico, que removeu os adaptadores.
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_29.png" alt="Ausência de adaptadores informada pelo módulo Adapter Content do FastQC" align="center">
+</center>
+<br><br> 
+Agora, ao finalizar a avaliação de todos os módulos de resultados, podemos perceber que modo geral, os reads do sequenciamento da linhagem CBS 120486 de <i>Phyllosticta citriasiana</i> apresentam ótima qualidade e poderão ser utilizados para outras análises e processos (como a montagem do genoma), desde que realizemos uma filtragem e limpeza para remover os adaptadores que ainda estão presentes.
+</div>
+
+## Primeira avaliação de qualidade no FastQC no Galaxy
 
 <div align="justify">
 Também é possível produzir o alinhamento pelo plugin do MAFFT no PhyloSuite. Caso ainda não tenha o PhyloSuite instalado e o plugin do MAFFT configurado, siga estas instruções <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/phylosuite">aqui</a>. Após a instalação e configuração, para fazer os alinhamentos primeiramente iremos definir uma pasta de trabalho ao abrir o programa. Clicando no ícone amarelo, escolha a pasta que contiver o arquivo com as sequências. Lembre-se de <b>NÃO</b> selecionar a opção “<i>Use this as the default and do not ask again</i>” para que você sempre seja capaz de escolher qualquer pasta de seu interesse e não ficar restrito à uma única pasta:
@@ -723,8 +767,8 @@ Após inspecionar e estar satisfeito com sua edição, exporte o alinhamento no 
 
 <br>
 <div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yz0njYN0oIw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 <br><br>
-Clique <a href="https://photos.app.goo.gl/pukRgyGobNrkH3Un7">aqui</a> para fazer o download do vídeo.
+Clique <a href="https://photos.app.goo.gl/">aqui</a> para fazer o download do vídeo.
 <br><br>
 </div>
