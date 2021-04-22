@@ -237,10 +237,10 @@ Ao terminar a análise, podemos abrir o arquivo HTML que foi gerado em qualquer 
 <table style="text-align:center; vertical-align:middle;">
   <tr>
   <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
-  <td><b><i>Normal:</i></b> nenhuma alteração do que seria esperado em um contexto normal</td>
+  <td width="500"><b><i>Normal:</i></b> nenhuma alteração do que seria esperado em um contexto normal</td>
   </tr>
   <tr>
-  <td width="500"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
+  <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
   <td><b><i>Slightly abnormal:</i></b> levemente anormal, com algumas leves alterações em relação ao que seria esperado em um contexto normal, mas que provavelmente são alterações simples e fáceis de se resolver, ou que não devem ser motivo de maiores cuidados</td>
   </tr>
   <tr>
@@ -279,8 +279,21 @@ Este primeiro módulo sempre é classificado como “Normal” (ícone verde) e 
 ### Per Base Sequence Quality (Qualidade da sequência em cada uma das bases)
 
 <div align="justify">
-Em seguida, aguardamos que o BLASTn realize a comparação da sequência consenso com as demais sequências do banco de dados. Na tela seguinte ele fornecerá algumas informações sobre o andamento da busca, como o tempo decorrido. Basta aguardar até que seja carregada a página de resultados.
+Este módulo fornece uma visão geral da variação da qualidade das bases ao longo das posições dos reads, fornecendo um diagrama de caixa (box-whisker plot) para cada uma das posições. Para cada plot é utilizada a seguinte notação:
 <br><br>
+<ul>
+<li><b>Linha vermelha central:</b> mediana da qualidade das bases</li>
+<li><b>Caixa amarela:</b> intervalo entre o primeiro e o terceiro quartil (25 - 75% dos valores)</li>
+<li><b>Linhas verticais (<i>whisker</i>):</b> traçadas até os pontos representando 10% e 90% da distribuição</li>
+<li><b>Linha azul:</b> média da qualidade das bases</li>
+<li><b>Eixo x:</b> posição da base ao longo read</li>
+<li><b>Eixo y:</b> valor de qualidade, quanto mais alto, melhor. No fundo, as cores verde, laranja e vermelho dividem os valores de qualidade em muito bom, razoável e ruim</li>
+</ul>
+
+A classificação dos resultados desse módulo é a seguinte:
+<br><br>
+
+
 Na parte superior esquerda, são sumarizadas algumas informações sobre a busca, como o tipo de programa usado (BLASTN), qual banco de dados (nt), qual o tipo de molécula (dna) e o tamanho da sequência:
 <br><br>
 <center>
