@@ -90,8 +90,8 @@ Na próxima página podemos ver o número de resultados da nossa busca (neste ca
 <br><br>
 Ao abrir o primeiro resultado, é possível descobrir qual é o código de acesso com o qual o conjunto de dados foi registrado (neste caso, SRX9601541), e obter mais informações sobre o sequenciamento e o depositante, tais como:
 <br><br>
-<li><b>Submitted by: </b>responsável pela submissão dos dados, nesse caso “<i>DOE Joint Genome Institute (JGI)</i>”</li>
 <ol>
+<li><b>Submitted by: </b>responsável pela submissão dos dados, nesse caso “<i>DOE Joint Genome Institute (JGI)</i>”</li>
 <li><b>Study: </b>título breve do estudo, nesse caso “<i><u>Phyllosticta citricarpa</u> CBS 111.20 Standard Draft genome sequencing</i>”, referindo-se ao sequenciamento de genoma rascunho da linhagem CBS 111.20 da espécie <i>Phyllosticta citricarpa</i></li>
 <li><b>Sample: </b>amostra utilizada, nesse caso “<i><u>Phyllosticta citricarpa</u> CBS 111.20</i>”. Nesse caso a informação já estava presente no título, mas em muitos casos o título é mais abrangente e não informa qual linhagem foi sequenciada.</li>
 <li><b>Library: </b>aqui é possível encontrar informações sobre a estratégia de sequenciamento, como:<br>
@@ -106,12 +106,11 @@ Ao abrir o primeiro resultado, é possível descobrir qual é o código de acess
 </ol>
 </li>
 </ol>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_3.png" alt="Página dos dados do sequenciamento de genoma da linhagem CBS 111.20 de P. citricarpa no NCBI SRA, com dados sobre os arquivos" align="center">
+</center>
 <br><br>
 Para seguir para o download da sequência via NCBI SRA, podemos clicar no código de acesso da corrida (nesse caso, “<i>SRR13162647</i>”). Na página da corrida, podemos ter acesso à diferentes abas. Na aba “<i>Metadata</i>” os dados com a quantidade de posições lidas pelo sequenciador, total de bases em todos os reads e tamanho do arquivo para download são novamente apresentados.
-<br><br>
-<center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_3.png" alt="Página dos dados  do sequenciamento de genoma da linhagem CBS 111.20 de P. citricarpa no NCBI SRA, com dados sobre os arquivos" align="center">
-</center>
 <br><br>
 Para realizar o download, podemos seguir para a aba “<i>Data access</i>”: 
 <br><br>
