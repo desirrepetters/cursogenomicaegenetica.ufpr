@@ -711,7 +711,7 @@ Ao abrir a aba para seleção de arquivos e opções, clique no ícone da opçã
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_31.png" alt="Opção Browse Datasets na ferramenta FastQC no Galaxy" align="center">
 </center>
 <br><br>
-Primeiro, iremos analisar os reads forward, então clique no arquivo correspondente, chamado “<br>SRR9672751_1</b>”:
+Primeiro, iremos analisar os reads forward, então clique no arquivo correspondente, chamado “<b>SRR9672751_1</b>”:
 <br><br>
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_31.png" alt="Janela Browse Datasets, com destaque para o arquivo SRR9672751_1" align="center">
@@ -729,7 +729,7 @@ Para analisar o arquivo com reads reverse, clique novamente na opção “<i>Bro
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_33.png" alt="Janela Browse Datasets, com destaque para o arquivo SRR9672751_2" align="center">
 </center>
 <br><br>
-Quando ambas as análises estiverem concluídas, os quatro arquivos estarão listados em verde. Para realizar o download, basta clicar sobre o nome do arquivo, e no ícone de disquete, referente à opção “Download”. Os arquivos HTML com os resultados estão listados sob os nomes “FastQC on data: Webpage”.
+Quando ambas as análises estiverem concluídas, os quatro arquivos estarão listados em verde. Para realizar o download, basta clicar sobre o nome do arquivo, e no ícone de disquete, referente à opção “<i>Download</i>”. Os arquivos HTML com os resultados estão listados sob os nomes “<b>FastQC on data: Webpage</b>”.
 <br><br>
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_34.png" alt="Análise do FastQC concluída no Galaxy, indicada pela cor verde na lista de arquivos" align="center">
