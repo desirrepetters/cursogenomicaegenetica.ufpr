@@ -602,16 +602,43 @@ Por outro lado, se não for esse o caso, pode indicar problemas no sequenciament
 <div align="justify">
 Num conjunto de dados diverso e aleatório, espera-se que nenhuma sequência única ocorra em uma proporção maior que as outras. Este módulo lista sequências que representem mais de 0.1% do total de sequências, e realiza comparações contra uma lista de contaminantes comuns (e. g.: sequências bacterianas, sequências de adaptadores de sequenciamento) para tentar identificar a identidade das sequências super representadas.
 <br><br>
+A classificação dos resultados desse módulo é a seguinte:
+<br><br>
+<table style="vertical-align:middle;">
+  <tr>
+  <td style="text-align:center" width="100"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
+  <td width="650"><b><i>Normal:</i></b> nenhuma sequência única representa mais de 0.1% do total de sequências</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
+  <td><b><i>Slightly abnormal:</i></b> pelo menos uma sequência representa mais de 0.1% do total de sequências</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center" width="50"></td>
+  <td><b><i>Very unusual:</i></b> pelo menos uma sequência representa mais de 1% do total de sequências</td>
+  </tr>
+  </table>
+  <br><br>
+Uma sequência pode estar super representada por diversos motivos, sejam biológicos (por exemplo, em experimentos de expressão gênica, podem representar um gene que é muito mais expresso que outros), podem indicar fontes de contaminação, ou que a amostra não era tão diversa quanto se esperava (por exemplo, em estudos de metagenômica, um organismo ou grupo de organismos é muito mais frequente que outros), ou podem representar simplesmente os adaptadores que foram utilizados para o sequenciamento. Levando o contexto do experimento, amostra, e identidade das sequências super representadas, é possível decidir se realmente há um problema com a amostra, ou se já se esperava que algumas sequências fossem mais frequentes que outras.
+<br><br>
+No exemplo do arquivo <b>SRR9672751_1</b>, o FastQC detectou que há algumas sequências super representadas, mas que correspondem aos adaptadores da plataforma Illumina (<i>“TruSeq Adapter, Index 4 (100% over 50bp”</i>). Nesse caso, será algo simples de resolver através da limpeza e filtragem dos dados, e será possível remover fragmentos que correspondam à adaptadores. Além disso, como estas sequências representam uma pequena fração do conjunto total (0,31% e 0,13%), ainda restarão vários reads que realmente contém informações biológicas:  
+<br><br> 
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_12.png" alt="Campo para inserir ou escolher o arquivo de sequências no MAFFT online" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_25.png" alt="Resultado do módulo Overrepresented sequences do FastQC" align="center">
 </center>
 <br><br>
-Em seguida, podemos configurar algumas opções referente ao arquivo de saída. Para evitar problemas de sequências em orientações opostas no meio do alinhamento, podemos selecionar a opção “<i>Adjust direction according to the first sequence</i>”, em que a orientação das sequências será ajustada para seguir a mesma orientação da primeira sequência do alinhamento. Também é possível pedir que o MAFFT ordene as sequências no arquivo de saída de acordo com a sua similaridade com a opção “<i>Aligned</i>” dentro de “<i>Output order</i>”. Ao selecionar essa opção, as sequências mais similares estarão mais próximas no arquivo final, o que é bastante conveniente para a inspeção visual do alinhamento.
+Em alguns casos, o FastQC pode encontrar algumas sequências super representadas e não conseguir atribuir uma possível identidade (“<i>No Hit</i>”). Isso pode significar que se tratam de contaminantes biológicos (bactérias em amostras de outros organismos), ou de sequências truncadas, parciais ou de baixa qualidade de adaptadores, que não foram reconhecidas. 
+<br><br> 
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_26.png" alt="Exemplo de resultados ruins do módulo Overrepresented sequences do FastQC" align="center">
+</center>
 <br><br>
-Também é possível dar um nome à tarefa em “<i>Job name</i>” e inserir seu e-mail para ser notificado quando o alinhamento ficar pronto, visto que o procedimento pode ser demorado para arquivos muito grandes com muitas sequências longas.
+Nesse tipo de situação, é importante <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#filtragem-e-limpeza-dos-reads-no-trimmomatic">realizar o processamento e filtragem do arquivo e a remoção de adaptadores</a>, e <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/segunda-avaliacao-de-qualidade-no-fastqc">avaliar se as sequências listadas deixaram de existir</a>. Se ainda persistirem, é interessante investigar a possível identidade das sequências por meio do BLAST, ou seguir para análises posteriores e investigar a contaminação em outros momentos (como na avaliação de montagem de genomas). Por outro lado, dependendo do contexto e do tipo de experimento, estas sequências podem representar sequências reais que realmente estavam mais presentes na amostra que outras. Aqui também reforçamos a importância de lembrar do contexto do experimento ao avaliar os resultados deste módulo.
+<br><br>
+Um outro tipo de situação problemática ocorre quando todas as sequências super representadas representam sequências de adaptadores, e em alta quantidade, como neste último exemplo. Neste caso, o FastQC conseguiu atribuir a identidade da maior parte dessas sequências, caracterizando-as como adaptadores Illumina. Além disso, elas representam uma fração significativa dos dados, em frequências de 8,12%, 5,08%, 1,08%. Esse tipo de observação sugere que a há contaminação com dímeros de adaptadores, e pode ser necessário sequenciar o material novamente.
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_13.png" alt="Opções para o alinhamento com o MAFFT online" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_27.png" alt="Contaminação de dímeros de adaptadores detectada no módulo Overrepresented sequences do FastQC" align="center">
 </center>
 <br><br>
 O MAFFT também fornece algumas opções avançadas para otimização dos alinhamentos em caso de muitas sequências ou regiões problemáticas, e também a possibilidade de utilizar diferentes matrizes de substituição e alterar a penalidade de gaps. Para este exemplo, utilizaremos as opções já definidas por padrão e clicaremos em “<i>Submit</i>”.
@@ -689,6 +716,8 @@ Após inspecionar e estar satisfeito com sua edição, exporte o alinhamento no 
 </div>
 
 ## Filtragem e limpeza dos reads no Trimmomatic
+
+## Segunda avaliação de qualidade no FastQC
 
 ## Aula em vídeo
 
