@@ -653,13 +653,12 @@ Muitas das estratégias de sequenciamento de nova geração exigem o uso de adap
 Esse módulo avalia a presença de adaptadores para os principais tipos de plataformas de sequenciamento de reads curtos, como Illumina e SOLID. No eixo x, apresenta a posição da base ao longo do read, e no eixo y apresenta a porcentagem de sequências de adaptadores que foi encontrada para cada posição. As linhas coloridas de distribuição representam diferentes plataformas:
 <br><br>
 <ul>
-<li><b><style="color:#eb3434";>Linha vermelha:</b> Illumina Universal Adapter</li>
-<li><b><style="color:#3437eb";>Linha azul:</b> Illumina Small RNA 3’ Adapter</li>
-<li><b><style="color:#34eb40";>Linha verde:</b> Illumina Small RNA 5’ Adapter</li>
-<li><b><style="color:#000000";>Linha preta:</b> Nextera Transposase Sequence</li>
-<li><b><style="color:#eb34df";>Linha rosa:</b> SOLID Small RNA Adapter</li>
+<li><b><p style="color:#eb3434";>Linha vermelha:</b> Illumina Universal Adapter</li>
+<li><b><p style="color:#3437eb";>Linha azul:</b> Illumina Small RNA 3’ Adapter</li>
+<li><b><p style="color:#34eb40";>Linha verde:</b> Illumina Small RNA 5’ Adapter</li>
+<li><b><p style="color:#000000";>Linha preta:</b> Nextera Transposase Sequence</li>
+<li><b><p style="color:#eb34df";>Linha rosa:</b> SOLID Small RNA Adapter</li>
 </ul>
-<br><br>
 A classificação dos resultados desse módulo é a seguinte:
 <br><br>
 <table style="vertical-align:middle;">
