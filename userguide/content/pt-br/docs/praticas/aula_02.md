@@ -257,11 +257,27 @@ Prosseguiremos para a avaliação do arquivo HTML e cada um dos módulos analisa
 
 ### Basic Statistics (Estatísticas básicas)
 
-<div align="justify">  
+<div align="justify"> 
+Este primeiro módulo sempre é classificado como “Normal” (ícone verde) e fornece algumas estatísticas básicas sobre o arquivo analisado, e nunca tais como:
+<br><br>
+<ul>
+<li><b><i>Filename:</i></b> nome original do arquivo que foi analisado (nesse caso, <b>SRR9672751_1.gz</b>)</li>
+<li><b><i>File type:</i></b> informa se o arquivo continha informações sobre a qualidade das bases ou teve que ser convertido para que essa informação fosse obtida (nesse caso, “<b>Conventional base calls</b>”, informando que os dados estavam no formato convencional, contendo a informação sobre a qualidade das bases)</li>
+<li><b><i>Encoding:</i></b> informa se a codificação ASCII de qualidade das bases foi encontrada no arquivo, e qual tipo de codificação foi utilizada, visto que diferentes plataformas podem usar codificações distintas (nesse caso, “<b>Sanger / Illumina 1.9</b>”, informando que a codificação ASCII segue o padrão utilizado usualmente para Sanger ou Illumina 1.9)</li>
+<li><b><i>Total sequences:</i></b> número total de sequências (reads) presentes no arquivo (nesse caso, “<b>20.773.714</b>”)</li>
+<li><b><i>Sequences flagged as poor quality:</i></b> quantidade de sequências que apresentam qualidade ruim (nesse caso, “<b>0</b>”)</li>
+<li><b><i>Sequence Length:</i></b> informa o tamanho da menor e da maior sequência (read) presentes no arquivo, e se todos os reads forem do mesmo tamanho, apenas um valor será mostrado (nesse caso, todos os reads possuem tamanho de “<b>150</b>” bases)</li>
+<li><b><i>%GC:</i></b> porcentagem de GC considerando todas as bases e todos os reads (nesse caso, o conteúdo GC médio é de “<b>52%</b>”)</li>
+</ul>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_4.png" alt="Opções ~Somewhat similar sequences (blastn)~ e ~Search database Nucleotide collection (nt/nr) using Blastn (Optimize for somewhat similar sequences)" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_10.png" alt="Resultados do módulo Basic Statistics do FastQC" align="center">
 </center>
 <br><br>
+</div>
+
+### Per Base Sequence Quality (Qualidade da sequência em cada uma das bases)
+
+<div align="justify">
 Em seguida, aguardamos que o BLASTn realize a comparação da sequência consenso com as demais sequências do banco de dados. Na tela seguinte ele fornecerá algumas informações sobre o andamento da busca, como o tempo decorrido. Basta aguardar até que seja carregada a página de resultados.
 <br><br>
 Na parte superior esquerda, são sumarizadas algumas informações sobre a busca, como o tipo de programa usado (BLASTN), qual banco de dados (nt), qual o tipo de molécula (dna) e o tamanho da sequência:
