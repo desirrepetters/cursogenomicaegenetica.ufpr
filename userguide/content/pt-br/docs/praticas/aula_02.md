@@ -352,20 +352,43 @@ Nesse tipo de situação, diferente do exemplo em <i>P. citriasiana</i>, dificil
 ### Per base sequence content (Conteúdo de sequência em cada uma das bases)
 
 <div align="justify">
-No nosso exemplo, é possível ver que em todas as sequências aparece “<i>translation elongation fator 1-alpha (tef1) gene</i>” ao lado da espécie e do isolado, indicando que a região sequenciada na sequência consenso corresponde a um fragmento do fator de elongamento da tradução 1-alpha, bastante utilizado em alguns grupos taxonômicos. Como a intenção ao sequenciar este indivíduo era de fato sequenciar este fragmento, sabemos então que fomos bem sucedidos em termos de sequenciar a região correta.
+Este módulo fornece uma visão geral do conteúdo das bases (A, T, C ou G) ao longo das posições dos reads, plotando a posição do read no eixo x, e a porcentagem das bases no eixo y. Em um conjunto aleatório, a diferença na proporção entre as bases seria mínima, de modo que a linha de cada uma das bases seria paralela às outras. 
 <br><br>
-Por outro lado, vemos diversas espécies listadas: “<i>Fusarium awaxy</i>”, “<i>Fusarium cf. fujikuroi</i>”, “<i>Fusarium</i> sp.”, “<i>Fusarium culmorum</i>”, “<i>Fusarium subglutinans</i>”, “<i>Fusarium guttiforme</i>”, “<i>Fusarium antophilum</i>”. Este tipo de ocorrência é bastante comum e não é um exemplo isolado: aqui demonstramos o quão problemático é realizar a identificação de espécies apenas via BLASTn, sem análises mais refinadas. Neste caso, a única informação relevante para nossa atividade é de que provavelmente o indivíduo da sequência consenso pertence ao gênero “<i>Fusarium</i>”, mas uma identificação definitiva só poderá ser realizada por meio de análise filogenética utilizando sequências de referência do gênero Fusarium. Não há informações que nos permitam escolher uma das espécies da lista e definir a identificação do indivíduo da sequência consenso. 
+A classificação dos resultados desse módulo é a seguinte:
 <br><br>
-Agora que definimos que é necessário obter sequências das espécies descritas e aceitas de <i>Fusarium</i> para realizar a identificação do indivíduo da sequência consenso, seguiremos para a etapa de busca e obtenção de sequências no NCBI GenBank.
+Em geral, as classificações “<i>Slightly abnormal</i>” e “<i>Very unusual</i>” para este módulo ocorrem por desvios do que seria esperado em condições aleatórias, mas que não costumam causar problemas em análises posteriores. Novamente, aqui se reforça a importância de ter sempre o contexto dos dados e das análises em mente para detectar se a classificação deste módulo realmente representa um problema. As causas de desvios podem ser:
 <br><br>
+<ul>
+<li><b>Sequências super representadas:</b> seja por razões biológicas ou por procedimentos de sequenciamento ou amostragem, se algumas sequências específicas forem mais frequentes que as outras podem causar desvios nas distribuições. </li>
+<li><b>Viés na fragmentação ou na preparação da biblioteca para sequenciamento:</b> algumas estratégias ou kits de sequenciamento possuem procedimentos de preparação que podem gerar vieses na composição das bases no começo ou final das sequências, mas que não atrapalham as análises e processamento posterior dos dados</li>
+<li><b>Remoção de adaptadores:</b> o corte e filtragem das sequências para remoção de adaptadores também pode inserir um viés na composição das bases no começo ou final da sequência, mas também não atrapalha as análises e processamento posterior dos dados. </li>
+<ul>
+
+Todas estas questões dificilmente serão resolvidas com processamento e filtragem de reads (principalmente porque o viés no conteúdo de bases pode ser originado no próprio sequenciamento), mas em geral não atrapalham análises posteriores, e podem ser deixadas de lado dependendo do contexto.
+<br><br>
+No exemplo em questão (análise do arquivo <b>SRR9672751_1</b>), podemos perceber que o FastQC classificou como “<i>slightly abnormal</i>”, pois no início dos reads (até a posição 5) há alguns pequenos desvios. Entretanto, como já discutimos anteriormente, esta observação pode estar relacionada ao próprio processo de sequenciamento e inclusive representar sequências de adaptadores. Nesse caso, não caracteriza um problema com a amostra, e podemos utilizar os dados sem problemas.
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_15.png" alt="Resultados do módulo Per base sequence content do FastQC" align="center">
+</center>
+<br><br>
+Mas como ficaria o gráfico caso essa não fosse a situação? Apresentamos então um exemplo de dados em há grandes desvios entre as proporções das bases, e em que os desvios ocorrem ao longo de toda a sequência:
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_16.png" alt="Exemplo de resultados ruins do módulo Per base sequence content do FastQC" align="center">
+</center>
+<br><br>
+Nesse outro exemplo, é importante ter em mente o tipo de contexto e situação para definir uma solução. Se os dados forem provenientes de um experimento ou condição em que se esperam vieses no tipo de sequências, fragmentação ou tamanho das sequências (por exemplo, um experimento de super expressão de algum gene em relação a outros), esse tipo de observação pode ser normal e é possível prosseguir com a análise sem problemas. 
+<br><br>
+Por outro lado, se não for esse o caso, pode indicar problemas no sequenciamento (como por exemplo, a corrida sequenciou apenas os adaptadores ou sequenciou somente um tipo ou grupo de sequências). Nesse caso, a melhor solução será sequenciar o material novamente, com mais cuidado nos procedimentos de extração, purificação e sequenciamento, evitando erros que possam causar o mesmo tipo de problema.
 </div>
 
-## Obtendo sequências no NCBI GenBank
+## Per sequence GC content (Conteúdo GC por sequência)
 
 <div align="justify">
-O NCBI GenBank é a base de dados do National Center for Biotechnology Information, contendo dados genéticos disponíveis publicamente. Lá é possível encontrar diversos tipos de dados, desde sequências de DNA de diferentes regiões genômicas, montagens de genomas completos, transcriptomas, entre outros. A existência de bases de dados como o GenBank é extremamente importante, seja para lidar com o crescente volume de dados biológicos gerados, como para fornecer acesso e ferramentas de trabalho adequadas aos pesquisadores que trabalham com estes dados, e garantir que as informações estejam amplamente e permanentemente disponíveis.
+Este módulo mede a distribuição do conteúdo GC ao longo dos reads e compara com uma distribuição normal teórica. No eixo x é plotada a porcentagem de GC, e no eixo y é plotada a quantidade de reads, enquanto a distribuição teórica é plotada na linha azul, e a distribuição observada plotada na linha vermelha.  Em um conjunto normal e aleatório, uma distribuição bastante similar à distribuição teórica seria observada.
 <br><br>
-Apesar da grande variedade de dados disponíveis no GenBank, no contexto do curso nosso foco será nas páginas e ferramentas destinadas à obtenção de sequências de DNA.
+A classificação dos resultados desse módulo é a seguinte:
 <br><br>
 No topo página inicial do GenBank existe uma ferramenta de busca para encontrarmos os dados de interesse. Ao clicar na caixa de seleção suspensa, são listadas várias opções. Para sequências de DNA, escolheremos “<i>Nucleotide</i>”. Em seguida, digitamos os termos de interesse no campo em branco e clicamos em Search para pesquisar. Podemos procurar pelo nome dos organismos de interesse, por nomes de genes, ou também realizar combinações de palavras como nome do organismo e interesse e nomes de genes: 
 <br><br>
