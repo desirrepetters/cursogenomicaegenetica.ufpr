@@ -928,7 +928,6 @@ Abra o arquivo em algum editor de texto simples (como o Notepad ++). Nas linhas 
 </center>
 <br><br>
 Podemos perceber que boa parte dos pares de reads sobreviveu ao processo de filtragem (88.46%), o que já era esperado considerando que a primeira avaliação dos arquivos no FastQC atestava a boa qualidade do conjunto de dados. Entretanto, apenas olhando o arquivo LOG do Trimmomatic não é possível perceber se os adaptadores foram totalmente removidos e se podemos prosseguir com a montagem do genoma. Sendo assim, avaliaremos os arquivos filtrados com o FastQC, seguindo a mesma lógica de avaliação dos arquivos originais.  
-<br><br>
 </div>
 
 ## Segunda avaliação de qualidade no FastQC
@@ -937,7 +936,6 @@ Podemos perceber que boa parte dos pares de reads sobreviveu ao processo de filt
 Com os reads processados pelo Trimmomatic em mãos, iremos avaliar se a limpeza e processamento foram suficientes, e se a qualidade, comprimento, quantidade dos reads é adequada, e se os adaptadores foram removidos utilizando novamente o software FastQC. Os processos são os mesmos realizados para a primeira avaliação, seja <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#primeira-avalia%C3%A7%C3%A3o-de-qualidade-no-fastqc"utilizando o comando</a> ou <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#primeira-avalia%C3%A7%C3%A3o-de-qualidade-no-fastqc-no-galaxy">no Galaxy</a>, mas desta vez usando os <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#filtragem-e-limpeza-dos-reads-no-trimmomatic">arquivos FASTQ filtrados pelo Trimmomatic</a> (<b>R1 paired, R2 paired, R1 unpaired e R2 unpaired</b>). 
 <br><br>
 <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#primeira-avalia%C3%A7%C3%A3o-de-qualidade-no-fastqc">A interpretação dos módulos de resultados do arquivo HTML é a mesma descrita anteriormente</a>. Como pontos importantes a ter em mente nessa segunda avaliação, destacamos os seguintes:
-<br><br>
 </div>
 
 ### Posições de baixa qualidade nos reads foram removidas?
@@ -948,7 +946,6 @@ Para avaliar esse ponto, podemos comparar os resultados do módulo “<a href="h
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_52.png" alt="Comparação de resultados do módulo Per base sequence quality antes e depois da filtragem" align="center">
 </center>
-<br><br>
 </div>
 
 ### Reads de baixa qualidade foram removidos?
@@ -959,7 +956,6 @@ Para avaliar este ponto, podemos comparar os resultados do módulo “<a href="h
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_53.png" alt="Comparação de resultados do módulo Per sequence quality scores antes e depois da filtragem" align="center">
 </center>
-<br><br>
 </div>
 
 ### Os adaptadores foram removidos?
