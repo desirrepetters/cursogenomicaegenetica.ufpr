@@ -16,10 +16,10 @@ Para este tutorial, acessaremos o <a href="https://www.ncbi.nlm.nih.gov/sra">NCB
 <br><br>
 Ao utilizar estes softwares e servidores, cite as seguintes referências ou agradecimentos:
 <br><br>
-<table>
+<table class="center" style="text-align:center; vertical-align:middle;">
   <tr>
     <th><strong>Software</strong></th>
-	<th width="400"><strong>Referência / Agradecimento</strong></th>
+	<th width="300" ><strong>Referência / Agradecimento</strong></th>
   <tr>
     <td>FastQC</td>
     <td>Andrews S, 2019. FastQC: a quality control tool for high throughput sequence data. Disponível online em: <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</a></td>
@@ -165,32 +165,99 @@ Para corridas com layout “<i>SINGLE</i>”:
 fastq-dump SRR13162647
 ```
 
+<div align="justify">
+Para corridas com layout “<i>PAIRED</i>”, como no caso dos arquivos da linhagem CBS 120486 de de Phyllosticta citriasiana, existe a possiblidade de separar os reads de orientação forward e reverse em arquivos distintos:
+<br><br>
+</div>
+
+```
+fastq-dump --split-files SRR9672751
+```
 
 <div align="justify">
-A primeira etapa é acessar diretamente a página do <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST</a> e escolher a opção “<a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome"><i>Nucleotide BLAST</i></a>”, em que compararemos uma sequência de nucleotídeos contra um banco de dados de nucleotídeos:
+Existem duas possibilidades para uso do fastq-dump em relação ao arquivo de entrada. É possível pular a etapa anterior de download e informar o código de acesso diretamente ao comando (como nos exemplos acima) e a ferramenta para o download do arquivo diretamente do NCBI para realizar a conversão (e salvará uma cópia do arquivo SRA na pasta $HOME/ncbi/public/sra/). Caso não deseje pular o download e queira utilizar o arquivo baixado, basta informar a localização do arquivo dentro dos diretórios ao escrever o comando. Por exemplo, se o arquivo tivesse sido baixado na pasta “RNAseq” dentro da pasta “home”, o script seria:
+<br><br>
+</div>
+
+```
+fastq-dump --split-files /home/RNAseq/SRR9672751
+```
+
+<div align="justify">
+Em todos os modos de uso do fastq-dump para corridas com layout PAIRED serão gerados arquivos de saída: nesse exemplo, SRR9672751_1 para os reads forward e SRR9672751_2 para os reads reverse.
+<br><br>
+</div>
+
+## Obtenção de sequências no NCBI SRA e conversão para o formato FASTQ no Galaxy
+
+<div align="justify">
+Uma das vantagens de trabalhar com as análises diretamente no <a href="https://usegalaxy.eu/">Galaxy</a> é a possibilidade de importar os dados do NCBI SRA diretamente às pastas do Galaxy e realizar a conversão para o formato FASTQ sem ter que realizar o download do arquivo no computador. Para iniciar o download, acesse o Galaxy e crie uma nova “<i>History</i>”. Ao criar a nova “<i>History</i>”, clique na opção “<i>get data from an external source</i>”:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_1.png" alt="Página Inicial do BLAST apresentando as diferentes ferramentas: Nucleotide BLAST, tblastx, tblastn, Protein BLAST" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_6.png" alt="Opção 'get data from an external source' na aba History do Galaxy" align="center">
 </center>
 <br><br>
-Na página do BLASTn serão fornecidas várias opções para análise da nossa sequência. Na primeira porção da página, devemos colar nossa sequência na primeira caixa (“<i>Enter accession number(s), gi(s), or FASTA sequence(s)”</i>). Não é obrigatório que a sequência esteja no formato FASTA contendo o cabeçalho – se inserirmos apenas a sequência em si, o BLASTn irá funcionar. Apenas devemos estar atentos para não inserir nenhuma informação extra ou caracteres especiais que não sejam reconhecidos. 
-<br><br>
-Também é possível analisar mais de uma sequência por vez: o BLASTn irá comparar as sequências individualmente e gerar uma aba de resultados que permite navegar entre as sequências. Além da possibilidade colar as sequências a serem analisadas diretamente na caixa em branco, é possível escolher um arquivo do computador em que as sequências estejam salvas, e fazer diretamente o upload deste arquivo:
+Na aba “<i>Tools</i>”, na região esquerda da página, surgirão várias possibilidades de download de arquivos em diferentes bases de dados. Selecione a opção “<i>Faster Download and Extract Reads in FASTQ format from NCBI SRA</i>”:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_2.png" alt="Campo para inserir a sequência ou arquivo a ser analisado pelo blastn" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_7.png" alt="Opção 'Faster Download and Extract Reads in FASTQ format from NCBI SRA' na aba Tools do Galaxy" align="center">
 </center>
 <br><br>
-No próximo campo, podemos escolher contra qual banco de dados ou organismos específicos a sequência consenso será comparada. É possível excluir organismos da comparação, escolher bancos de dados específicos (como por exemplo, apenas comparar com sequências de linhagens-tipo na opção “<i>Sequences from type material</i>”, e agora até mesmo realizar diretamente comparações com sequências de betacoronavírus!). Para nosso exemplo, iremos manter a opção padrão de comparação com a base de dados padrão, que é a coleção não redundante de nucleotídeos:
+Na opção “<i>select input type</i>” selecione “<i>SRR accession</i>”, e digite o código de acesso na opção “<i>Acession</i>”. Na aba “<i>Advanced Options</i>”, na opção “<i>Select how to split the spots</i>” podemos escolher se desejamos separar os reads forward e reverse em arquivos distintos, quando os dados são pareados. Como essa informação é importante, iremos escolher a opção “<i>--split-files: write reads into different files (forward and reverse may not match if one read is empty</i>”, separando os reads forward e reverse em arquivos diferentes.  Existem algumas opções de processamento avançadas para filtrar os dados, mas como iremos realizar avaliações e filtragens posteriormente, podemos deixar estas opções em branco e clicar em “<i>Execute</i>” para iniciar o download:
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_3.png" alt="Opções ~Standard databases (nr etc)~e ~Sequences from type material~ na configuração do blastn" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_8.png" alt="Opções para configuração da ferramenta Faster Download and Extract Reads in FASTQ format from NCBI SRA no Galaxy" align="center">
 </center>
 <br><br>
-Na última seção, faremos uma escolha em relação ao algoritmo que será utilizado. Podemos restringir os resultados às sequências altamente similares (<i>“Highly similar sequences”</i>, usando o megablast), mais dissimilares (<i>“More dissimilar sequences”</i> usando o discontinguous megablast) ou moderamente similares (<i>“Somewhat similar sequences”</i> com o blastn padrão). Em geral, quando não temos muita ideia do agrupamento taxonômico do organismo de interesse, o ideal é utilizar o blastn padrão para não restringir as buscas excessivamente.
+Quando o download estiver finalizado, os arquivos estarão listados na aba History com uma cor verde, e poderão ser utilizados e selecionados em análises seguintes com outras ferramentas: 
 <br><br>
-Por fim, conferimos se o tipo de busca que selecionamos está correto (no exemplo, “Search <b>database Nucleotide collection (nr/nt)</b> using <b>Blastn (Optimize for somewhat similar sequences)</b> e clicamos no botão BLAST. Nesse momento não iremos mexer em opções avançadas presentes na aba “<i>Algorithm parameters</i>”:
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_9.png" alt="Download de arquivos finalizado no Galaxy, indicado pela coloração verde nos itens da lista" align="center">
+</center>
 <br><br>
+</div>
+
+## Primeira avaliação de qualidade no FastQC
+
+<div align="justify">
+Com os reads em mãos, iremos avaliar sua qualidade, comprimento, quantidade, e presença de possíveis adaptadores usados para o sequenciamento e contaminantes utilizando o software FastQC.
+<br><br>
+O FastQC é um software que realiza uma avaliação de qualidade de reads de sequenciamento de larga escala a fim de identificar problemas que possam ter ocorrido tanto durante o sequenciamento, quanto no material que foi sequenciado (como contaminações).  Após a avaliação, o FastQC gera um arquivo HTML ilustrando diferentes parâmetros que foram avaliados, e seus respectivos resultados. Após a instalação, iremos rodar o FastQC para os dados da linhagem CBS 120486 de <i>Phyllosticta citriasiana</i> com o seguinte comando:
+<br><br>
+</div>
+
+```
+fastqc SRR9672751_1 SRR9672751_2
+```
+
+<div align="justify">
+Ao terminar a análise, podemos abrir o arquivo HTML que foi gerado em qualquer navegador e avaliar os resultados. Para cada um dos módulos, o FastQC classifica os resultados em:
+<br><br>
+
+<table class="center" style="text-align:center; vertical-align:middle;">
+  <tr>
+  <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center"></td>
+  <td><b><i>Normal:</i></b> nenhuma alteração do que seria esperado em um contexto normal</td>
+  </tr>
+  <tr>
+  <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center"></td>
+  <td><b><i>Slightly abnormal:</i></b> levemente anormal, com algumas leves alterações em relação ao que seria esperado em um contexto normal, mas que provavelmente são alterações simples e fáceis de se resolver, ou que não devem ser motivo de maiores cuidados</td>
+  </tr>
+  <tr>
+  <td><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center"></td>
+  <td><b><i>Very unusual:</i></b> muito anormal, com muita diferença em relação ao que seria esperado em um contexto normal, e que pode caracterizar problemas mais sérios, e demandar mais atenção</td>
+  </tr>
+  </table>
+  <br><br>
+É importante frisar que tais avaliações do FastQC devem ser sempre contextualizadas em relação à amostra que está sendo trabalhada, pois a comparação é feita em relação a um contexto normal e aleatório. Por exemplo, o FastQC espera que parâmetros como quantidade e tamanho de reads sigam uma distribuição normal, por exemplo. Entretanto, se você está trabalhando com um conjunto de dados que sofreu seleção em função do tamanho dos reads, provavelmente este parâmetro não apresentará uma distribuição normal e será classificado como “slightly abnormal” ou “very unusual”, mas isso não significará que existam grandes problemas. De forma geral, é importante sempre encarar as avaliações como uma visão geral dos dados e levar o contexto sempre em consideração antes de realizar a interpretação.
+<br><br>
+Prosseguiremos para a avaliação do arquivo HTML e cada um dos módulos analisados pelo FastQC, usando o arquivo HTML de saída para os reads forward (SRR9672751_1) como exemplo:
+<br><br>
+</div>
+
+### Basic Statistics (Estatísticas básicas)
+
+<div align="justify">  
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_4.png" alt="Opções ~Somewhat similar sequences (blastn)~ e ~Search database Nucleotide collection (nt/nr) using Blastn (Optimize for somewhat similar sequences)" align="center">
 </center>
