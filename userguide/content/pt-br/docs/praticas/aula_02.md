@@ -292,8 +292,21 @@ Este módulo fornece uma visão geral da variação da qualidade das bases ao lo
 
 A classificação dos resultados desse módulo é a seguinte:
 <br><br>
-
-
+<table style="vertical-align:middle;">
+  <tr>
+  <td style="text-align:center" width="100"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
+  <td width="650"><b><i>Normal:</i></b> nenhuma alteração do que seria esperado em um contexto normal</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
+  <td><b><i>Slightly abnormal:</i></b> o quartil inferior (25%) para qualquer base corresponde a um valor de qualidade menor que 10, ou a mediana do valor de qualidade de qualquer base é menor que 25</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center" width="50"></td>
+  <td><b><i>Very unusual:</i></b> o quartil inferior (25%) para qualquer base corresponde a um valor de qualidade menor que 5, ou a mediana do valor de qualidade de qualquer base é menor que 20</td>
+  </tr>
+  </table>
+  <br><br>
 Em geral, as classificações “<i>Slightly abnormal</i>” e “<i>Very unusual</i>” para este módulo ocorrem pela degradação de qualidade que normalmente é observada nas corridas devido à degradação dos reagentes, e será observada à medida que a quantidade de reads aumenta ou o comprimento é aumentado. 
 <br><br>
 Como solução de problemas, é possível cortar e filtrar os reads em função da qualidade (quando as bases de má qualidade estão restritas ao começo ou final da sequência, é possível remover regiões específicas e manter as regiões de boa qualidade). Entretanto, quando todas as bases apresentam qualidade ruim, possivelmente será necessário sequenciar a amostra novamente.
@@ -327,6 +340,21 @@ Em um cenário ideal, apenas um pico nos melhores valores de qualidade será obs
 <br><br>
 A classificação dos resultados desse módulo é a seguinte:
 <br><br>
+<table style="vertical-align:middle;">
+  <tr>
+  <td style="text-align:center" width="100"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
+  <td width="650"><b><i>Normal:</i></b> o valor de qualidade médio mais observado é igual ou superior à 27</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
+  <td><b><i>Slightly abnormal:</i></b> o valor de qualidade médio mais observado é inferior à 27, sendo correspondente à uma taxa de erro de 0.2%</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center" width="50"></td>
+  <td><b><i>Very unusual:</i></b> o valor de qualidade médio mais observado é inferior à 20, sendo correspondente à uma taxa de erro de 1%</td>
+  </tr>
+  </table>
+  <br><br>
 Em geral, as classificações “<i>Slightly abnormal</i>” e “<i>Very unusual</i>” para este módulo ocorrem pela degradação de qualidade que normalmente é observada nas corridas, e por limitações do próprio equipamento. 
 <br><br>
 Como solução de problemas, é possível cortar e filtrar os reads em função da qualidade, removendo reads com qualidade baixa, quando a quantidade de reads de baixa qualidade não for muito elevada. Entretanto, quando muitos reads apresentarem qualidade ruim, a solução está relacionada ao equipamento e não ao processamento de dados.
@@ -356,6 +384,21 @@ Este módulo fornece uma visão geral do conteúdo das bases (A, T, C ou G) ao l
 <br><br>
 A classificação dos resultados desse módulo é a seguinte:
 <br><br>
+<table style="vertical-align:middle;">
+  <tr>
+  <td style="text-align:center" width="100"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
+  <td width="650"><b><i>Normal:</i></b> diferenças entre as proporções de A, T, C ou G não foram observadas ou, se foram, foram menores que 10% </td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
+  <td><b><i>Slightly abnormal:</i></b> a diferença entre a proporção entre A, T, C ou G é maior que 10% para pelo menos uma posição dos reads</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center" width="50"></td>
+  <td><b><i>Very unusual:</i></b> a diferença entre a proporção entre A, T, C ou G é maior que 20% para pelo menos uma posição dos reads</td>
+  </tr>
+  </table>
+  <br><br>
 Em geral, as classificações “<i>Slightly abnormal</i>” e “<i>Very unusual</i>” para este módulo ocorrem por desvios do que seria esperado em condições aleatórias, mas que não costumam causar problemas em análises posteriores. Novamente, aqui se reforça a importância de ter sempre o contexto dos dados e das análises em mente para detectar se a classificação deste módulo realmente representa um problema. As causas de desvios podem ser:
 <br><br>
 <ul>
@@ -383,76 +426,181 @@ Nesse outro exemplo, é importante ter em mente o tipo de contexto e situação 
 Por outro lado, se não for esse o caso, pode indicar problemas no sequenciamento (como por exemplo, a corrida sequenciou apenas os adaptadores ou sequenciou somente um tipo ou grupo de sequências). Nesse caso, a melhor solução será sequenciar o material novamente, com mais cuidado nos procedimentos de extração, purificação e sequenciamento, evitando erros que possam causar o mesmo tipo de problema.
 </div>
 
-## Per sequence GC content (Conteúdo GC por sequência)
+### Per sequence GC content (Conteúdo GC por sequência)
 
 <div align="justify">
 Este módulo mede a distribuição do conteúdo GC ao longo dos reads e compara com uma distribuição normal teórica. No eixo x é plotada a porcentagem de GC, e no eixo y é plotada a quantidade de reads, enquanto a distribuição teórica é plotada na linha azul, e a distribuição observada plotada na linha vermelha.  Em um conjunto normal e aleatório, uma distribuição bastante similar à distribuição teórica seria observada.
 <br><br>
 A classificação dos resultados desse módulo é a seguinte:
 <br><br>
-No topo página inicial do GenBank existe uma ferramenta de busca para encontrarmos os dados de interesse. Ao clicar na caixa de seleção suspensa, são listadas várias opções. Para sequências de DNA, escolheremos “<i>Nucleotide</i>”. Em seguida, digitamos os termos de interesse no campo em branco e clicamos em Search para pesquisar. Podemos procurar pelo nome dos organismos de interesse, por nomes de genes, ou também realizar combinações de palavras como nome do organismo e interesse e nomes de genes: 
+<table style="vertical-align:middle;">
+  <tr>
+  <td style="text-align:center" width="100"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
+  <td width="650"><b><i>Normal:</i></b> desvios em relação à distribuição normal não foram observados, e se foram, a soma dos desvios representam menos de 15% dos reads</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
+  <td><b><i>Slightly abnormal:</i></b> a soma dos desvios em relação à distribuição normal representa mais de 15% dos reads</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center" width="50"></td>
+  <td><b><i>Very unusual:</i></b> a soma dos desvios em relação à distribuição normal representa mais de 30% dos reads</td>
+  </tr>
+  </table>
+  <br><br>
+Em geral, as classificações “<i>Slightly abnormal</i>” e “<i>Very unusual</i>” para este módulo ocorrem por desvios do que seria esperado em condições aleatórias, como problemas no sequenciamento ou preparo da biblioteca, contaminação (dois ou mais picos ao longo do gráfico) ou um viés biológico da própria amostra que não caracterizaria um problema em análises posteriores. Novamente, aqui se reforça a importância de ter sempre o contexto dos dados e das análises em mente para detectar se a classificação deste módulo realmente representa um problema a ser resolvido.  
+<br><br>
+A depender do contexto e tipo de problema, dificilmente é solucionado com o processamento dos dados, e pode exigir um novo sequenciamento do material (como no caso de problemas de sequenciamento, preparo ou contaminação).
+<br><br>
+No exemplo em questão (análise do arquivo <b>SRR9672751_1</b>), podemos perceber que o FastQC classificou como “<i>slightly abnormal</i>”, pois há um leve desvio em relação à distribuição teórica esperada. Entretanto, como já discutimos anteriormente, esta observação pode estar relacionada ao próprio processo de sequenciamento ou por questões biológicas da própria amostra. Nesse caso, apesar do pequeno desvio, percebemos que o pico ainda está relacionado ao mesmo valor do pico de GC% da distribuição teórica. Além disso, o pico é único, não existindo picos adicionais que seriam evidência de possíveis contaminações. Sendo assim, essa observação provavelmente não caracteriza um problema com a amostra, e podemos utilizar os dados sem problemas.
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_7.png" alt="Campo superior de buscas no NCBI GenBank com a opção ~Nucleotide~ selecionada e ~fusarium tef1~ como termo de busca" align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_17.png" alt="Resultados do módulo Per sequence GC content do FastQC" align="center">
 </center>
 <br><br>
-Na próxima página podemos ver o número de resultados da nossa busca (neste caso, 7070), navegar por diferentes páginas de resultados (neste caso, 354 páginas) ou abrir resultados específicos. Vamos abrir o primeiro resultado para avaliar algumas das informações principais e descobrir como obter sua sequência FASTA:
+Mas como ficaria o gráfico caso essa não fosse a situação? Apresentamos então um exemplo de dados em há um desvio mais significativo em relação à distribuição teórica esperada, contendo mais de um pico ao longo da distribuição.  
 <br><br>
 <center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_8.png" alt="Resultado da busca pelo termo ~fusarium tef1~no NCBI GenBank, com 7070 resultados no total e 354 páginas de resultados." align="center">
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_18.png" alt="Exemplo de resultados ruins do módulo Per sequence GC content do FastQC" align="center">
 </center>
 <br><br>
-Ao abrir o primeiro resultado, é possível descobrir qual é o código de acesso com o qual a sequência foi registrada (neste caso, <b>MG183712.1</b>), avaliar seu tamanho (714 bp), data em que foi depositada (15 de abril de 2018), qual a identificação segundo o depositante, quem são os autores e se a sequência faz parte de algum trabalho publicado ou não. Neste caso, a sequência consta como “Não publicada”.
+Nesse outro caso também é importante ter em mente o tipo de contexto e situação para definir uma solução. Se os dados forem provenientes de um experimento ou condição em que se esperam vieses no tipo de sequências e sequências com diferentes tipos de conteúdo GC são mais frequentes que outras (por exemplo, um experimento de super expressão de algum gene em relação a outros), esse tipo de observação pode ser normal e é possível prosseguir com a análise sem problemas. 
 <br><br>
-Para baixar a sequência há duas possibilidades. A primeira consiste em clicar em “<i>Send to</i>” na parte superior direita, selecionar “<i>Complete record</i>”, “<i>File</i>”, formato “<i>FASTA</i>” e “<i>Create file</i>” para fazer download da sequência no formato FASTA. 
-<br><br>
-<br><br>
-<center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_9.png" alt="Página da sequência de código MG183712.1 de Fusarium solani" align="center">
-</center>
-<br><br>
-A segunda possibilidade é clicar em FASTA logo abaixo do código GenBank da sequência e abrir uma nova janela em que a sequência no formato FASTA poderá ser copiada:
-<br><br>
-<center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_10.png" alt="Página da sequência de código MG183712.1 de Fusarium solani, em formato FASTA" align="center">
-</center>
-<br><br>
-Para organizar as sequências, seja baixando os arquivos ou copiando cada uma, nossa sugestão é criar um documento no Notepad ++, e editar os cabeçalhos para remover informações extras, caracteres especiais e espaços. Uma boa abordagem é manter os cabeçalhos das sequências sempre como “>[Gênero]_[epíteto específico]_[código do isolado]”, para facilitar a compatibilidade entre diferentes softwares. No caso do exemplo, editaríamos a sequência de <b>“>MG183712.1 Fusarium solani strain FJAT-31354 TEF1 (TEF1) gene, partial cds”</b> para <b>“>Fusarium_solani_FJAT_31354”</b>. É importante sempre usar underlines ao invés de espaços. 
-<br><br>
-Como você já deve ter percebido pela quantidade de resultados que aparecem na busca, pelo status de “<i>Unpublished</i>” de muitas sequências, e pelo fato da identificação da sequência ser dependente do depositante (e sem curadoria posterior), muitas vezes buscar diretamente pelos genes ou nome dos organismos não é a estratégia mais fácil para filtrar e selecionar as sequências adequadas a serem incluídas na análise filogenética. 
-<br><br>
-Em geral, uma abordagem mais acertada é buscar por artigos ou outros bancos de dados que informem quais são as espécies aceitas, quais são as linhagens-tipo e os respectivos códigos GenBank para suas sequências, e aí utilizando estes códigos, fazer a busca e baixar as sequências conforme demonstramos anteriormente. 
-<br><br>
-No caso da sequência consenso, pertencente ao gênero <i>Fusarium</i>, a informação está dispersa em diversos materiais na literatura, e no contexto do curso não seria produtivo que todos gastássemos tempo reunindo essas informações. Além disso, como o gênero <i>Fusarium</i> apresenta muitas espécies descritas, muitas vezes se torna mais fácil realizar análises separando o gênero em diversos complexos de espécies. Como as espécies listadas nos primeiros alinhamentos no nosso resultado de BLASTn pertencem ao mesmo complexo, focaremos a análise no complexo “<i>Fusarium fujikuroi</i>”. Vamos trabalhar com um conjunto de sequências de referência do complexo <i>Fusarium fujikuroi</i> que já foi reunido e curado manualmente, cujos códigos e informações sobre os isolados (origem geográfica, substrato de isolamento, coleção em que foram depositados e referências dos estudos que descreveram cada espécie) estão <a href="https://github.com/desirrepetters/cursogenomicaegenetica.ufpr/raw/master/userguide/content/pt-br/docs/praticas/example_files/aula_02/Aula_02_Tabela.pdf">nesta tabela</a>. 
-<br><br>
-<center>
-<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_11.png" alt="Cabeçalho da Tabela das Sequências de Referência" align="center">
-</center>
-<br><br>
-Este tipo de tabela é extremamente útil não só para a nossa própria organização em relação ao nosso material de estudo, mas também para auxiliar outros pesquisadores a terem um acesso mais fácil a estas informações. Nesse sentido, aconselhamos que no momento de pesquisa na literatura, procurem por este tipo de tabela (que facilitará imensamente seu trabalho futuro). Caso este tipo de tabela não exista e as informações estejam muito dispersas em vários bancos de dados e artigos, talvez você inicialmente passe por um processo trabalhoso de reunião e curadoria de informação. Nesse caso, que tal contribuir com outros pesquisadores e facilitar o acesso deles à esta informação ao incluir a tabela em seu trabalho? Com certeza você auxiliará diversas pessoas e esse esforço será reconhecido com diversas citações à sua tabela!
+Por outro lado, se não for esse o caso, pode indicar problemas no sequenciamento e inclusive a presença de contaminantes. Nesse caso, a melhor solução será sequenciar o material novamente, com mais cuidado nos procedimentos de extração, purificação e sequenciamento, evitando erros que possam causar o mesmo tipo de problema, com especial atenção à possíveis fontes de contaminação (como amostras ou reagentes contaminados).
 <br><br>
 </div>
 
-## Escolhendo o outgroup e organizando o arquivo de entrada
+### Per base N content (Quantidade de N em cada uma das bases)
 
 <div align="justify">
-Vamos então produzir o alinhamento múltiplo unindo a sequência consenso ainda não identificada, as sequências de referência, e um outgroup adequado. Como já discutimos durante a aula teórica, o outgroup adequado consiste em um indivíduo externo ao grupo que está sendo analisado, mas que compartilhe um ancestral comum. Neste caso, há algumas possibilidades:
+Quando o sequenciador não consegue determinar com confiabilidade qual é a base presente numa posição, geralmente adicionará um N à sequência. Sendo assim, esse módulo informa a porcentagem de bases indeterminadas (N) para cada posição ao longo dos reads. No eixo x, o gráfico apresenta a posição ao longo do read, e no eixo y, a porcentagem de reads com N para a respectiva posição, com a linha vermelha representando a distribuição observada.
 <br><br>
+A classificação dos resultados desse módulo é a seguinte:
+<br><br>
+<table style="vertical-align:middle;">
+  <tr>
+  <td style="text-align:center" width="100"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
+  <td width="650"><b><i>Normal:</i></b> nenhum N foi observado, ou se foi, nenhuma das posições apresenta uma quantidade de N maior que 5%</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
+  <td><b><i>Slightly abnormal:</i></b> pelo menos uma das posições possui uma quantidade de N maior que 5%.</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center" width="50"></td>
+  <td><b><i>Very unusual:</i></b> pelo menos uma das posições possui uma quantidade de N maior que 20%.</td>
+  </tr>
+  </table>
+  <br><br>
+  Em geral, as classificações “<i>Slightly abnormal</i>” e “<i>Very unusual</i>” para este módulo ocorrem pela degradação de qualidade que normalmente é observada nas corridas devido à degradação dos reagentes, e será observada à medida que a quantidade de reads aumenta ou o comprimento é aumentado, então é importante olhar os resultados deste módulo junto com os resultados dos outros, a fim de observar se este resultado tem relação com o módulo <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#per-base-sequence-quality-qualidade-da-sequência-em-cada-uma-das-bases">“Per base sequence quality”</a>.
+  <br><br>
+  Como solução de problemas, é possível cortar e filtrar os reads em função da qualidade, pois os N serão classificados como bases de qualidade ruim (quando as bases de má qualidade estão restritas ao começo ou final da sequência, é possível remover regiões específicas e manter as regiões de boa qualidade). Entretanto, quando todas as bases apresentam N, possivelmente será necessário sequenciar a amostra novamente.
+  <br><br>
+  No exemplo em questão (análise do arquivo SRR9672751_1), podemos perceber que nenhuma base indeterminada ocorreu em nenhuma das posições ao longo de todos os reads, reforçando <a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/praticas/aula_02/#per-base-sequence-quality-qualidade-da-sequência-em-cada-uma-das-bases">a observação anterior de que a qualidade das bases é excelente e não há bases duvidosas</a>.
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_19.png" alt="Resultados do módulo Per base N content do FastQC" align="center">
+</center>
+<br><br>
+Mas como ficaria o gráfico caso essa não fosse a situação? Apresentamos então um exemplo de dados em existem bases indeterminadas em algumas posições de alguns reads (cerca de 5% dos reads apresentam bases indeterminadas entre as posições 26 e 30):
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_20.png" alt="Exemplo de resultados ruins do módulo Per base N content do FastQC" align="center">
+</center>
+<br><br>
+Neste exemplo ainda é possível cortar e filtrar os reads em função da qualidade, pois somente uma quantidade pequena de reads apresentam bases indeterminadas, e estão restritas a uma porção da sequência total. Entretanto, quando todas as bases apresentam N, ou quando uma grande quantidade de reads apresenta esse tipo de problema, será necessário sequenciar a amostra novamente.
+<br><br>
+</div>
+
+### Sequence length distribution (Distribuição de tamanho das sequências)
+
+<div align="justify">
+Em geral, os procedimentos de preparação da amostra, fragmentação e sequenciamento levam à geração de reads de tamanhos uniformes. No entanto, variações podem surgir, e a remoção de bases de má qualidade também pode encurtar alguns reads. Este módulo apresenta um gráfico de distribuição do tamanho observado dos reads, plotando o comprimento da sequência em pares de bases no eixo x, e quantidade de reads no eixo y. Na maioria dos casos apenas um pico será observado (no tamanho de fragmento associado à estratégia de sequenciamento).
+<br><br>
+A classificação dos resultados desse módulo é a seguinte:
+<br><br>
+<table style="vertical-align:middle;">
+  <tr>
+  <td style="text-align:center" width="100"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
+  <td width="650"><b><i>Normal:</i></b> a distribuição de tamanho das sequências é uniforme</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
+  <td><b><i>Slightly abnormal:</i></b> todas as sequências tem tamanhos distintos</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center" width="50"></td>
+  <td><b><i>Very unusual:</i></b> pelo menos uma da sequência tem um comprimento de 0</td>
+  </tr>
+  </table>
+  <br><br>
+Em diversos casos é perfeitamente normal possuir reads de tamanhos distintos dentro do conjunto de dados, seja por questões da própria amostra, e também porque algumas plataformas de sequenciamento de fragmentos mais longos como a PacBio sempre produzem reads de tamanhos variáveis. Sendo assim, as classificações de erro deste módulo podem ser ignoradas, e sua finalidade acaba sendo mais demonstrativa, para fornecer uma visão geral da distribuição de tamanho.
+<br><br>
+No exemplo em questão (análise do arquivo SRR9672751_1), podemos perceber que a distribuição de tamanho de bases é bastante uniforme, e que todos os reads tem tamanho de 150 bases (determinado pela estratégia de sequenciamento utilizada):
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_21.png" alt="Resultado do módulo Sequence Length Distribution do FastQC" align="center">
+</center>
+<br><br>
+Em um arquivo com reads de tamanhos variáveis, poderíamos observar resultados como esse:
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_22.png" alt="Exemplo de resultados ruins do módulo Sequence Length Distribution do FastQC" align="center">
+</center>
+<br><br>
+</div>
+
+## Sequence duplication levels (Nível de duplicação das sequências)
+
+<div align="justify">
+Num conjunto de dados diverso e aleatório, espera-se que a maior parte das sequências ocorra na mesma proporção que as outras, sem que estejam duplicadas. Sendo assim, esse módulo avalia o nível de duplicação de cada um dos reads no conjunto de dados e cria um plot para mostrar a distribuição de possíveis sequências duplicadas. No eixo x o gráfico apresenta os níveis de duplicação, e no eixo y a porcentagem de sequências de cada categoria. A linha azul representa a distribuição observada para a amostra original, e a linha vermelha representa a distribuição que seria observada se as sequências observadas fossem removidas. Em seu título, o gráfico apresenta a porcentagem de sequências que seriam mantidas caso as sequências duplicadas fossem removidas, para fornecer uma ideia do nível de perda no caso de remoção de sequências.
+<br><br>
+A classificação dos resultados desse módulo é a seguinte:
+<br><br>
+<table style="vertical-align:middle;">
+  <tr>
+  <td style="text-align:center" width="100"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/green_arrow.png" alt="Seta verde do FastQC" align="center" width="50"></td>
+  <td width="650"><b><i>Normal:</i></b> sequências duplicadas não foram encontradas, ou se foram, correspondem a menos de 20% do conjunto total de sequências</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/orange_sign.png" alt="Ponto de exclamação laranja do FastQC" align="center" width="50"></td>
+  <td><b><i>Slightly abnormal:</i></b> sequências duplicadas compõem mais de 20% do conjunto total de sequências</td>
+  </tr>
+  <tr>
+  <td style="text-align:center"><img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/red_error.png" alt="Erro vermelho do FastQC" align="center" width="50"></td>
+  <td><b><i>Very unusual:</i></b> sequências duplicadas compões mais de 50% do conjunto total de sequências</td>
+  </tr>
+  </table>
+  <br><br>
+Em diversos cenários é perfeitamente normal que algumas sequências estejam duplicadas. Por exemplo:
 <ul>
-<li>Algum representante de um gênero que pertença à família Nectriaceae (mesma família do gênero <i>Fusarium</i>);</li>
-<li>Algum indivíduo do gênero <i>Fusarium</i>, mas que pertença a um complexo de espécies distinto do complexo <i>Fusarium fujikuroi</i></li>
+<li>Em bibliotecas de RNA-Seq, diferentes transcritos apresentam diferentes níveis de expressão, e possivelmente os transcritos mais frequentes serão sequenciados muito mais vezes que transcritos não tão frequentes</li>
+<li>Se o sequenciamento está sendo realizado com uma cobertura bastante alta, à medida que todas as regiões do genoma forem sequenciadas, é provável que algumas regiões sejam sequenciadas vária vezes. Nesse tipo de cenário, encontrar muitas sequências duplicadas pode sugerir que a cobertura do sequenciamento não precisava ser tão alta</li>
 </ul>
 <br><br>
-Na nossa atividade prática seguiremos a segunda opção, utilizando um indivíduo da espécie <i>Fusarium oxysporum</i>, que pertence ao complexo de espécies <i>Fusarium oxysporum</i>.
+Novamente, aqui se reforça a importância de ter sempre o contexto dos dados e das análises em mente para detectar se a classificação deste módulo realmente representa um problema a ser resolvido, ou se é um comportamento já esperado no tipo de amostra que está sendo analisada.
 <br><br>
-Para produzir o alinhamento múltiplo, utilizaremos o software MAFFT. Podemos utilizar tanto a <a href="https://mafft.cbrc.jp/alignment/server/">versão online</a> quanto o plugin do PhyloSuite, e demonstraremos como realizar o alinhamento das duas formas. Primeiro, devemos criar um único arquivo FASTA contendo todas as sequências que queremos alinhar. Podemos fazer isso abrindo todos os arquivos no Notepad ++, copiar e colar todas as sequências num novo documento e salvar com a extensão FASTA.
+No exemplo do arquivo SRR9672751_1, a quantidade de sequências duplicadas é muito pequena, e, se forem removidas, 82.6% dos reads ainda serão mantidos na amostra, sugerindo que não há problemas com o arquivo nesse sentido. 
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_23.png" alt="Resultado do módulo Sequence Duplication Levels do FastQC" align="center">
+</center>
+<br><br> 
+Mas como ficaria o gráfico caso essa não fosse a situação? Apresentamos então um exemplo de dados em que o nível de sequências duplicadas é mais alto e que, se fossem removidas, apenas 46.66% permaneceriam no conjunto de dados:
+<br><br>
+<center>
+<img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_24.png" alt="Exemplo de resultados ruins do módulo Sequence Duplication Levels do FastQC" align="center">
+</center>
+<br><br> 
+Nesse outro caso também é importante ter em mente o tipo de contexto e situação para definir uma solução. Se os dados forem provenientes de um experimento ou condição em que se esperam vieses e que algumas sequências sejam mais frequentes que outras (por exemplo, um experimento de super expressão de algum gene em relação a outros), esse tipo de observação pode ser normal e é possível prosseguir com a análise sem problemas. 
+<br><br>
+Por outro lado, se não for esse o caso, pode indicar problemas no sequenciamento ou com a amostra. Nesse caso, a melhor solução será sequenciar o material novamente, com mais cuidado nos procedimentos de extração, purificação e sequenciamento, evitando erros que possam causar o mesmo tipo de problema.
 <br><br>
 </div>
 
-## Alinhamento múltiplo com o MAFFT online
+## Overrepresented sequences (Sequências super representadas)
 
 <div align="justify">
-Usando o <a href="https://mafft.cbrc.jp/alignment/server/">MAFFT online</a>, no primeiro campo podemos colar diretamente as sequências de DNA a serem alinhadas ou selecionar o arquivo FASTA que acabamos de criar:
+Num conjunto de dados diverso e aleatório, espera-se que nenhuma sequência única ocorra em uma proporção maior que as outras. Este módulo lista sequências que representem mais de 0.1% do total de sequências, e realiza comparações contra uma lista de contaminantes comuns (e. g.: sequências bacterianas, sequências de adaptadores de sequenciamento) para tentar identificar a identidade das sequências super representadas.
 <br><br>
 <center>
 <img src="https://raw.githubusercontent.com/desirrepetters/cursogenomicaegenetica.ufpr/master/userguide/content/pt-br/docs/praticas/img/aula_02/aula_02_12.png" alt="Campo para inserir ou escolher o arquivo de sequências no MAFFT online" align="center">
