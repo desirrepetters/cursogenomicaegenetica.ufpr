@@ -37,7 +37,7 @@ Clique <a href="https://photos.app.goo.gl/4P66WNSWofLMSM1DA">aqui</a> para fazer
 
 <h2>Slides</h2>
 <br>
-<a href="https://github.com/desirrepetters/cursogenomicaegenetica.ufpr/raw/master/userguide/content/pt-br/docs/teoricas/slides/aula_01_1.pdf">Parte 02 - Conceitos gerais em genômica e genética funcional de microrganismos</a>
+<a href="https://github.com/desirrepetters/cursogenomicaegenetica.ufpr/raw/master/userguide/content/pt-br/docs/teoricas/slides/aula_01.pdf">Parte 02 - Conceitos gerais em genômica e genética funcional de microrganismos</a>
 <br><br>
-<a href="https://github.com/desirrepetters/cursogenomicaegenetica.ufpr/raw/master/userguide/content/pt-br/docs/teoricas/slides/aula_01_2.pdf">Parte 03 - Organização de genomas fúngicos</a>
+<a href="https://github.com/desirrepetters/cursogenomicaegenetica.ufpr/raw/master/userguide/content/pt-br/docs/teoricas/slides/aula_02.pdf">Parte 03 - Organização de genomas fúngicos</a>
 </div>
