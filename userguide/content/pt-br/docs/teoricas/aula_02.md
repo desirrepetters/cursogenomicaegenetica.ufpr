@@ -1,29 +1,18 @@
 ---
-title: "Aula 02 - Metodologias de sequenciamento de genomas"
-linkTitle: "Aula 02 - Metodologias de sequenciamento de genomas"
+title: "Aula 02 - Organização de genomas fúngicos"
+linkTitle: "Aula 02 - Organização de genomas fúngicos"
 weight: 4
 description: >
-  Aula teórica sobre metodologias de sequenciamento de genomas e suas especificidades
+  Aula teórica sobre organização de genomas fúngicos e suas especificidades
 ---
 
 <br>
 <div align="center">
-<h2>Parte 01</h2>
-<br>
-<i>Em breve!</i>
-<br><br><br>
+<h2>Aula gravada</h2>
+<br><br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
-Clique <a href="https://photos.app.goo.gl/">aqui</a> para fazer o download do vídeo (EM BREVE!). 
-<br><br>
-
-<h2>Parte 02</h2>
-<br>
-<i>Em breve!</i>
-<br><br><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br><br>
-Clique <a href="https://photos.app.goo.gl/">aqui</a> para fazer o download do vídeo (EM BREVE!). 
+Clique <a href="https://photos.app.goo.gl/">aqui</a> para fazer o download do vídeo. 
 <br><br>
 
 <h2>Slides</h2>

@@ -8,7 +8,7 @@ description: >
 <br>
 <div align="center">
 <h2>Aula gravada</h2>
-<br><br><br>
+<br><br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIu0LeLNOqw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
 Clique <a href="https://photos.app.goo.gl/8tNw5jCD8R3uUm2C6">aqui</a> para fazer o download do vídeo. 
