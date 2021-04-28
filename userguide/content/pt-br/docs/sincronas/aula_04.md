@@ -16,7 +16,6 @@ description: >
 Clique <a href="https://photos.app.goo.gl/sbvNue6y8dNG66pn8">aqui</a> para fazer o download do vídeo.
 <br><br>
 
-<div align="center">
 <h2>Parte 02</h2>
 <br>
 <i>Montagem de genomas com os softwares SPAdes e Canu</i>
@@ -26,7 +25,6 @@ Clique <a href="https://photos.app.goo.gl/sbvNue6y8dNG66pn8">aqui</a> para fazer
 Clique <a href="https://photos.app.goo.gl/hxWr77ba2mGwRMpj8">aqui</a> para fazer o download do vídeo.
 <br><br>
 
-<div align="center">
 <h2>Parte 03</h2>
 <br>
 <i>Avaliação de qualidade (contiguidade) de montagens com o software QUAST</i>
