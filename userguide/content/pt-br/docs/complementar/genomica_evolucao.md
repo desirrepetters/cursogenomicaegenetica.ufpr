@@ -26,7 +26,6 @@ Torres et al. 2020. Genome evolution in fungal plant pathogens: looking beyond t
 Algumas referências úteis (em ordem alfabética):
 <br><br>
 Rhie et al. 2021. Towards complete and error-free genome assemblies of all vertebrate species. <b>Nature</b> 592, 737-746. DOI: <a href="https://doi.org/10.1038/s41586-021-03451-0">10.1038/s41586-021-03451-0</a>. <b><a href="https://www.nature.com/articles/s41586-021-03451-0.pdf">[PDF]</a></b>
-<br><br>
 </div>
 
 ## Exemplos em plantas

@@ -18,7 +18,6 @@ Muszewska et al. 2019. Transposable elements contribute to fungal genes and impa
 Razali et al. 2019. Transposable Elements Adaptive Role in Genome Plasticity, Pathogenicity and Evolution in Fungal Phytopathogens. <b>International Journal of Molecular Sciences</b> 20. DOI: <a href"https://doi.org/10.3390/ijms20143597">10.3390/ijms20143597</a>. <b><a href="https://www.mdpi.com/1422-0067/20/14/3597/pdf">[PDF]</a></b>
 <br><br>
 Wicker et al. 2007. A unified classificatioon system for eukaryotic transposable elements. <b>Nature Reviews Genetics</b> 8, 973-982. DOI: <a href"https://doi.org/10.1038/nrg2165">10.1038/nrg2165</a>. <b><a href="https://www.researchgate.net/profile/Philippe-Leroy-6/publication/5861686_A_unified_classification_system_for_eukaryotic_transposbale_elments/links/0fcfd50e3122e23e3f000000/A-unified-classification-system-for-eukaryotic-transposbale-elments.pdf">[PDF]</a></b>
-<br><br>
 </div> 
 
 ## Exemplos em animais
@@ -27,3 +26,4 @@ Wicker et al. 2007. A unified classificatioon system for eukaryotic transposable
 Algumas referências úteis (em ordem alfabética):
 <br><br>
 Peccoud et al. 2017. Massive horizontal transfer of transposable elements in insects. <b>PNAS</b> 114, 4721-4726. DOI: <a href="https://doi.org/10.1073/pnas.1621178114">10.1073/pnas.1621178114</a>. <b><a href="https://www.pnas.org/content/pnas/114/18/4721.full.pdf">[PDF]</a></b>
+</div>
