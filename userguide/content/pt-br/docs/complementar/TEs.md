@@ -21,3 +21,9 @@ Wicker et al. 2007. A unified classificatioon system for eukaryotic transposable
 <br><br>
 </div> 
 
+## Exemplos em animais
+
+<div align="justify">
+Algumas referências úteis (em ordem alfabética):
+<br><br>
+Peccoud et al. 2017. Massive horizontal transfer of transposable elements in insects. <b>PNAS</b> 114, 4721-4726. DOI: <a href="https://doi.org/10.1073/pnas.1621178114">10.1073/pnas.1621178114</a>. <b><a href="https://www.pnas.org/content/pnas/114/18/4721.full.pdf">[PDF]</a></b>
