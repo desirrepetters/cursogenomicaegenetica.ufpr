@@ -64,7 +64,7 @@ description: >
   <tr>
   <td style="vertical-align:middle;">Aula 07 (Síncrona)</td>
   <td style="vertical-align:middle;">03/05/2021 <br>(13:30 - 17:30)</td>
-  <td style="vertical-align:middle;"><br><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_07">Aula teórica com conceitos introdutórios da genética de interações patógeno-planta</a><br></td>
+  <td style="vertical-align:middle;"><br><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_07">Introdução ao módulo e aula teórica com conceitos introdutórios da genética de interações patógeno-planta</a><br></td>
   <td style="vertical-align:middle;">Chirlei e Alan</td>
   <tr>
   <td style="vertical-align:middle;">Aula 08 (Síncrona)</td>
@@ -72,29 +72,29 @@ description: >
   <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_08"><br>Aula teórica sobre bases moleculares do reconhecimento de patógenos por plantas e aula prática sobre seleção de genes candidatos<br></a></td>
    <td style="vertical-align:middle;">Chirlei e Alan</td>
   <tr>
-  <td style="vertical-align:middle;">Aula 09 (Síncrona)</td>
-  <td style="vertical-align:middle;">07/05/2021 <br>(13:30 - 17:30)</td>
+  <td style="vertical-align:middle;">Aula 09 (Assíncrona)</td>
+  <td style="vertical-align:middle;">- - - </td>
   <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_09"><br>Aula teórica e prática sobre métodos de transformação genética<br></a></td>
   <td style="vertical-align:middle;">Chirlei e Alan</td>
   <tr>
   <td style="vertical-align:middle;">Aula 10 (Síncrona)</td>
   <td style="vertical-align:middle;">10/05/2021 <br>(13:30 - 17:30)</td>
-  <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_10"><br>Aula teórica sobre aspectos moleculares de diferentes interações entre microrganismos e plantas<br><a></td>
-  <td style="vertical-align:middle;">Chirlei</td>
+  <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_10"><br>Aula teórica e prática sobre métodos de transformação genética (revisão sobre aula assíncrona 09)<br><a></td>
+  <td style="vertical-align:middle;">Chirlei, Alan</td>
   <tr>
   <td style="vertical-align:middle;">Aula 11 (Síncrona)</td>
   <td style="vertical-align:middle;">13/05/2021 <br>(13:30 - 17:30)</td>
-  <td style="vertical-align:middle;"><br><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_11">Aula prática sobre PCR, do desenho de primers eficientes à confirmação da amplificação por eletroforese</a><br></td>
-  <td style="vertical-align:middle;">Alan</td>
+  <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_11"><br>Palestra sobre aspectos moleculares de diferentes interações entre microrganismos e plantas com o Prof. Holger Deising (Martin-Luther-University, Alemanha), e aula prática sobre PCR, do desenho de primers eficientes à confirmação da amplificação por eletroforese<br><a></td>
+  <td style="vertical-align:middle;">Chirlei, Alan e Prof. Holger Deising</td>
   <tr>
   <td style="vertical-align:middle;">Aula 12 (Síncrona)</td>
   <td style="vertical-align:middle;">14/05/2021 <br>(13:30 - 17:30)</td>
-  <td style="vertical-align:middle;"><br><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_12">Aula prática sobre clonagem gênica, da escolha e manipulação de vetores, desenho de primers, digestão, ligação e clonagem em <i>E. coli</i></a><br></td>
+  <td style="vertical-align:middle;"><br><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_12">Continuação da aula prática sobre PCR, do desenho de primers eficientes à confirmação da amplificação por eletroforese, e aula prática sobre clonagem gênica, da escolha e manipulação de vetores, desenho de primers, digestão, ligação e clonagem em <i>E. coli</i></a><br></td>
   <td style="vertical-align:middle;">Alan</td>
   <tr>
   <td style="vertical-align:middle;">Aula 13 (Síncrona)</td>
   <td style="vertical-align:middle;">17/05/2021 <br>(13:30 - 17:30)</td>
-  <td style="vertical-align:middle;"><br><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_13">Aula teórica e prática sobre metodologias para o estudo funcional de genes, como <i>knockout</i> (deleção), <i>knockdown</i> (RNAi) e superexpressão de genes, e metodologias para o estudo de expressão de genes</a><br></td>
+  <td style="vertical-align:middle;"><br><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_13">Continuação da aula prática sobre clonagem gênica, da escolha e manipulação de vetores, desenho de primers, digestão, ligação e clonagem em <i>E. coli</i></a>, e aula teórica e prática sobre metodologias para o estudo funcional de genes, como <i>knockout</i> (deleção), <i>knockdown</i> (RNAi) e superexpressão de genes, e metodologias para o estudo de expressão de genes</a><br></td>
   <td style="vertical-align:middle;">Chirlei e Alan</td>
   <tr>
   <td style="vertical-align:middle;">Aula 14 (Síncrona)</td>
@@ -104,30 +104,29 @@ description: >
   <tr>
   <td style="vertical-align:middle;">Aula 15 (Síncrona)</td>
   <td style="vertical-align:middle;">21/05/2021 <br>(13:30 - 17:30)</td>
-  <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_15"><br>Aula prática sobre transformação genética em fungos, com montagem de cassetes para aumento (<i>overexpression</i>) ou redução de expressão de genes (<i>knock-down</i> por RNA de interferência)<br></td>
+  <td style="vertical-align:middle;"><br><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_15">Aula prática sobre transformação genética em fungos, com montagem de cassetes para aumento (<i>overexpression</i>) ou redução de expressão de genes (<i>knock-down</i> por RNA de interferência)<br></td>
   <td style="vertical-align:middle;">Alan</td>
   <tr>
-  <td style="vertical-align:middle;">Aula 15 (Síncrona)</td>
+  <td style="vertical-align:middle;">Aula 16 (Síncrona)</td>
   <td style="vertical-align:middle;">24/05/2021 <br>(13:30 - 17:30)</td>
   <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_16"><br>Aula teórica sobre metodologias para edição de genomas (CRISPR-Cas)<br></td>
   <td style="vertical-align:middle;">Chirlei</td>
   <tr>
-  <td style="vertical-align:middle;">Aula 16 (Síncrona)</td>
+  <td style="vertical-align:middle;">Aula 17 (Síncrona)</td>
   <td style="vertical-align:middle;">27/05/2021 <br>(13:30 - 17:30)</td>
   <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_17"><br>Aula prática sobre PCR quantitativo (qPCR) para avaliar a biomassa de fungos em tecidos vegetais infectados, desde o desenho e validação de primers, curva de calibração, desenho experimental e seleção de controles, até à análise do resultado<br><br></td>
   <td style="vertical-align:middle;">Alan</td>
   <tr>
-  <td style="vertical-align:middle;">Aula 16 (Síncrona)</td>
+  <td style="vertical-align:middle;">Aula 18 (Síncrona)</td>
   <td style="vertical-align:middle;">28/05/2021 <br>(13:30 - 17:30)</td>
   <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_18"><br>Aula prática sobre RT-qPCR para avaliar a expressão de genes interesse, com conceitos sobre extração de RNA, desenho e validação de primers, seleção de genes para normalização, ao procedimento experimental e análise dos resultados <br><br></td>
   <td style="vertical-align:middle;">Alan</td>
   <tr>
-  <td style="vertical-align:middle;">Aula 16 (Síncrona)</td>
+  <td style="vertical-align:middle;">Aula 19 (Síncrona)</td>
   <td style="vertical-align:middle;">31/05/2021 <br>(13:30 - 17:30)</td>
   <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_19"><br>Discussão geral e encerramento do curso<br><br></td>
   <td style="vertical-align:middle;">Chirlei e Alan</td>
   </table>
-
   </div>
 
 	
