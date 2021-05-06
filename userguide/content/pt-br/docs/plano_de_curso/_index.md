@@ -79,7 +79,7 @@ description: >
   <tr>
   <td style="vertical-align:middle;">Aula 10 (Síncrona)</td>
   <td style="vertical-align:middle;">10/05/2021 <br>(13:30 - 17:30)</td>
-  <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_10"><br>Aula teórica e prática sobre métodos de transformação genética (revisão sobre aula assíncrona 09)<br><a></td>
+  <td style="vertical-align:middle;"><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_10"><br>Aula teórica e prática sobre métodos de transformação genética e também revisão sobre aula assíncrona 09<br><a></td>
   <td style="vertical-align:middle;">Chirlei, Alan</td>
   <tr>
   <td style="vertical-align:middle;">Aula 11 (Síncrona)</td>
