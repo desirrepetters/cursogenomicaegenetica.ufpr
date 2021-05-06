@@ -94,7 +94,7 @@ description: >
   <tr>
   <td style="vertical-align:middle;">Aula 13 (Síncrona)</td>
   <td style="vertical-align:middle;">17/05/2021 <br>(13:30 - 17:30)</td>
-  <td style="vertical-align:middle;"><br><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_13">Continuação da aula prática sobre clonagem gênica, da escolha e manipulação de vetores, desenho de primers, digestão, ligação e clonagem em <i>E. coli</i></a>, e aula teórica e prática sobre metodologias para o estudo funcional de genes, como <i>knockout</i> (deleção), <i>knockdown</i> (RNAi) e superexpressão de genes, e metodologias para o estudo de expressão de genes</a><br></td>
+  <td style="vertical-align:middle;"><br><a href="https://cursogenomicaegeneticaufpr.netlify.app/docs/sincronas/aula_13">Continuação da aula prática sobre clonagem gênica, da escolha e manipulação de vetores, desenho de primers, digestão, ligação e clonagem em <i>E. coli</i></a>, e aula teórica e prática sobre metodologias para o estudo funcional de genes, como <i>knockout</i> (deleção), <i>knockdown</i> (RNAi) e superexpressão de genes, e metodologias para o estudo de expressão de genes</a></td>
   <td style="vertical-align:middle;">Chirlei e Alan</td>
   <tr>
   <td style="vertical-align:middle;">Aula 14 (Síncrona)</td>
