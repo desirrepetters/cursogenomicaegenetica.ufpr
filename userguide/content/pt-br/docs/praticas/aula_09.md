@@ -1,24 +1,18 @@
 ---
-title: "Aula 09 - em breve!"
-linkTitle: "Aula 09 - em breve!"
+title: "Aula 09 - Caracterização de mutantes por Southern Blot"
+linkTitle: "Aula 09 - Caracterização de mutantes por Southern Blot"
 weight: 9
 description: >
-  Softwares utilizados: em breve!
+ Aula teórica e prática com vídeo experimental da caracterização de mutantes por Southern Blot
 ---
 
-<div align="justify">
-Tutorial em breve!
-<br><br>
-
-</div>
-
-## Aula em vídeo (EM BREVE!)
+## Aula gravada
 
 <br>
 <div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YL-V0LUDzag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 <br><br>
-Clique <a href="https://photos.app.goo.gl/">aqui</a> para fazer o download do vídeo (EM BREVE!).
+Clique <a href="https://photos.app.goo.gl/wQkdaWCe6gske5Px9">aqui</a> para fazer o download do vídeo.
 <br><br>
 </div>
 
@@ -26,5 +20,5 @@ Clique <a href="https://photos.app.goo.gl/">aqui</a> para fazer o download do v�
 
 <div align="center">
 <br>
-Clique <a href="https://github.com/desirrepetters/cursogenomicagenetica.ufpr/raw/master/userguide/content/pt-br/docs/praticas/slides/aula_09.pdf">aqui</a> (EM BREVE!)!
+Clique <a href="https://github.com/desirrepetters/cursogenomicagenetica.ufpr/raw/master/userguide/content/pt-br/docs/praticas/slides/aula_.pdf">aqui</a> (EM BREVE!)!
 </div>
