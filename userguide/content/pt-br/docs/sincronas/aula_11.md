@@ -12,9 +12,7 @@ description: >
 <br>
 <i>Palestra do Prof. Holger Deising: "The role of fungal cell walls in plant infection"</i>
 <br><br><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br><br>
-Clique <a href="https://photos.app.goo.gl/">aqui</a> para fazer o download do vídeo (EM BREVE!). 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B12fCRKkwwE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
 
 <h2>Parte 02</h2>
