@@ -229,6 +229,48 @@ espécies de <i>Colletotrichum</i></li>
 </tbody>
 </table>
 
+<p><p>
+<h2>Aulas extras</h2>
+<p>
+<p>
+<p>
+
+<table>
+<tbody>
+<tr>
+<td>
+
+<p><p>
+
+<b>Elvio Henrique Benatto Perino</b> é aluno de doutorado na Martin-Luther-Universität Halle-Wittenberg e no Leibniz Institut für Pflanzenbiochemie, em Halle, na Alemanha.
+<p><p>
+<p style="text-align: left">Atua principalmente nos seguintes tópicos:</p>
+
+<ul>
+<li style="text-align: left">Papel de suberina na defesa contra patógenos em <i>Solanum tuberosum</i></li>
+<li style="text-align: left">Transportes em <i>Solanum</i> spp.</li>
+<li style="text-align: left">Clonagem gênica por GoldenGate</li>
+</ul>
+
+<strong>Formação</strong>
+<p>
+<ul>
+<li>Graduação em Engenharia de Bioprocessos e Biotecnologia - Universidade Federal do Paraná (UFPR) (2014)</li>
+<li>Mestrado em Genética - Universidade Federal do Paraná (UFPR) (2017)</li>
+<li>Doutorado em Genética e Bioquímica em andamento pela Martin-Luther-Universität e pelo Leibniz Institut für Pflanzenbiochemie (previsão de titulação: 2022)</li>
+</ul>
+
+<p>
+
+</td>
+<td rowspan="3"> <img class="alignnone size-full wp-image-604" src="/sobre/elvio.jpeg" alt="Foto de Perfil de Elvio" width="310"/></td>
+</tr>
+</tbody>
+</table>
+<p>
+<p>
+<p>
+
 {{% /blocks/section %}}
 {{% blocks/section type="section" color="primary" %}}
 
