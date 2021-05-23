@@ -94,7 +94,7 @@ com as plantas (60 horas - 03 a 31 de Maio)
     <tr>
    <td><strong>Módulo 2: Genética Funcional de Microrganismos e suas interações
 com as plantas (60 horas - 03 a 31 de Maio)
-<p><p>Professores: Chirlei Glienke e Alan de Oliveira Silva
+<p><p>Professores: Chirlei Glienke, Alan de Oliveira Silva e Elvio Henrique Benatto Perino
 <p>Tópicos Práticos</strong>
    </td>
    <td>
@@ -105,6 +105,7 @@ espécies de <i>Colletotrichum</i></li>
 <li style="text-align: left">PCR: do desenho de primers eficientes à confirmação da amplificação por eletroforese.</li>
 <li style="text-align: left">Clonagem gênica: escolha e manipulação de vetores, desenho de primers, digestão, ligação e clonagem em <i>E. coli.</i></li>
 <li style="text-align: left">Transformação genética em fungos: montagem de cassetes para deleção (<i>knock-out</i>), aumento (<i>overexpression</i>) ou redução de expressão de genes (knock-down por RNA de interferência).</li>
+<li style="text-align: left">Metodologia de edição de genomas (CRISPR-Cas9)</li>
 <li style="text-align: left">PCR quantitativo (qPCR) para avaliar a biomassa de fungos em tecidos vegetais infectados: do desenho e validação de primers, curva de calibração, desenho experimental, seleção de controles à análise dos resultados.</li>
 <li style="text-align: left">RT-qPCR para avaliar a expressão de genes de interesse: da extração de RNA, desenho e validação de primers, seleção de genes para normalização ao procedimento experimental e análise dos resultados.</li>
 </ul>
