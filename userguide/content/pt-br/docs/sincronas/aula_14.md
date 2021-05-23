@@ -1,9 +1,9 @@
 ---
-title: "Aula 14 - Clonagem gênica e métodos de transformação genética em fungos"
-linkTitle: "Aula 14 - Clonagem gênica e métodos de transformação genética em fungos"
+title: "Aula 14 - Clonagem gênica e transformação genética em fungos"
+linkTitle: "Aula 14 - Clonagem gênica e transformação genética em fungos"
 weight: 4
 description: >
-  Encontro do dia 20 de Maio com aula teórica e prática sobre clonagem gênica, com montagem de cassete de RNAi, e sobre métodos de transformação genética em fungos, com montagem de cassete de fusão
+  Encontro do dia 20 de Maio com aula teórica e prática sobre clonagem gênica, com montagem de cassete de RNAi, e sobre transformação genética em fungos, com montagem de cassete de fusão
 ---
 
 <br>
@@ -19,7 +19,7 @@ Clique <a href="https://photos.app.goo.gl/wbyphiytZhtz9oES6">aqui</a> para fazer
 
 <h2>Parte 02</h2>
 <br>
-<i>Métodos de transformação genética em fungos</i>
+<i>Transformação genética em fungos</i>
 <br><br><br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WALH1mjwhxs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 <br><br>
@@ -28,6 +28,8 @@ Clique <a href="https://photos.app.goo.gl/Dj5UmPziN73kftSw8">aqui</a> para fazer
 
 <h2>Slides</h2>
 <br>
-Clique <a href="https://github.com/desirrepetters/cursogenomicaegenetica.ufpr/raw/master/userguide/content/pt-br/docs/teoricas/slides/aula_19.pdf">aqui</a> (EM BREVE!)!
+<a href="https://github.com/desirrepetters/cursogenomicaegenetica.ufpr/raw/master/userguide/content/pt-br/docs/teoricas/slides/aula_17.pdf">Parte 01 - Clonagem gênica: montagem de cassete de RNAi</a>
+<br><br>
+<a href="https://github.com/desirrepetters/cursogenomicaegenetica.ufpr/raw/master/userguide/content/pt-br/docs/teoricas/slides/aula_19.pdf">Parte 02 - Transformação genética em fungos</a>
 <br><br>
 </div>
