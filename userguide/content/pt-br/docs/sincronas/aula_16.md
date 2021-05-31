@@ -10,7 +10,7 @@ description: >
 <div align="center">
 <h2>Parte 01</h2>
 <br>
-<i>Em breve!</i>
+<i>Aula teórica: Metodologia de edição de genomas (CRISPR-Cas) e clonagem GoldenGate</i>
 <br><br><br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i5t13n90Cb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
@@ -19,7 +19,7 @@ Clique <a href="https://photos.app.goo.gl/c73vbZ6VfdoM2SbC6">aqui</a> para fazer
 
 <h2>Parte 02</h2>
 <br>
-<i>Em breve!</i>
+<i>Aula prática: Metodologia de edição de genomas (CRISPR-Cas) e clonagem GoldenGate</i>
 <br><br><br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/15IjHkOaBSQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 <br><br>
