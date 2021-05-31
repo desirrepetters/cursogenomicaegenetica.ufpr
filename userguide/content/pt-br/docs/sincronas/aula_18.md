@@ -1,6 +1,6 @@
 ---
-title: "Aula 18 - em breve"
-linkTitle: "Aula 18 - em breve"
+title: "Aula 18 - PCR em tempo real"
+linkTitle: "Aula 18 - PCR em tempo real"
 weight: 4
 description: >
   Encontro do dia 28 de Maio com aula teórica sobre PCR em tempo real, com teste de primers, tipos de quantificação, desenho experimental, normalização, e estudos de caso de quantificação de biomassa e avaliação de expressão gênica

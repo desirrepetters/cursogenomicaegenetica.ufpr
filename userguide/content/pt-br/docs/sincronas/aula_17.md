@@ -1,6 +1,6 @@
 ---
 title: "Aula 17 - PCR em tempo real"
-linkTitle: "Aula 17 - em breve"
+linkTitle: "Aula 17 - PCR em tempo real"
 weight: 4
 description: >
   Encontro do dia 27 de Maio com aula teórica sobre PCR em tempo real, com conceitos gerais, sistemas de detecção, desenho de primers e testes de especificidade e eficiência
