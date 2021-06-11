@@ -12,7 +12,7 @@ description: >
 <br>
 <i>Metodologias para o estudo funcional de genes</i>
 <br><br><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iwifPbipWA4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NqDAN06eaQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
 Clique <a href="https://photos.app.goo.gl/42YK8PEjycqFgYb68">aqui</a> para fazer o download do vídeo. 
 <br><br>
